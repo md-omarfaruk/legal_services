@@ -1,0 +1,142 @@
+.appointment-title {
+  background-color: #F2F2F2;
+  padding: 100px 0;
+}
+
+.appointment-details {
+  max-height: 260px;
+  max-width: 450px;
+}
+
+.bi.appointment-icon {
+  font-size: 22px;
+  margin-right: 8px;
+}
+.appointment-details .active{
+  color: #12D488!important;
+}
+
+.icon-link {
+  color: #535D71;
+  letter-spacing: 1px;
+  padding-bottom: 12px;
+}
+.service h4,
+h5 {
+  color: #202c45;
+}
+
+.all-icon {
+  font-size: 18px;
+  color: #12D488;
+  border-color: #12D488 !important;
+}
+
+.appointment-page-client-img {
+  max-width: 56px;
+  max-height: 56px;
+  border-radius: 100%;
+}
+
+.service-details {
+  font-weight: 400;
+  cursor: pointer;
+  border: 1px solid;
+  border-color: #b3b8b6;
+}
+.note {
+  color: #535D71;
+}
+
+.service-details-icon {
+  font-size: 25px;
+  position: absolute;
+  top: 2% !important;
+  right: 2% !important;
+  color: #12D488;
+}
+.amount {
+  color: white;
+  background-color: #12D488;
+}
+#serviceRequiredNote, #dateTimeRequiredNote {
+  color: red
+}
+.next-btn .icon-link {
+  background-color: #12D488;
+  cursor: pointer;
+}
+
+.icon-link>.bi {
+  margin-bottom: 10px;
+}
+
+.time-slot h6 {
+  font-weight: 400;
+  color: #535D71;
+}
+
+.times h5 {
+  color: #535D71;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.times h6 {
+  color: #535D71;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.date-time h4,
+h5 {
+  color: #202c45;
+}
+
+.calendar-body label {
+  color: #12D488;
+}
+
+input[type="submit" i] {
+  background-color: #12D488;
+  color: white;
+  padding: 10px 26px;
+  border: none;
+  border-radius: 5px;
+}
+input#radio1,input#radio2 {
+  border-color: #12D488;
+}
+#select-date {
+  padding: 8px 26px;
+  color: #535D71;
+  border: 1px solid #12D488;
+  border-radius: 5px;
+}
+
+h6.slot-period {
+  color: #12D488;
+  font-weight: 900;
+}
+.slot{
+  cursor: pointer;
+  border: 1px solid;
+  border-color: #b3b8b6;
+}
+.basic-details h4 {
+  color: #202c45;
+}
+
+.bi-patch-check-fill {
+  font-size: 30px;
+  color: #12D488;
+}
+
+@media (max-width: 767.98px) {
+  .icon-link {
+    font-size: 14px;
+  }
+  .appointment-container .col-lg-9{
+    margin-top: 30px;
+  }
+}
