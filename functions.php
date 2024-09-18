@@ -36,8 +36,40 @@ function legal_services_enqueue_styles()
 }
 add_action('wp_enqueue_scripts', 'legal_services_enqueue_styles');
 
-function legal_services_enqueue_scripts() {
-    wp_enqueue_script( 'legal_services_bootstrapJsScript', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js', null, null, true);
-    wp_enqueue_script( 'legal_services_mainJsScript', get_template_directory_uri() . '/assets/js/main.js', null, null, true);
+function legal_services_enqueue_scripts()
+{
+    wp_enqueue_script('legal_services_bootstrapJsScript', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js', null, null, true);
+    wp_enqueue_script('legal_services_mainJsScript', get_template_directory_uri() . '/assets/js/main.js', null, null, true);
 }
 add_action('wp_enqueue_scripts', 'legal_services_enqueue_scripts');
+
+// --------------------------------Theme-Customize-Objects-Manager--------------------------------
+function legal_services_top_header($wp_customize)
+{
+    //Setting
+    $wp_customize->add_setting('top_header_logo', array('default' => '/assets/img/moin-choudhury-logo.webp'));
+    //Control
+    //top_header
+    $wp_customize->add_control(
+        new WP_Customize_Image_Control(
+            $wp_customize,
+            'top_header_logo',
+            array(
+                'label' => __('Top Header Logo', 'legal_services'),
+                'section' => 'top_header',
+                'settings' => 'top_header_logo',
+            )
+        )
+    );
+
+    //Section
+    $wp_customize->add_section(
+        'top_header',
+        array(
+            'title' => __('Top Header', 'legal_services'),
+            'priority' => 30,
+            'description' => __('Add your top header logo here.', 'legal_services')
+        )
+    );
+}
+add_action('customize_register', 'legal_services_top_header');

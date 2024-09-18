@@ -28,7 +28,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
-                        <a href="index.html"><img src="<?php echo get_theme_file_uri( 'assets/img/moin-choudhury-logo.webp' );?>" class="header-logo"
+                        <a href="index.html"><img src="<?php echo  get_theme_mod('top_header_logo'); ?>" class="header-logo"
                                 width="224" alt="Legal Services"></a>
                     </div>
                     <div class="col-lg-9 d-flex justify-content-end">
