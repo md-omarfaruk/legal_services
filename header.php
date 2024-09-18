@@ -28,29 +28,29 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
-                        <a href="index.html"><img src="<?php echo  get_theme_mod('top_header_logo'); ?>" class="header-logo"
+                        <a href="<?php echo get_option("siteurl"); ?>">"><img src="<?php echo  get_theme_mod('top_header_logo'); ?>" class="header-logo"
                                 width="224" alt="Legal Services"></a>
                     </div>
                     <div class="col-lg-9 d-flex justify-content-end">
                         <div class="opening-hours me-5">
                             <div class="d-flex align-items-center">
                                 <img src="<?php echo get_theme_file_uri( 'assets/img/icons/clock.png' );?>" class="header-icon-img" alt="">
-                                <h4 class="hours roboto-regular">09:00 - 06:00</h4>
+                                <h4 class="hours roboto-regular"><?php echo get_theme_mod( 'opening_hours');?></h4>
                             </div>
-                            <p class="day roboto-regular">Our Opening Hours Mon. - Fri.</p>
+                            <p class="day roboto-regular">Our Opening Hours <?php echo get_theme_mod( 'opening_days');?></p>
                         </div>
 
                         <div class="direct-contact me-5">
                             <div class="d-flex align-items-center">
                                 <img src="<?php echo get_theme_file_uri( 'assets/img/icons/headphone.png' );?>" class="header-icon-img" alt="">
-                                <h4 class="contact-number roboto-regular">+8801868-787748</h4>
+                                <h4 class="contact-number roboto-regular"><?php echo get_theme_mod( 'mobile_number');?></h4>
                             </div>
-                            <p class="direct-contact-text roboto-regular">Direct : +8801868-787748</p>
+                            <p class="direct-contact-text roboto-regular">Direct : <?php echo get_theme_mod( 'direct_mobile_number');?></p>
                         </div>
                         <div class="header-social-icons">
-                            <a href="#"><i class="bi bi-facebook me-3"></i></a>
-                            <a href="#"><i class="bi bi-twitter me-3"></i></a>
-                            <a href="#"><i class="bi bi-youtube me-3"></i></a>
+                            <a href="<?php echo get_theme_mod( 'facebook' ); ?>"><i class="bi bi-facebook me-3"></i></a>
+                            <a href="<?php echo get_theme_mod( 'twitter' ); ?>"><i class="bi bi-twitter me-3"></i></a>
+                            <a href="<?php echo get_theme_mod( 'youtube' ); ?>"><i class="bi bi-youtube me-3"></i></a>
                         </div>
                         <div class="header-search-icon ms-4">
                             <i class="bi bi-search"></i>

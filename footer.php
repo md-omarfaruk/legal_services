@@ -12,10 +12,9 @@
                         International Trade and the Michigan Supreme Court.</p>
                     <p><a href="#" class="text-danger">Read More</a></p>
                     <div class="footer-social-links d-flex">
-                        <a href="#" class="pe-3"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="pe-3"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="pe-3"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" class="pe-3"><i class="bi bi-youtube"></i></a>
+                        <a href="<?php echo get_theme_mod( 'facebook' ); ?>" class="pe-3"><i class="bi bi-facebook"></i></a>
+                        <a href="<?php echo get_theme_mod( 'twitter' ); ?>" class="pe-3"><i class="bi bi-twitter"></i></a>
+                        <a href="<?php echo get_theme_mod( 'youtube' ); ?>" class="pe-3"><i class="bi bi-youtube"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 footer-contact roboto-regular align-items-center px-5">

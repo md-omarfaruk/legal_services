@@ -46,10 +46,15 @@ add_action('wp_enqueue_scripts', 'legal_services_enqueue_scripts');
 // --------------------------------Theme-Customize-Objects-Manager--------------------------------
 function legal_services_top_header($wp_customize)
 {
+    // -----------------Top-Logo--------------------------------
     //Setting
-    $wp_customize->add_setting('top_header_logo', array('default' => '/assets/img/moin-choudhury-logo.webp'));
+    $wp_customize->add_setting('top_header_logo',  array(
+        'type' => 'theme_mod',
+        'default' => '/assets/img/moin-choudhury-logo.webp',
+      ) );
+    
     //Control
-    //top_header
+    //Top-Logo
     $wp_customize->add_control(
         new WP_Customize_Image_Control(
             $wp_customize,
@@ -61,6 +66,90 @@ function legal_services_top_header($wp_customize)
             )
         )
     );
+    // -----------------Top-Opening-Hours--------------------------------
+
+    //Setting
+    $wp_customize->add_setting( 'opening_hours',  array(
+        'type' => 'theme_mod',
+        'default' => '09:00 - 06:00',
+
+      ) );
+    //Control
+        //Top-Opening-Hours
+        $wp_customize->add_control(
+            new WP_Customize_Control(
+                $wp_customize, 'opening_hours',
+                array(
+                    'label' => __( 'Opening Hours', 'legal_services' ),
+                    'type' => 'text',
+                    'section' => 'top_header',
+                    'settings' => 'opening_hours',
+                )
+            )
+        );
+ 
+        // -----------------Top-Opening-Days--------------------------------
+
+    //Setting
+    $wp_customize->add_setting( 'opening_days',  array(
+        'type' => 'theme_mod',
+        'default' => 'Mon. - Fri.',
+      ) );
+    //Control
+        //Top-Opening-Days
+        $wp_customize->add_control(
+            new WP_Customize_Control(
+                $wp_customize, 'opening_days',
+                array(
+                    'label' => __( 'Opening Days', 'legal_services' ),
+                    'type' => 'text',
+                    'section' => 'top_header',
+                    'settings' => 'opening_days',
+                )
+            )
+        );
+                // -----------------Mobile-Number--------------------------------
+
+    //Setting
+    $wp_customize->add_setting( 'mobile_number',  array(
+        'type' => 'theme_mod',
+        'default' => '+8801868787748',
+      ) );
+    //Control
+        //Mobile Number
+        $wp_customize->add_control(
+            new WP_Customize_Control(
+                $wp_customize, 'mobile_number',
+                array(
+                    'label' => __( 'Mobile Number', 'legal_services' ),
+                    'type' => 'text',
+                    'section' => 'top_header',
+                    'settings' => 'mobile_number',
+                )
+            )
+        );
+                        // -----------------Direct-Mobile-Number--------------------------------
+
+    //Setting
+    $wp_customize->add_setting( 'direct_mobile_number',  array(
+        'type' => 'theme_mod',
+        'default' => '+8801868787748',
+      ) );
+    //Control
+        //Direct Mobile Number
+        $wp_customize->add_control(
+            new WP_Customize_Control(
+                $wp_customize, 'direct_mobile_number',
+                array(
+                    'label' => __( 'Direct Mobile Number', 'legal_services' ),
+                    'type' => 'text',
+                    'section' => 'top_header',
+                    'settings' => 'direct_mobile_number',
+                )
+            )
+        );
+
+
 
     //Section
     $wp_customize->add_section(
@@ -68,8 +157,63 @@ function legal_services_top_header($wp_customize)
         array(
             'title' => __('Top Header', 'legal_services'),
             'priority' => 30,
-            'description' => __('Add your top header logo here.', 'legal_services')
+            'description' => __('Add your top header content.', 'legal_services')
         )
     );
 }
 add_action('customize_register', 'legal_services_top_header');
+
+// ----------------------------Social-Medial-----------------------------
+function social_media( $wp_customize ){
+    //Settings
+    $wp_customize->add_setting( 'facebook', array( 'default' => 'https://www.facebook.com/advbashir.ahammed' ) );
+    $wp_customize->add_setting( 'twitter', array( 'default' => '' ) );
+    $wp_customize->add_setting( 'youtube', array( 'default' => '' ) );
+
+    //Controls
+        //Facebook
+        $wp_customize->add_control(
+            new WP_Customize_Control(
+                $wp_customize, 'facebook',
+                array(
+                    'label' => __( 'Facebook', 'legal_services' ),
+                    'section' => 'social-media',
+                    'settings' => 'facebook'
+                )
+            )
+        );
+    //Twitter
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize, 'twitter',
+            array(
+                'label' => __( 'Twitter', 'legal_services' ),
+                'section' => 'social-media',
+                'settings' => 'twitter'
+            )
+        )
+    );
+    //Youtube
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize, 'youtube',
+            array(
+                'label' => __( 'YouTube', 'legal_services' ),
+                'section' => 'social-media',
+                'settings' => 'youtube'
+            )
+        )
+    );
+    
+        //Sections
+        $wp_customize->add_section(
+            'social-media',
+            array(
+                'title' => __( 'Social Media', 'legal_services' ),
+                'priority' => 30,
+                'description' => __( 'Enter the URL to your accounts for each social media for the icon to appear in the header.', 'legal_services' )
+            )
+        );
+}
+add_action('customize_register', 'social_media');
+
