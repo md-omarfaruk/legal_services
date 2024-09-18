@@ -3,7 +3,7 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 roboto-regular px-5">
-                    <a class="navbar-brand" href="index.html"><img src="assets/img/responsive-logo.png" width="160"
+                    <a class="navbar-brand" href="index.html"><img src="<?php echo get_theme_file_uri( 'assets/img/responsive-logo.png' );?>" width="160"
                             alt="Legal Services"></a>
                     <p class="footer-desc mt-4 mb-0 lh-lg">Adv Bashir Ahammed, probably the first Bangladeshi-American
                         attorney to
@@ -79,6 +79,6 @@
         crossorigin="anonymous"></script>
     <!-- ------------------js-Main-Scripts---------------- -->
     <script src="assets/js/main.js"></script>
+    <?php wp_footer(); ?>
 </body>
-
 </html>

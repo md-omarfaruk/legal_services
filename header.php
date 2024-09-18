@@ -1,27 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adv Bashir Ahammed &#8211; American Adv Bashir Ahammed</title>
-
     <!-- ---------------------Bootstrap--------------------------- -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
 
     <!-- ---------------------Roboto-Google-Font--------------------------- -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> -->
 
     <!-- ---------------------Bootstrap-Icon-------------------------- -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> -->
 
     <!-- ---------------------Main-Stylesheet--------------------------- -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <?php wp_head(); ?>
 </head>
 
 <body>
@@ -31,13 +28,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
-                        <a href="index.html"><img src="assets/img/moin-choudhury-logo.webp" class="header-logo"
+                        <a href="index.html"><img src="<?php echo get_theme_file_uri( 'assets/img/moin-choudhury-logo.webp' );?>" class="header-logo"
                                 width="224" alt="Legal Services"></a>
                     </div>
                     <div class="col-lg-9 d-flex justify-content-end">
                         <div class="opening-hours me-5">
                             <div class="d-flex align-items-center">
-                                <img src="assets/img/icons/clock.png" class="header-icon-img" alt="">
+                                <img src="<?php echo get_theme_file_uri( 'assets/img/icons/clock.png' );?>" class="header-icon-img" alt="">
                                 <h4 class="hours roboto-regular">09:00 - 06:00</h4>
                             </div>
                             <p class="day roboto-regular">Our Opening Hours Mon. - Fri.</p>
@@ -45,15 +42,15 @@
 
                         <div class="direct-contact me-5">
                             <div class="d-flex align-items-center">
-                                <img src="assets/img/icons/headphone.png" class="header-icon-img" alt="">
+                                <img src="<?php echo get_theme_file_uri( 'assets/img/icons/headphone.png' );?>" class="header-icon-img" alt="">
                                 <h4 class="contact-number roboto-regular">+8801868-787748</h4>
                             </div>
                             <p class="direct-contact-text roboto-regular">Direct : +8801868-787748</p>
                         </div>
                         <div class="header-social-icons">
                             <a href="#"><i class="bi bi-facebook me-3"></i></a>
-                            <a href="#"></a><i class="bi bi-twitter me-3"></i></a>
-                            <a href="#"></a><i class="bi bi-youtube me-3"></i></a>
+                            <a href="#"><i class="bi bi-twitter me-3"></i></a>
+                            <a href="#"><i class="bi bi-youtube me-3"></i></a>
                         </div>
                         <div class="header-search-icon ms-4">
                             <i class="bi bi-search"></i>
@@ -68,7 +65,7 @@
         <div class="header-nav" id="header-navbar-one">
             <nav class="navbar navbar-expand-lg py-0 roboto-regular">
                 <div class="container-lg">
-                    <a class="navbar-brand responsive-logo" href="index.html"><img src="assets/img/responsive-logo.png"
+                    <a class="navbar-brand responsive-logo" href="index.html"><img src="<?php echo get_theme_file_uri( 'assets/img/responsive-logo.png' );?>"
                             width="110" alt="Legal Services"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -126,7 +123,7 @@
             <nav class="navbar navbar-expand-lg p-0 roboto-regular">
                 <div class="container">
                     <a class="navbar-brand" id="fixed-nav-logo" href="index.html"><img
-                            src="assets/img/fixed-nav-logo.webp" width="54" alt="Legal Services"></a>
+                            src="<?php echo get_theme_file_uri( 'assets/img/fixed-nav-logo.webp' );?>" width="54" alt="Legal Services"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
