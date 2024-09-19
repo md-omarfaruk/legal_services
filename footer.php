@@ -3,14 +3,14 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 roboto-regular px-5">
-                    <a class="navbar-brand" href="index.html"><img src="<?php echo get_theme_file_uri( 'assets/img/responsive-logo.png' );?>" width="160"
+                    <a class="navbar-brand" href="index.html"><img src="<?php echo  get_theme_mod('footer_logo'); ?>" width="160"
                             alt="Legal Services"></a>
                     <p class="footer-desc mt-4 mb-0 lh-lg">Adv Bashir Ahammed, probably the first Bangladeshi-American
                         attorney to
                         be
                         admitted to practice before the United States Supreme Court, the United States Court of
                         International Trade and the Michigan Supreme Court.</p>
-                    <p><a href="#" class="text-danger">Read More</a></p>
+                    <p><a href="<?php echo get_theme_mod( 'read_more' ); ?>" class="text-danger">Read More</a></p>
                     <div class="footer-social-links d-flex">
                         <a href="<?php echo get_theme_mod( 'facebook' ); ?>" class="pe-3"><i class="bi bi-facebook"></i></a>
                         <a href="<?php echo get_theme_mod( 'twitter' ); ?>" class="pe-3"><i class="bi bi-twitter"></i></a>

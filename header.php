@@ -28,7 +28,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
-                        <a href="<?php echo get_option("siteurl"); ?>">"><img src="<?php echo  get_theme_mod('top_header_logo'); ?>" class="header-logo"
+                        <a href="<?php echo get_option("siteurl"); ?>"><img src="<?php echo  get_theme_mod('top_header_logo'); ?>" class="header-logo"
                                 width="224" alt="Legal Services"></a>
                     </div>
                     <div class="col-lg-9 d-flex justify-content-end">
