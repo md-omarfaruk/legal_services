@@ -76,6 +76,11 @@
                         </svg>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
+                        <?php
+                        if ( has_nav_menu( 'primary' ) ) {
+                            wp_nav_menu( array( 'theme_location' => 'primary' ) );
+                        }
+                        ?>
                         <ul class="navbar-nav">
                             <li class="nav-item d-flex">
                                 <a class="nav-link active" aria-current="page" href="index.html">HOME</a>

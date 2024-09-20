@@ -8,6 +8,7 @@ function legal_services_setup_theme()
     // add_theme_support('align-wide');
     // Add support for title tag
     add_theme_support('title-tag');
+    add_theme_support('menus');
 
     add_theme_support('custom-background');
     // add_theme_support('custom-header');
@@ -18,9 +19,16 @@ function legal_services_setup_theme()
     add_theme_support('post-thumbnails');
     add_theme_support('post-formats', array('aside', 'gallery'));
     // Register primary menu
-    register_nav_menus(array(
-        'primary' => __('Primary Menu', 'legal_services'),
-    ));
+    function register_my_menus()
+    {
+        register_nav_menus(
+            array(
+                'header-menu' => __('Header Menu'),
+                'header-menu' => __('Header Fixed Menu'),
+                'extra-menu' => __('Footer Important Links')
+            )
+        );
+    };
 }
 add_action('after_setup_theme', 'legal_services_setup_theme');
 
@@ -232,7 +240,7 @@ function legal_services_footer_Customization($wp_customize)
     $wp_customize->add_panel('footer', array(
         'title' => __('Footer', 'legal_services'),
         'description' => __('Footer Customization', 'mytheme'),
-        'priority' => 50, 
+        'priority' => 50,
     ));
 
     // Footer First Column
@@ -241,12 +249,7 @@ function legal_services_footer_Customization($wp_customize)
         'panel' => 'footer',
         'priority' => 10,
     ));
-        // Footer Second Contact Column
-        $wp_customize->add_section('footer_second_contact_column', array(
-            'title' => __('Footer Second Contact Column', 'legal_services'),
-            'panel' => 'footer',
-            'priority' => 20,
-        ));
+
     // -----------------Footer-First-Column-Logo--------------------------------
     //Setting
     $wp_customize->add_setting('footer_logo',  array(
@@ -305,27 +308,68 @@ function legal_services_footer_Customization($wp_customize)
             )
         )
     );
+
+    // -----------------Footer-Second-Column-Contact-Details--------------------------------
     // Footer Second Contact Column
+    $wp_customize->add_section('footer_second_contact_column', array(
+        'title' => __('Footer Second Contact Column', 'legal_services'),
+        'panel' => 'footer',
+        'priority' => 20,
+    ));
     //Setting
-    $wp_customize->add_setting('logo',  array(
+    $wp_customize->add_setting('footer_location',  array(
         'type' => 'theme_mod',
-        'default' => '/assets/img/responsive-logo.png',
+        'default' => 'Brahmanbaria, Chittagong, Bangladesh',
     ));
 
     //Control
     //Footer-Logo
     $wp_customize->add_control(
-        new WP_Customize_Image_Control(
+        new WP_Customize_Control(
             $wp_customize,
-            'logo',
+            'footer_location',
             array(
-                'label' => __('Logo', 'legal_services'),
+                'label' => __('Footer Location', 'legal_services'),
                 'section' => 'footer_second_contact_column',
-                'settings' => 'logo',
+                'settings' => 'footer_location',
             )
         )
     );
-    
+    $wp_customize->add_setting('footer_mobile_number',  array(
+        'type' => 'theme_mod',
+        'default' => '+880-1868787748',
+    ));
 
+    //Control
+    //Footer-Logo
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'footer_mobile_number',
+            array(
+                'label' => __('Footer Mobile Number', 'legal_services'),
+                'section' => 'footer_second_contact_column',
+                'settings' => 'footer_mobile_number',
+            )
+        )
+    );
+    $wp_customize->add_setting('footer_mail_address',  array(
+        'type' => 'theme_mod',
+        'default' => 'demo@gmail.com',
+    ));
+
+    //Control
+    //Footer-Logo
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'footer_mail_address',
+            array(
+                'label' => __('Footer Mail Address', 'legal_services'),
+                'section' => 'footer_second_contact_column',
+                'settings' => 'footer_mail_address',
+            )
+        )
+    );
 }
 add_action('customize_register', 'legal_services_footer_Customization');

@@ -22,15 +22,15 @@
                     <div class="contact-details mt-4">
                         <div class="d-flex text-white mb-3">
                             <i class="bi bi-geo-alt-fill me-2"></i>
-                            <p class="mb-0 mt-1">Brahmanbaria, Chittagong, Bangladesh</p>
+                            <p class="mb-0 mt-1"><?php echo get_theme_mod( 'footer_location' ); ?></p>
                         </div>
                         <div class="d-flex text-white mb-3">
                             <i class="bi bi-telephone-fill me-2"></i>
-                            <p class="mb-0 mt-1">+880-1868787748</p>
+                            <p class="mb-0 mt-1"><?php echo get_theme_mod( 'footer_mobile_number' ); ?></p>
                         </div>
                         <div class="d-flex text-white mb-3">
                             <i class="bi bi-envelope-fill me-2"></i>
-                            <p class="mb-0 mt-1">demo@gmail.com</p>
+                            <p class="mb-0 mt-1"><?php echo get_theme_mod( 'footer_mail_address' ); ?></p>
                         </div>
                     </div>
                 </div>
