@@ -60,4 +60,4 @@ require_once(get_theme_file_path( '/inc/header_customize.php' ));
 require_once(get_theme_file_path( '/inc/social_media.php' ));
 
 // ---------------------------------Theme-Footer-Customization--------------------------------
-require_once(get_theme_file_path( '/inc/footer_customize.php' ));
+require_once(get_theme_file_path( '/inc/footer_customize/footer_customize_panel.php' ));

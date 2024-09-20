@@ -82,8 +82,8 @@
                                 'theme_location' => 'header-menu',
                                 'menu_id'      => 'headerMenu',
                                 'menu_class'   => 'navbar-nav',
-                                'menu_item'   => 'nav-item d-flex',
-                                'link_class' => 'nav-link active',
+                                // 'menu_item'   => 'nav-item d-flex',
+                                // 'link_class' => 'nav-link active',
                                 'link_after' => '<i class="bi bi-star-fill mx-3"></i>',                            ));
                         };
                         ?>
@@ -146,8 +146,8 @@
                                 'theme_location' => 'header-fixed-menu',
                                 'menu_id'      => 'headerFixedMenu',
                                 'menu_class'   => 'navbar-nav',
-                                'menu_item'   => 'nav-item d-flex',
-                                'link_class' => 'nav-link active',
+                                // 'menu_item'   => 'nav-item d-flex',
+                                // 'link_class' => 'nav-link active',
                                 'link_after' => '<i class="bi bi-star-fill mx-3"></i>',                            ));
                         };
                         ?>
