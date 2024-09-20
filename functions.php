@@ -19,16 +19,17 @@ function legal_services_setup_theme()
     add_theme_support('post-thumbnails');
     add_theme_support('post-formats', array('aside', 'gallery'));
     // Register primary menu
-    function register_my_menus()
+    function register_legal_services_menus()
     {
         register_nav_menus(
             array(
-                'header-menu' => __('Header Menu'),
-                'header-menu' => __('Header Fixed Menu'),
-                'extra-menu' => __('Footer Important Links')
+                'header-menu' => __('Header Menu', 'legal_services'),
+                'header-fixed-menu' => __('Header Fixed Menu', 'legal_services'),
+                'footer-important-links' => __('Footer Important Links', 'legal_services')
             )
         );
     };
+    add_action( 'init', 'register_legal_services_menus' );
 }
 add_action('after_setup_theme', 'legal_services_setup_theme');
 

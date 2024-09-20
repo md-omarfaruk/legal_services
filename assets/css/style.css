@@ -129,7 +129,7 @@
   margin-top: 27px;
 }
 
-.nav-link,
+a.nav-link,
 .dropdown {
   color: white;
   font-size: 14px;
