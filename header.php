@@ -77,18 +77,32 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <?php
-                        if (has_nav_menu('header-menu')) {
-                            wp_nav_menu(array(
-                                'theme_location' => 'header-menu',
-                                'menu_id'      => 'headerMenu',
-                                'menu_class'   => 'navbar-nav',
-                                // 'menu_item'   => 'nav-item d-flex',
-                                // 'link_class' => 'nav-link active',
-                                'link_after' => '<i class="bi bi-star-fill mx-3"></i>',                            ));
-                        };
+                        // if (has_nav_menu('header-menu')) {
+                        //     wp_nav_menu(array(
+                        //         'theme_location' => 'header-menu',
+                        //         'menu_id'      => '',
+                        //         'menu_class'   => 'navbar-nav',
+                        //         // 'menu_item'   => 'nav-item d-flex',
+                        //         // 'link_class' => 'nav-link active',
+                        //         'link_after' => '<i class="bi bi-star-fill mx-3"></i>',                            ));
+                        // };
+                        
                         ?>
-                        <!-- <ul class="navbar-nav" id="headerMenu">
-                            <li class="nav-item d-flex">
+                        <ul class="navbar-nav" id="headerMenu">
+                            <?php
+                            if (has_nav_menu('header-menu')) {
+                                wp_nav_menu(array(
+                                    'theme_location'  => 'header-menu', // Register this location in functions.php
+                                    'container'       => false,         // No wrapping div container
+                                    'items_wrap'      => '%3$s',        // Removes the <ul> since you already have it
+                                    'menu_class'      => '',            // No additional classes for <ul>
+                                    'add_li_class'    => 'nav-item d-flex', // Adds custom class to <li>
+                                    'link_class'      => 'nav-link',       // Adds custom class to <a>
+                                    'link_after'      => '<i class="bi bi-star-fill mx-3"></i>', // Add icon after each link
+                                ));
+                            }
+                            ?>
+                            <!-- <li class="nav-item d-flex">
                                 <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
                                 <i class="bi bi-star-fill mx-3"></i>
                             </li>
@@ -122,8 +136,8 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">CONTACT</a>
-                            </li>
-                        </ul> -->
+                            </li> -->
+                        </ul>
                     </div>
                 </div>
             </nav>
@@ -140,16 +154,20 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                    <?php
-                        if (has_nav_menu('header-fixed-menu')) {
-                            wp_nav_menu(array(
-                                'theme_location' => 'header-fixed-menu',
-                                'menu_id'      => 'headerFixedMenu',
-                                'menu_class'   => 'navbar-nav',
-                                // 'menu_item'   => 'nav-item d-flex',
-                                // 'link_class' => 'nav-link active',
-                                'link_after' => '<i class="bi bi-star-fill mx-3"></i>',                            ));
-                        };
+                        <?php
+                        // if (has_nav_menu('header-fixed-menu')) {
+                        //     wp_nav_menu(array(
+                        //         'theme_location' => 'header-fixed-menu',
+                        //         'menu_id'      => '',
+                        //         'container_class'      => 'collapse navbar-collapse',
+                        //         'container_id'      => 'cnavbarNav',
+                        //         'menu_class'   => 'navbar-nav',
+                        //         'menu_item'   => 'nav-item d-flex',
+                        //         'echo'                 => false,
+                        //         // 'link_class' => 'nav-link active',
+                        //         'link_after' => '<i class="bi bi-star-fill mx-3"></i>',
+                        //     ));
+                        // };
                         ?>
                         <!-- <ul class="navbar-nav">
                             <li class="nav-item d-flex">

@@ -54,10 +54,10 @@ add_action('wp_enqueue_scripts', 'legal_services_enqueue_scripts');
 
 // --------------------------------Theme-Customize-Objects-Manager--------------------------------
 // ---------------------------------Theme-Top-Header-Customization--------------------------------
-require_once(get_theme_file_path( '/inc/header_customize.php' ));
+require_once(get_theme_file_path( '/inc/header-customize.php' ));
 
 // ---------------------------Theme-Social-Media-Customization----------------------------
-require_once(get_theme_file_path( '/inc/social_media.php' ));
+require_once(get_theme_file_path( '/inc/social-media.php' ));
 
 // ---------------------------------Theme-Footer-Customization--------------------------------
-require_once(get_theme_file_path( '/inc/footer_customize/footer_customize_panel.php' ));
+require_once(get_theme_file_path( '/inc/footer-customize/footer-customize-panel.php' ));
