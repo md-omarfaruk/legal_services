@@ -76,6 +76,26 @@ function legal_services_top_header($wp_customize)
             )
         )
     );
+    // -----------------Header-Fixed-Menu-Logo--------------------------------
+    //Setting
+    $wp_customize->add_setting('header_fixed_menu_logo',  array(
+        'type' => 'theme_mod',
+        'default' => '/assets/img/fixed-nav-logo.png',
+    ));
+
+    //Control
+    //Top-Logo
+    $wp_customize->add_control(
+        new WP_Customize_Image_Control(
+            $wp_customize,
+            'header_fixed_menu_logo',
+            array(
+                'label' => __('Header Fixed Menu Logo', 'legal_services'),
+                'section' => 'top_header',
+                'settings' => 'header_fixed_menu_logo',
+            )
+        )
+    );
     // -----------------Top-Opening-Hours--------------------------------
 
     //Setting

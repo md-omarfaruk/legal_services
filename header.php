@@ -134,13 +134,24 @@
             <nav class="navbar navbar-expand-lg p-0 roboto-regular">
                 <div class="container">
                     <a class="navbar-brand" id="fixed-nav-logo" href="index.html"><img
-                            src="<?php echo get_theme_file_uri('assets/img/fixed-nav-logo.webp'); ?>" width="54" alt="Legal Services"></a>
+                            src="<?php echo get_theme_mod('header_fixed_menu_logo'); ?>" width="54" alt="Legal Services"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
+                    <?php
+                        if (has_nav_menu('header-fixed-menu')) {
+                            wp_nav_menu(array(
+                                'theme_location' => 'header-fixed-menu',
+                                'menu_id'      => 'headerFixedMenu',
+                                'menu_class'   => 'navbar-nav',
+                                'menu_item'   => 'nav-item d-flex',
+                                'link_class' => 'nav-link active',
+                                'link_after' => '<i class="bi bi-star-fill mx-3"></i>',                            ));
+                        };
+                        ?>
+                        <!-- <ul class="navbar-nav">
                             <li class="nav-item d-flex">
                                 <a class="nav-link  active" aria-current="page" href="index.html">HOME</a>
                                 <i class="bi bi-star-fill mx-3"></i>
@@ -176,7 +187,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">CONTACT</a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
             </nav>
