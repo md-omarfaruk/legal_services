@@ -124,7 +124,13 @@
   color: white !important;
   padding: 18px 0;
 }
-.menu-item:hover{
+#menu-footer-important-links > .menu-item{
+  padding: 8px 0;
+}
+#headerMenu .menu-item:hover{
+  border-bottom: 3px solid #AA4D4D;
+}
+#navbarNav ul .menu-item:hover{
   border-bottom: 3px solid #AA4D4D;
 }
 .menu-item a{
@@ -153,10 +159,9 @@
 .sub-menu {
   display: none;
   position: absolute;
-  min-width: 250px;
+  min-width: 300px;
   z-index: 1;
   top: 67px;
-  margin-top: 10px;
   padding: 8px 35px 8px 8px;
   background-color: #141414;
 }
