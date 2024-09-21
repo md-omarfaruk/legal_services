@@ -61,3 +61,6 @@ require_once(get_theme_file_path( '/inc/social-media.php' ));
 
 // ---------------------------------Theme-Footer-Customization--------------------------------
 require_once(get_theme_file_path( '/inc/footer-customize/footer-customize-panel.php' ));
+
+// ----------------------------------Home-Page-Banner-Section--------------------------------
+require_once(get_theme_file_path( '/inc/home-page-customize/home-page-customize-panel.php' ));

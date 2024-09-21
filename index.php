@@ -7,33 +7,32 @@
                 <div class="col-lg-12 d-flex ps-4">
                     <div class="text-center">
                         <div class="text-center text-white roboto-black hero-text fadeInUp">
-                            <h1 class="mb-5">Adv Bashir Ahammed</h1>
-                            <h3 class="m-0">COMPREHENSIVE</h3>
-                            <h3 class="m-0">LEGAL SERVICES</h3>
+                            <h1 class="mb-5"><?php echo get_theme_mod('banner_title'); ?></h1>
+                            <h3 class="m-0"><?php echo get_theme_mod('banner_smaller_first_title');?></h3>
+                            <h3 class="m-0"><?php echo get_theme_mod('banner_smaller_second_title');?></h3>
                         </div>
                         <div class="text-center text-white roboto-black responsive-hero-text fadeInUp">
-                            <h3 class="m-0">COMPREHENSIVE</h3>
-                            <h3 class="m-0">LEGAL SERVICES</h3>
-                            <h1 class="mb-5">Adv Bashir Ahammed</h1>
+                            <h3 class="m-0"><?php echo get_theme_mod('banner_smaller_first_title');?></h3>
+                            <h3 class="m-0"><?php echo get_theme_mod('banner_smaller_second_title');?></h3>
+                            <h1 class="mb-5"><?php echo get_theme_mod('banner_title'); ?></h1>
                         </div>
                         <div
                             class="services d-flex justify-content-center mt-3 mb-5 text-white roboto-black fadeInUp">
                             <div class="d-flex py-2">
                                 <i class="bi bi-star-fill"></i>
-                                <p class="mx-2 my-0">IMMIGRATION</p>
+                                <p class="mx-2 my-0"><?php echo get_theme_mod('banner_first_service_title');?></p>
                             </div>
                             <div class="d-flex py-2">
                                 <i class="bi bi-star-fill"></i>
-                                <p class="mx-2 my-0">MEDICAL MALPRACTICE</p>
+                                <p class="mx-2 my-0"><?php echo get_theme_mod('banner_second_service_title');?></p>
                             </div>
                             <div class="d-flex py-2">
                                 <i class="bi bi-star-fill"></i>
-                                <p class="mx-2 my-0">ACCIDENT CASES</p>
+                                <p class="mx-2 my-0"><?php echo get_theme_mod('banner_third_service_title');?></p>
                             </div>
                         </div>
                         <button type="button"
-                            class=" border-0 btn hero-btn py-3 px-4 text-white roboto-black fadeInUp">REQUEST FREE
-                            CONSULT</button>
+                            class=" border-0 btn hero-btn py-3 px-4 text-white roboto-black fadeInUp" href="<?php echo get_theme_mod('banner_btn_link');?>"><?php echo get_theme_mod('banner_btn_text');?></button>
                     </div>
                 </div>
             </div>

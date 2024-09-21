@@ -4,20 +4,6 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ---------------------Bootstrap--------------------------- -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
-
-    <!-- ---------------------Roboto-Google-Font--------------------------- -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> -->
-
-    <!-- ---------------------Bootstrap-Icon-------------------------- -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> -->
-
-    <!-- ---------------------Main-Stylesheet--------------------------- -->
-    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
     <?php wp_head(); ?>
 </head>
 
@@ -90,41 +76,6 @@
                                 ));
                             }
                             ?>
-                            <!-- <li class="nav-item d-flex">
-                                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-                                <i class="bi bi-star-fill mx-3"></i>
-                            </li>
-                            <li class="nav-item d-flex">
-                                <a class="nav-link" href="about_us.html">ABOUT US</a>
-                                <i class="bi bi-star-fill mx-3"></i>
-                            </li>
-                            <li class="nav-item d-flex">
-                                <a class="nav-link " href="our_team.html">OUR TEAM</a>
-                                <i class="bi bi-star-fill mx-3"></i>
-                            </li>
-                            <li class="dropdown position-relative">PRACTICE AREA<i class="bi bi-star-fill mx-3"></i>
-                                <ul class="dropdown-menu position-absolulte">
-                                    <li><a class="dropdown-item" href="accident_cases.html">Accident Cases</a></li>
-                                    <li><a class="dropdown-item" href="medical_malpractice.html">Medical Malpractice</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="immigration.html">Immigration</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item d-flex">
-                                <a class="nav-link " href="gallery.html">GALLERY</a>
-                                <i class="bi bi-star-fill mx-3"></i>
-                            </li>
-                            <li class="nav-item d-flex">
-                                <a class="nav-link " href="video_gallery.html">VIDEO GALLERY</a>
-                                <i class="bi bi-star-fill mx-3"></i>
-                            </li>
-                            <li class="nav-item d-flex">
-                                <a class="nav-link " href="appointment.html">APPOINTMENT</a>
-                                <i class="bi bi-star-fill mx-3"></i>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">CONTACT</a>
-                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -143,21 +94,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <?php
-                        // if (has_nav_menu('header-fixed-menu')) {
-                        //     wp_nav_menu(array(
-                        //         'theme_location' => 'header-fixed-menu',
-                        //         'menu_id'      => '',
-                        //         'container_class'      => 'collapse navbar-collapse',
-                        //         'container_id'      => 'cnavbarNav',
-                        //         'menu_class'   => 'navbar-nav',
-                        //         'menu_item'   => 'nav-item d-flex',
-                        //         'echo'                 => false,
-                        //         // 'link_class' => 'nav-link active',
-                        //         'link_after' => '<i class="bi bi-star-fill mx-3"></i>',
-                        //     ));
-                        // };
-                        
+                        <?php                       
                             if (has_nav_menu('header-fixed-menu')) {
                                 wp_nav_menu(array(
                                     'theme_location'  => 'header-fixed-menu', // Register this location in functions.php
@@ -171,43 +108,6 @@
                             }
                             ?>
                             </ul>
-                        <!-- <ul class="navbar-nav">
-                            <li class="nav-item d-flex">
-                                <a class="nav-link  active" aria-current="page" href="index.html">HOME</a>
-                                <i class="bi bi-star-fill mx-3"></i>
-                            </li>
-                            <li class="nav-item d-flex">
-                                <a class="nav-link " href="about_us.html">ABOUT US</a>
-                                <i class="bi bi-star-fill mx-3"></i>
-                            </li>
-                            <li class="nav-item d-flex">
-                                <a class="nav-link " href="our_team.html">OUR TEAM</a>
-                                <i class="bi bi-star-fill mx-3"></i>
-                            </li>
-                            <li class="dropdown position-relative">PRACTICE AREA<i class="bi bi-star-fill mx-3"></i>
-                                <ul class="dropdown-menu position-absolulte">
-                                    <li><a class="dropdown-item" href="accident_cases.html">Accident Cases</a></li>
-                                    <li><a class="dropdown-item" href="medical_malpractice.html">Medical Malpractice</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="immigration.html">Immigration</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item d-flex">
-                                <a class="nav-link " href="gallery.html">GALLERY</a>
-                                <i class="bi bi-star-fill mx-3"></i>
-                            </li>
-                            <li class="nav-item d-flex">
-                                <a class="nav-link " href="video_gallery.html">VIDEO GALLERY</a>
-                                <i class="bi bi-star-fill mx-3"></i>
-                            </li>
-                            <li class="nav-item d-flex">
-                                <a class="nav-link " href="appointment.html">APPOINTMENT</a>
-                                <i class="bi bi-star-fill mx-3"></i>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">CONTACT</a>
-                            </li>
-                        </ul> -->
                     </div>
                 </div>
             </nav>
