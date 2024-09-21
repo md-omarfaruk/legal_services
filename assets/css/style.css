@@ -472,11 +472,15 @@ footer .contact-details p {
   .menu-item a{
     color: white !important;
   }
-  .dropdown-menu {
-    position: relative !important;
-    top: 10px;
+  .sub-menu {
+    display: none;
+    position: absolute;
+    min-width: 300px;
+    z-index: 1;
+    top: 36px;
+    padding: 8px 35px 8px 8px;
+    background-color: #141414;
   }
-
   .hero-section {
     padding: 10px 0 80px 0;
   }
