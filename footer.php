@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 footer-important-links roboto-regular align-items-center px-5">
-                <h5 class="text-white m-0"><?php echo get_theme_mod(''); ?>Important Links</h5>
+                <h5 class="text-white mb-3"><?php echo get_theme_mod(''); ?>Important Links</h5>
                 <?php
                 if (has_nav_menu('footer-important-links')) {
                     wp_nav_menu(array(
