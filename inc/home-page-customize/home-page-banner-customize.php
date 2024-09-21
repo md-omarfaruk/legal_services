@@ -191,7 +191,7 @@ $wp_customize->add_control(
         'banner_btn_link',
         array(
             'label' => __('Banner Third Service Title', 'legal_services'),
-            'type' => 'text',
+            'type' => 'url',
             'section' => 'home_page_banner_section',
             'settings' => 'banner_btn_link',
         )

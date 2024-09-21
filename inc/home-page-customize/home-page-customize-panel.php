@@ -7,6 +7,8 @@ function legal_services_home_page_customize($wp_customize)
         'priority' => 80,
     ));
     require_once(get_theme_file_path( '/inc/home-page-customize/home-page-banner-customize.php' ));
+    require_once(get_theme_file_path( '/inc/home-page-customize/home-page-main-content-customize.php' ));
+
 }
 add_action('customize_register', 'legal_services_home_page_customize');
 
