@@ -29,26 +29,30 @@ function legal_services_setup_theme()
             )
         );
     };
-    add_action( 'init', 'register_legal_services_menus' );
+    add_action('init', 'register_legal_services_menus');
 }
 add_action('after_setup_theme', 'legal_services_setup_theme');
 
 // Enqueue theme styles and scripts
-require_once(get_theme_file_path( '/inc/enqueue-style-n-scripts.php' ));
+require_once(get_theme_file_path('/inc/enqueue-style-n-scripts.php'));
 
 
 // --------------------------------Theme-Customize-Objects-Manager--------------------------------
 // ---------------------------------Theme-Top-Header-Customization--------------------------------
-require_once(get_theme_file_path( '/inc/header-customize.php' ));
+require_once(get_theme_file_path('/inc/header-customize.php'));
 
 // ---------------------------Theme-Social-Media-Customization----------------------------
-require_once(get_theme_file_path( '/inc/social-media.php' ));
+require_once(get_theme_file_path('/inc/social-media.php'));
 
 // ---------------------------------Theme-Footer-Customization--------------------------------
-require_once(get_theme_file_path( '/inc/footer-customize/footer-customize-panel.php' ));
+require_once(get_theme_file_path('/inc/footer-customize/footer-customize-panel.php'));
 
 // ----------------------------------Home-Page-Customize--------------------------------
-require_once(get_theme_file_path( '/inc/home-page-customize/home-page-customize-panel.php' ));
+require_once(get_theme_file_path('/inc/home-page-customize/home-page-customize-panel.php'));
 
 // ----------------------------------About-Us-Page-Customize--------------------------------
-require_once(get_theme_file_path( '/inc/about-us-page-customize/about-us-page-customize-panel.php' ));
+require_once(get_theme_file_path('/inc/about-us-page-customize/about-us-page-customize-panel.php'));
+
+// -------------------About-Us-Page-Services-Area-Customize----------
+
+require_once(get_theme_file_path('/inc/about-us-page-customize/about-us-page-services-area-customize/about-us-page-services-area-customize-panel.php'));

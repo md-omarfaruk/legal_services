@@ -8,5 +8,5 @@
     line-height: 24px;
   }
   img.card-img-top{
-    min-height: 276px;
+    max-height: 276px !important;
   }
