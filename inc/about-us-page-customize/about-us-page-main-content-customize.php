@@ -5,50 +5,85 @@ $wp_customize->add_section('about_us_page_main_content_section', array(
     'priority' =>30,
 ));
 
-// -----------------Home-Page-Main-Content-Image--------------------------------
+// -----------------About-Us-Page-Main-Content-First-Row-Image--------------------------------
 //Setting
-// $wp_customize->add_setting('home_page_main_content_img',  array(
-//     'type' => 'theme_mod',
-//     'default' => '/assets/img/client-img.jpg',
-// ));
+$wp_customize->add_setting('about_us_page_main_content_first_row_img',  array(
+    'type' => 'theme_mod',
+    'default' => '/assets/img/supreme-court-building.jpg',
+));
 
 //Control
-//Footer-Logo
-// $wp_customize->add_control(
-//     new WP_Customize_Image_Control(
-//         $wp_customize,
-//         'home_page_main_content_img',
-//         array(
-//             'label' => __('Home Page Main Contect Image', 'legal_services'),
-//             'section' => 'home_page_main_content_section',
-//             'settings' => 'home_page_main_content_img',
-//         )
-//     )
-// );
-// -----------------Home-Page-Main-Content-First-Paragraph-Text--------------------------------
+$wp_customize->add_control(
+    new WP_Customize_Image_Control(
+        $wp_customize,
+        'about_us_page_main_content_first_row_img',
+        array(
+            'label' => __('About Us Page Main Contect First Row Image', 'legal_services'),
+            'section' => 'about_us_page_main_content_section',
+            'settings' => 'about_us_page_main_content_first_row_img',
+        )
+    )
+);
+// -----------------About-Us-Page-Main-Content-First-Row-Content--------------------------------
 
 //Setting
-// $wp_customize->add_setting('home_page_main_content_first_paragraph_text',  array(
-//     'type' => 'theme_mod',
-//     'default' => 'Adv Bashir Ahammed, probably the first Bangladeshi-American attorney to be admitted to practice before the United States Supreme Court, the United States Court of International Trade and the Michigan Supreme Court. December 19, 2010 the City of New York honored Adv Bashir Ahammed with a proclamation as a renowned United States Supreme Court Attorney. Adv Bashir Ahammed earned his Master of Laws degree with distinction from Touro Law School in 2002, New York.
-// In 2005, Adv Bashir Ahammed was admitted to the State Bar of Michigan and started his law practice in Wayne County, Michigan. During the beginning of his practice, he served as a court-appointed criminal defense attorney where he had an opportunity to represent many different clients, including Iraq War veterans in criminal defense cases.
-// Adv Bashir Ahammed is experienced in handling accident cases where he has recovered millions of dollars for his accident victim clients. He also successfully represents clients in immigration matters.
-// Adv Bashir Ahammed is a proud member of the American Bar Association, American Immigration Lawyers Association, Michigan State Bar, and New York State Bar Association (out of state).
-// Adv Bashir Ahammed is a registered Democrat and is very active in the political process, including local, state, and federal elections. He is the managing attorney for the Adv Bashir Ahammed Law Firm, P.C. in Michigan.',
+$wp_customize->add_setting('about_us_page_main_content_first_row_content',  array(
+    'type' => 'theme_mod',
+    'default' => 'The idea for a national organisation of lawyers providing free advice and legal representation to people unable to access justice due to poverty or disadvantage was first raised at a national conference of lawyers held by the Bangladesh Bar Council in 1992. The Bangladesh Legal Aid and Services Trust (BLAST) was then established in 1993 dedicated to providing free legal services for the poor, with a Board of Trustees including eminent jurists, lawyers, professionals, and former judges of the Bangladesh Supreme Court. From the outset, BLAST was designed to ensure local involvement and decentralised leadership, with elected leaders of each district Bar Association heading district Management Committees, and civil society members in its Advisory Committees. The founding member strove to institutionalise, through BLAST, the tradition of legal aid. Over time, BLAST moved from its initial focus on legal representation in the courts, to providing alternative dispute resolution. It also began to address systemic barriers to accessing justice, by undertaking research and advocacy to press for legal, policy and institutional reforms, and undertaking public interest litigation. It undertakes legal awareness programmes for diverse groups, on rights, remedies, and available services, relating to family, criminal, land and labour laws, as well as fundamental rights. It is involved in coordination with the local administration, in particular with justice system actors and civil society organisations.',
 
-// ));
+));
 //Control
-// $wp_customize->add_control(
-//     new WP_Customize_Control(
-//         $wp_customize,
-//         'home_page_main_content_first_paragraph_text',
-//         array(
-//             'label' => __('Home Page Main Content First Paragraph Text', 'legal_services'),
-//             'type' => 'text',
-//             'section' => 'home_page_main_content_section',
-//             'settings' => 'home_page_main_content_first_paragraph_text',
-//         )
-//     )
-// );
+$wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'about_us_page_main_content_first_row_content',
+        array(
+            'label' => __('About Us Page Main Contect First Row Content', 'legal_services'),
+            'type' => 'text',
+            'section' => 'about_us_page_main_content_section',
+            'settings' => 'about_us_page_main_content_first_row_content',
+        )
+    )
+);
 
+// -----------------About-Us-Page-Main-Content-Second-Row-Image--------------------------------
+//Setting
+$wp_customize->add_setting('about_us_page_main_content_second_row_img',  array(
+    'type' => 'theme_mod',
+    'default' => '/assets/img/shongshad.jpg',
+));
+
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Image_Control(
+        $wp_customize,
+        'about_us_page_main_content_second_row_img',
+        array(
+            'label' => __('About Us Page Main Contect Second Row Image', 'legal_services'),
+            'section' => 'about_us_page_main_content_section',
+            'settings' => 'about_us_page_main_content_second_row_img',
+        )
+    )
+);
+// -----------------About-Us-Page-Main-Content-Second-Row-Content--------------------------------
+
+//Setting
+$wp_customize->add_setting('about_us_page_main_content_second_row_content',  array(
+    'type' => 'theme_mod',
+    'default' => 'In the bustling business landscape of Bangladesh, legal matters can be a complex and challenging terrain to navigate. Whether you are an individual or a business, legal services are a necessity to ensure that your rights are protected and that you are operating within the bounds of the law. That is where our law firm Lacsb comes in. We specialise in providing expert legal services to businesses and individuals in Bangladesh. Our team of experienced lawyers, attorneys, and legal consultants is well-versed in a wide range of legal areas, including business law, corporate law, tax law, and more. We understand the process of the legal system and are equipped to handle any legal issue that comes your way.',
+
+));
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'about_us_page_main_content_second_row_content',
+        array(
+            'label' => __('About Us Page Main Contect Second Row Content', 'legal_services'),
+            'type' => 'text',
+            'section' => 'about_us_page_main_content_section',
+            'settings' => 'about_us_page_main_content_second_row_content',
+        )
+    )
+);
 ?>
