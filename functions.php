@@ -3,16 +3,8 @@
 // Theme setup
 function legal_services_setup_theme()
 {
-    // add_theme_support('admin-bar');
-    // add_theme_support('editor-styles');
-    // add_theme_support('align-wide');
-    // Add support for title tag
     add_theme_support('title-tag');
     add_theme_support('menus');
-
-    add_theme_support('custom-background');
-    // add_theme_support('custom-header');
-    // add_theme_support('custom-logo');
     add_theme_support('automatic-feed-links');
     add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script'));
     // Add support for post thumbnails
@@ -36,7 +28,6 @@ add_action('after_setup_theme', 'legal_services_setup_theme');
 // Enqueue theme styles and scripts
 require_once(get_theme_file_path('/inc/enqueue-style-n-scripts.php'));
 
-
 // --------------------------------Theme-Customize-Objects-Manager--------------------------------
 // ---------------------------------Theme-Top-Header-Customization--------------------------------
 require_once(get_theme_file_path('/inc/header-customize.php'));
@@ -54,5 +45,4 @@ require_once(get_theme_file_path('/inc/home-page-customize/home-page-customize-p
 require_once(get_theme_file_path('/inc/about-us-page-customize/about-us-page-customize-panel.php'));
 
 // -------------------About-Us-Page-Services-Area-Customize----------
-
 require_once(get_theme_file_path('/inc/about-us-page-customize/about-us-page-services-area-customize/about-us-page-services-area-customize-panel.php'));
