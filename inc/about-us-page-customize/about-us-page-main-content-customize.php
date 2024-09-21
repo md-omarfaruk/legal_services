@@ -39,7 +39,7 @@ $wp_customize->add_control(
         'about_us_page_main_content_first_row_content',
         array(
             'label' => __('About Us Page Main Contect First Row Content', 'legal_services'),
-            'type' => 'text',
+            'type' => 'textarea',
             'section' => 'about_us_page_main_content_section',
             'settings' => 'about_us_page_main_content_first_row_content',
         )
@@ -80,7 +80,7 @@ $wp_customize->add_control(
         'about_us_page_main_content_second_row_content',
         array(
             'label' => __('About Us Page Main Contect Second Row Content', 'legal_services'),
-            'type' => 'text',
+            'type' => 'textarea',
             'section' => 'about_us_page_main_content_section',
             'settings' => 'about_us_page_main_content_second_row_content',
         )

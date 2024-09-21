@@ -1,6 +1,15 @@
 <?php
 function legal_services_top_header($wp_customize)
 {
+        //Section
+        $wp_customize->add_section(
+            'top_header',
+            array(
+                'title' => __('Top Header', 'legal_services'),
+                'priority' => 20,
+                'description' => __('Add your top header content.', 'legal_services')
+            )
+        );
     // -----------------Top-Logo--------------------------------
     //Setting
     $wp_customize->add_setting('top_header_logo',  array(
@@ -128,17 +137,6 @@ function legal_services_top_header($wp_customize)
         )
     );
 
-
-
-    //Section
-    $wp_customize->add_section(
-        'top_header',
-        array(
-            'title' => __('Top Header', 'legal_services'),
-            'priority' => 30,
-            'description' => __('Add your top header content.', 'legal_services')
-        )
-    );
 }
 add_action('customize_register', 'legal_services_top_header');
 ?>

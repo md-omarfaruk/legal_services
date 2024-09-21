@@ -43,7 +43,7 @@ $wp_customize->add_control(
         'home_page_main_content_first_paragraph_text',
         array(
             'label' => __('Home Page Main Content First Paragraph Text', 'legal_services'),
-            'type' => 'text',
+            'type' => 'textarea',
             'section' => 'home_page_main_content_section',
             'settings' => 'home_page_main_content_first_paragraph_text',
         )
@@ -126,7 +126,7 @@ $wp_customize->add_control(
         'home_page_main_content_second_paragraph_text',
         array(
             'label' => __('Home Page Main Content First Paragraph Text', 'legal_services'),
-            'type' => 'text',
+            'type' => 'textarea',
             'section' => 'home_page_main_content_section',
             'settings' => 'home_page_main_content_second_paragraph_text',
         )

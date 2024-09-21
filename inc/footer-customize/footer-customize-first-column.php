@@ -40,7 +40,7 @@ $wp_customize->add_control(
         'footer_description',
         array(
             'label' => __('Footer Description', 'legal_services'),
-            'type' => 'text',
+            'type' => 'textarea',
             'section' => 'footer_first_column',
             'settings' => 'footer_description',
         )
