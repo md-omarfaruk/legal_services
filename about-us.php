@@ -1,11 +1,16 @@
-<?php 
+<?php
+
 /**
  * Template Name: About Us Page
  */
-get_header() 
+get_header()
 ?>
 <!-- ---------------------Main-Section-Start--------------------------- -->
-<?php get_template_part('/template-parts/hero.php') ?>
+<div class="about-title">
+    <h1 class="text-center roboto-black">
+        <?php echo get_theme_mod('about_us_page_hero_title'); ?>
+    </h1>
+</div>
 <div class="bg-white">
     <div class="container py-5 roboto-regular">
         <div class="row">

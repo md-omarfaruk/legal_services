@@ -11,6 +11,9 @@ function legal_services_footer_Customize($wp_customize)
 
     // Footer Second Contact Column
     require_once(get_theme_file_path('/inc/footer-customize/footer-customize-second-column.php'));
+
+    // Footer Copyright Section
+    require_once(get_theme_file_path('/inc/footer-customize/footer-copyright-section.php'));
 }
 add_action('customize_register', 'legal_services_footer_Customize');
 

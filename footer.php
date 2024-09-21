@@ -31,47 +31,22 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 footer-important-links roboto-regular align-items-center px-5">
-                <h5 class="text-white m-0">Important Links</h5>
+                <h5 class="text-white m-0"><?php echo get_theme_mod(''); ?>Important Links</h5>
                 <?php
                 if (has_nav_menu('footer-important-links')) {
                     wp_nav_menu(array(
                         'theme_location' => 'footer-important-links',
                         'menu_id'      => '',
                         'menu_class'   => 'nav-item mb-2',
-                        // 'menu_item'   => 'nav-item d-flex',
-                        // 'link_class' => 'nav-link active',
                         'link_before' => '<i class="bi bi-box-arrow-up-right mt-0 me-2"></i>',
                     ));
                 };
                 ?>
-                <!-- <ul class="nav flex-column mt-4">
-                            <li class="nav-item mb-2">
-                                <a class="text-white" href="#"><i class="bi bi-box-arrow-up-right mt-0 me-2"></i>About Us</a>
-                            </li>
-                            <li class="nav-item mb-2">
-                                <a class="text-white" href="#"><i class="bi bi-box-arrow-up-right mt-0 me-2"></i>Login</a>
-                            </li>
-                            <li class="nav-item mb-2">
-                                <a class="text-white" href="#"><i class="bi bi-box-arrow-up-right mt-0 me-2"></i>Corporate & Social Responsibility</a>
-                            </li>
-                            <li class="nav-item mb-2">
-                                <a class="text-white" href="#"><i class="bi bi-box-arrow-up-right mt-0 me-2"></i>Investor Relation</a>
-                            </li>
-                            <li class="nav-item mb-2">
-                                <a class="text-white" href="#"><i class="bi bi-box-arrow-up-right mt-0 me-2"></i>Blog</a>
-                            </li>
-                            <li class="nav-item mb-2">
-                                <a class="text-white" href="#"><i class="bi bi-box-arrow-up-right mt-0 me-2"></i>Privacy & website use</a>
-                            </li>
-                            <li class="nav-item mb-2">
-                                <a class="text-white" href="#"><i class="bi bi-box-arrow-up-right mt-0 me-2"></i>Contact</a>
-                            </li>
-                          </ul> -->
             </div>
         </div>
     </div>
     <div class="copyright-text roboto-bold p-4 text-center">
-        <p class="m-0 ">Copyright 2024 Adv Bashir Ahammed law. Design & Developed by webnewsdesign.com</p>
+        <p class="m-0 "><?php echo get_theme_mod('footer_copyright_text'); ?></p>
     </div>
 </footer>
 <a href="#" type="button"

@@ -47,5 +47,8 @@ require_once(get_theme_file_path( '/inc/social-media.php' ));
 // ---------------------------------Theme-Footer-Customization--------------------------------
 require_once(get_theme_file_path( '/inc/footer-customize/footer-customize-panel.php' ));
 
-// ----------------------------------Home-Page-Banner-Section--------------------------------
+// ----------------------------------Home-Page-Customize--------------------------------
 require_once(get_theme_file_path( '/inc/home-page-customize/home-page-customize-panel.php' ));
+
+// ----------------------------------About-Us-Page-Customize--------------------------------
+require_once(get_theme_file_path( '/inc/about-us-page-customize/about-us-page-customize-panel.php' ));
