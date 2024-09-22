@@ -23,7 +23,7 @@
                                 <img src="<?php echo get_theme_file_uri('assets/img/icons/clock.png'); ?>" class="header-icon-img" alt="">
                                 <h4 class="hours roboto-regular"><?php echo get_theme_mod('opening_hours'); ?></h4>
                             </div>
-                            <p class="day roboto-regular">Our Opening Hours <?php echo get_theme_mod('opening_days'); ?></p>
+                            <p class="day roboto-regular">Our Opening Days <?php echo get_theme_mod('opening_days'); ?></p>
                         </div>
 
                         <div class="direct-contact me-5">
