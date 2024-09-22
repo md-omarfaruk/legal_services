@@ -46,3 +46,6 @@ require_once(get_theme_file_path('/inc/about-us-page-customize/about-us-page-cus
 
 // -------------------About-Us-Page-Services-Area-Customize----------
 require_once(get_theme_file_path('/inc/about-us-page-customize/about-us-page-services-area-customize/about-us-page-services-area-customize-panel.php'));
+
+// -------------------Contact-Page-Customize----------
+require_once(get_theme_file_path('/inc/contact-page-customize/contact-page-customize-panel.php'));

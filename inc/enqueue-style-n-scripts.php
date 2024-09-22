@@ -7,9 +7,10 @@ function legal_services_enqueue_styles()
     wp_enqueue_style('bootstrap-icon', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css');
 
     // ---------------------About-Us-Page-----------------------
-    wp_enqueue_style('legal_services-about-us-page-style',  get_template_directory_uri() . '/assets/css/about-us.css', array(), filemtime(get_template_directory() . '/assets/css/style.css'), 'all');
+    wp_enqueue_style('legal_services-about-us-page-style',  get_template_directory_uri() . '/assets/css/about-us.css', array(), filemtime(get_template_directory() . '/assets/css/about-us.css'), 'all');
 
-
+    // ---------------------Contact-Page-----------------------
+    wp_enqueue_style('legal_services-contact-page-style',  get_template_directory_uri() . '/assets/css/contact.css', array(), filemtime(get_template_directory() . '/assets/css/contact.css'), 'all');
 
 
 
@@ -24,4 +25,3 @@ function legal_services_enqueue_scripts()
     wp_enqueue_script('legal_services_mainJsScript', get_template_directory_uri() . '/assets/js/main.js', null, null, true);
 }
 add_action('wp_enqueue_scripts', 'legal_services_enqueue_scripts');
-?>
