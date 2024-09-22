@@ -7,10 +7,13 @@ function legal_services_enqueue_styles()
     wp_enqueue_style('bootstrap-icon', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css');
 
     // ---------------------About-Us-Page-----------------------
-    wp_enqueue_style('legal_services-about-us-page-style',  get_template_directory_uri() . '/assets/css/about-us.css', array(), filemtime(get_template_directory() . '/assets/css/about-us.css'), 'all');
-
+    if(is_page_template( 'contact.php' )){
+        wp_enqueue_style('legal_services-contact-page-style',  get_template_directory_uri() . '/assets/css/contact.css', array(), filemtime(get_template_directory() . '/assets/css/contact.css'), 'all');
+    }
     // ---------------------Contact-Page-----------------------
-    wp_enqueue_style('legal_services-contact-page-style',  get_template_directory_uri() . '/assets/css/contact.css', array(), filemtime(get_template_directory() . '/assets/css/contact.css'), 'all');
+    if(is_page_template( 'about-us.php' )){
+        wp_enqueue_style('legal_services-about-us-page-style',  get_template_directory_uri() . '/assets/css/about-us.css', array(), filemtime(get_template_directory() . '/assets/css/about-us.css'), 'all');
+    }
 
 
 

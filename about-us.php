@@ -3,7 +3,7 @@
 /**
  * Template Name: About Us Page
  */
-get_header()
+get_header();
 ?>
 <!-- ---------------------Main-Section-Start--------------------------- -->
 <div class="about-title">
