@@ -1,11 +1,9 @@
 <?php
-function legal_services_video_gallery_page_customize($wp_customize)
-{
     //Section
-    $wp_customize->add_section('video_gallery_page_customize', array(
-        'title' => __('Video Gallery Page Customize', 'legal_services'),
-        'description' => __('Add Video Gallery Page Hero Title.', 'legal_services'),
-        'priority' => 90,
+    $wp_customize->add_section('video_gallery_page_hero_title_customize', array(
+        'title' => __('Video Gallery Page Hero Title Customize', 'legal_services'),
+        'panel' => 'video_gallery_page_customize',
+        'priority' => 10,
     ));
     // -----------------Hero-Title--------------------------------
 
@@ -23,11 +21,9 @@ function legal_services_video_gallery_page_customize($wp_customize)
             array(
                 'label' => __('Video Gallery Page Hero Title', 'legal_services'),
                 'type' => 'text',
-                'section' => 'video_gallery_page_customize',
+                'section' => 'video_gallery_page_hero_title_customize',
                 'settings' => 'video_gallery_page_hero_title',
             )
         )
     );
-};
-add_action('customize_register', 'legal_services_video_gallery_page_customize');
 ?>

@@ -51,7 +51,7 @@ require_once(get_theme_file_path('/inc/about-us-page-customize/about-us-page-ser
 require_once(get_theme_file_path('/inc/contact-page-customize/contact-page-customize-panel.php'));
 
 // -------------------Gallery-Page-Customize----------
-require_once(get_theme_file_path('/inc/gallery-page-customize.php'));
+require_once(get_theme_file_path('/inc/gallery-page-customize/gallery-page-customize-panel.php'));
 
 // -------------------Video-Gallery-Page-Customize----------
-require_once(get_theme_file_path('/inc/video-gallery-page-customize.php'));
+require_once(get_theme_file_path('/inc/video-gallery-page-customize/video-gallery-page-customize-panel.php'));

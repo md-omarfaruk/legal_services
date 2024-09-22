@@ -19,85 +19,43 @@ get_header()
                     <div class="col-lg-4">
                         <div class="lightbox_img_wrap">
                             <img class="lightbox-enabled img-fluid gallery-img"
-                                src="assets/img/client-img.jpg"
-                                data-imgsrc="assets/img/client-img.jpg" alt="Photo Gallery">
+                                src="<?php echo get_theme_mod('gallery_page_img_gallery_imgOne');?>"
+                                data-imgsrc="<?php echo get_theme_mod('gallery_page_img_gallery_imgOne');?>" alt="Photo Gallery">
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="lightbox_img_wrap">
                             <img class="lightbox-enabled img-fluid gallery-img"
-                                src="assets/img/1.jpg"
-                                data-imgsrc="assets/img/1.jpg" alt="Photo Gallery">
+                                src="<?php echo get_theme_mod('gallery_page_img_gallery_imgTwo');?>"
+                                data-imgsrc="<?php echo get_theme_mod('gallery_page_img_gallery_imgTwo');?>" alt="Photo Gallery">
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="lightbox_img_wrap">
                             <img class="lightbox-enabled img-fluid gallery-img"
-                                src="assets/img/2.jpg"
-                                data-imgsrc="assets/img/2.jpg" alt="Photo Gallery">
+                                src="<?php echo get_theme_mod('gallery_page_img_gallery_imgThree');?>"
+                                data-imgsrc="<?php echo get_theme_mod('gallery_page_img_gallery_imgThree');?>" alt="Photo Gallery">
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="lightbox_img_wrap">
                             <img class="lightbox-enabled img-fluid gallery-img"
-                                src="assets/img/3.jpg"
-                                data-imgsrc="assets/img/3.jpg" alt="Photo Gallery">
+                                src="<?php echo get_theme_mod('gallery_page_img_gallery_imgFour');?>"
+                                data-imgsrc="<?php echo get_theme_mod('gallery_page_img_gallery_imgFour');?>" alt="Photo Gallery">
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="lightbox_img_wrap">
                             <img class="lightbox-enabled img-fluid gallery-img"
-                                src="assets/img/4.jpg"
-                                data-imgsrc="assets/img/4.jpg" alt="Photo Gallery">
+                                src="<?php echo get_theme_mod('gallery_page_img_gallery_imgFive');?>"
+                                data-imgsrc="<?php echo get_theme_mod('gallery_page_img_gallery_imgFive');?>" alt="Photo Gallery">
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="lightbox_img_wrap">
                             <img class="lightbox-enabled img-fluid gallery-img"
-                                src="assets/img/5.jpg"
-                                data-imgsrc="assets/img/5.jpg" alt="Photo Gallery">
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="lightbox_img_wrap">
-                            <img class="lightbox-enabled img-fluid gallery-img"
-                                src="assets/img/6.jpg"
-                                data-imgsrc="assets/img/6.jpg" alt="Photo Gallery">
-                        </div>
-                    </div> 
-                    <div class="col-lg-4">
-                        <div class="lightbox_img_wrap">
-                            <img class="lightbox-enabled img-fluid gallery-img"
-                                src="assets/img/7.jpg"
-                                data-imgsrc="assets/img/7.jpg" alt="Photo Gallery">
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="lightbox_img_wrap">
-                            <img class="lightbox-enabled img-fluid gallery-img"
-                                src="assets/img/8.jpg"
-                                data-imgsrc="assets/img/8.jpg" alt="Photo Gallery">
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="lightbox_img_wrap">
-                            <img class="lightbox-enabled img-fluid gallery-img"
-                                src="assets/img/9.jpg"
-                                data-imgsrc="assets/img/9.jpg" alt="Photo Gallery">
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="lightbox_img_wrap">
-                            <img class="lightbox-enabled img-fluid gallery-img"
-                                src="assets/img/10.jpg"
-                                data-imgsrc="assets/img/10.jpg" alt="Photo Gallery">
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="lightbox_img_wrap">
-                            <img class="lightbox-enabled img-fluid gallery-img"
-                                src="assets/img/11.jpg"
-                                data-imgsrc="assets/img/11.jpg" alt="Photo Gallery">
+                                src="<?php echo get_theme_mod('gallery_page_img_gallery_imgSix');?>"
+                                data-imgsrc="<?php echo get_theme_mod('gallery_page_img_gallery_imgSix');?>" alt="Photo Gallery">
                         </div>
                     </div>                
                 </div>                

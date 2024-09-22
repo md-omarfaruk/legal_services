@@ -17,60 +17,48 @@ get_header()
                 <div class="row">
                     <div class="col-lg-6">
                         <iframe class="gallery-video" width="100%" height="360"
-                            src="https://www.youtube.com/embed/hbLASgme01c?si=fUQOaaUhUddlj-yi"
+                            src="<?php echo get_theme_mod('video_gallery_page_gallery_videoOne');?>"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-6">
                         <iframe width="100%" height="360"
-                            src="https://www.youtube.com/embed/zUuIk1Cc-8Y?si=zjUEXYeo-cEESH_9"
+                            src="<?php echo get_theme_mod('video_gallery_page_gallery_videoTwo');?>"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-6">
                         <iframe width="100%" height="360"
-                            src="https://www.youtube.com/embed/qUnikyOntC4?si=OtZHrB2celdayE6t"
+                            src="<?php echo get_theme_mod('video_gallery_page_gallery_videoThree');?>"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-6">
                         <iframe width="100%" height="360"
-                            src="https://www.youtube.com/embed/4-gAa3fA7sk?si=75XHK8ffe2GNOMW5"
+                            src="<?php echo get_theme_mod('video_gallery_page_gallery_videoFour');?>"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-6">
                         <iframe class="gallery-video" width="100%" height="360"
-                            src="https://www.youtube.com/embed/hbLASgme01c?si=fUQOaaUhUddlj-yi"
+                            src="<?php echo get_theme_mod('video_gallery_page_gallery_videoFive');?>"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-6">
                         <iframe width="100%" height="360"
-                            src="https://www.youtube.com/embed/zUuIk1Cc-8Y?si=zjUEXYeo-cEESH_9"
+                            src="<?php echo get_theme_mod('video_gallery_page_gallery_videoSix');?>"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
-                    <div class="col-lg-6">
-                        <iframe width="100%" height="360"
-                            src="https://www.youtube.com/embed/qUnikyOntC4?si=OtZHrB2celdayE6t"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-lg-6">
-                        <iframe width="100%" height="360"
-                            src="https://www.youtube.com/embed/4-gAa3fA7sk?si=75XHK8ffe2GNOMW5"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
+
+
                 </div>
             </div>
         </div>

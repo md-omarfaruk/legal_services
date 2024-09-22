@@ -43,6 +43,11 @@ add_action('wp_enqueue_scripts', 'legal_services_enqueue_styles');
 function legal_services_enqueue_scripts()
 {
     wp_enqueue_script('legal_services_bootstrapJsScript', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js', null, null, true);
+    
+    // ---------------------Gallery-Page-----------------------
+    if(is_page_template( 'gallery.php' )){
+    wp_enqueue_script('legal_services_jQueryJsScript', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js', null, null, true);
+    }
     wp_enqueue_script('legal_services_mainJsScript', get_template_directory_uri() . '/assets/js/main.js', null, null, true);
 }
 add_action('wp_enqueue_scripts', 'legal_services_enqueue_scripts');
