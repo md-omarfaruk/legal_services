@@ -343,6 +343,13 @@ footer .contact-details p {
   left: 2%;
   bottom: 2%;
 }
+a.whats-app-btn:hover {
+  background-color: #ffffff;
+  color: #25d366 !important;
+  font-size: 18px;
+  left: 2%;
+  bottom: 2%;
+}
 
 .home-btn {
   right: 2%;
