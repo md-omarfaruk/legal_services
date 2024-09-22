@@ -9,7 +9,7 @@ function legal_services_setup_theme()
     add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script'));
     // Add support for post thumbnails
     add_theme_support('post-thumbnails');
-    add_theme_support('post-formats', array('aside', 'gallery'));
+    add_theme_support('post-formats', array('gallery', 'video'));
     // Register primary menu
     function register_legal_services_menus()
     {
@@ -49,3 +49,9 @@ require_once(get_theme_file_path('/inc/about-us-page-customize/about-us-page-ser
 
 // -------------------Contact-Page-Customize----------
 require_once(get_theme_file_path('/inc/contact-page-customize/contact-page-customize-panel.php'));
+
+// -------------------Gallery-Page-Customize----------
+require_once(get_theme_file_path('/inc/gallery-page-customize.php'));
+
+// -------------------Video-Gallery-Page-Customize----------
+require_once(get_theme_file_path('/inc/video-gallery-page-customize.php'));

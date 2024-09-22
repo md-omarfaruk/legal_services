@@ -15,11 +15,11 @@ function legal_services_enqueue_styles()
         wp_enqueue_style('legal_services-our-team-page-style',  get_template_directory_uri() . '/assets/css/our-team.css', array(), filemtime(get_template_directory() . '/assets/css/our-team.css'), 'all');
     }
     // ---------------------Gallery-Page-----------------------
-    if(is_page_template( 'our-team.php' )){
+    if(is_page_template( 'gallery.php' )){
         wp_enqueue_style('legal_services-gallery-page-style',  get_template_directory_uri() . '/assets/css/gallery.css', array(), filemtime(get_template_directory() . '/assets/css/gallery.css'), 'all');
     }
     // ---------------------Video-Gallery-Page-----------------------
-    if(is_page_template( 'our-team.php' )){
+    if(is_page_template( 'video-gallery.php' )){
         wp_enqueue_style('legal_services-video-gallery-page-style',  get_template_directory_uri() . '/assets/css/video-gallery.css', array(), filemtime(get_template_directory() . '/assets/css/video-gallery.css'), 'all');
     }
     // ---------------------Appointment-Page-----------------------
