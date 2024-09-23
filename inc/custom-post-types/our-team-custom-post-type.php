@@ -1,89 +1,109 @@
 <?php
-// Register Custom Post Type: 'Our Team'
-function create_our_team_cpt() {
-    $labels = array(
-        'name'                  => __('Our Team', 'Post Type General Name', 'legal_services'),
-        'singular_name'         => __('Team Member', 'Post Type Singular Name', 'legal_services'),
-        'menu_name'             => __('Our Team', 'legal_services'),
-        'name_admin_bar'        => __('Team Member', 'legal_services'),
-        'archives'              => __('Team Member Archives', 'legal_services'),
-        'attributes'            => __('Team Member Attributes', 'legal_services'),
-        'parent_item_colon'     => __('Parent Team Member:', 'legal_services'),
-        'all_items'             => __('All Team Members', 'legal_services'),
-        'add_new_item'          => __('Add New Team Member', 'legal_services'),
-        'add_new'               => __('Add New', 'legal_services'),
-        'new_item'              => __('New Team Member', 'legal_services'),
-        'edit_item'             => __('Edit Team Member', 'legal_services'),
-        'update_item'           => __('Update Team Member', 'legal_services'),
-        'view_item'             => __('View Team Member', 'legal_services'),
-        'view_items'            => __('View Team Members', 'legal_services'),
-        'search_items'          => __('Search Team Member', 'legal_services'),
-        'not_found'             => __('Not found', 'legal_services'),
-        'not_found_in_trash'    => __('Not found in Trash', 'legal_services'),
-        'featured_image'        => __('Team Member Image', 'legal_services'),
-        'set_featured_image'    => __('Set team member image', 'legal_services'),
-        'remove_featured_image' => __('Remove team member image', 'legal_services'),
-        'use_featured_image'    => __('Use as team member image', 'legal_services'),
-        'insert_into_item'      => __('Insert into team member', 'legal_services'),
-        'uploaded_to_this_item' => __('Uploaded to this team member', 'legal_services'),
-        'items_list'            => __('Team Members list', 'legal_services'),
-        'items_list_navigation' => __('Team Members list navigation', 'legal_services'),
-        'filter_items_list'     => __('Filter team members list', 'legal_services'),
-    );
-    
-    $args = array(
-        'label'                 => __('Team Member', 'legal_services'),
-        'description'           => __('Post Type for Our Team', 'legal_services'),
-        'labels'                => $labels,
-        'supports'              => array('title', 'editor', 'thumbnail'),
-        'public'                => true,
-        'hierarchical'          => false,
-        'has_archive'           => true,
-        'show_in_menu'          => true,
-        'show_in_rest'          => true, // Enables Gutenberg editor
-        'menu_position'         => 5,
-        'menu_icon'             => 'dashicons-groups',
-        'capability_type'       => 'post',
-        'rewrite'               => array('slug' => 'team'),
-    );
-  
-    register_post_type('our-team', $args);
+add_action( 'init', 'legal_services_our_team' );
+function legal_services_our_team() {
+	$args = [
+		'label'  => esc_html__( 'Our Team', 'text-domain' ),
+		'labels' => [
+			'menu_name'          => esc_html__( 'Our Team', 'legal_services' ),
+			'name_admin_bar'     => esc_html__( 'Team Member', 'legal_services' ),
+			'add_new'            => esc_html__( 'Add Team Member', 'legal_services' ),
+			'add_new_item'       => esc_html__( 'Add new Team Member', 'legal_services' ),
+			'new_item'           => esc_html__( 'New Team Member', 'legal_services' ),
+			'edit_item'          => esc_html__( 'Edit Team Member', 'legal_services' ),
+			'view_item'          => esc_html__( 'View Team Member', 'legal_services' ),
+			'update_item'        => esc_html__( 'View Team Member', 'legal_services' ),
+			'all_items'          => esc_html__( 'All Team Members', 'legal_services' ),
+			'search_items'       => esc_html__( 'Search Our Team', 'legal_services' ),
+			'parent_item_colon'  => esc_html__( 'Parent Team Member', 'legal_services' ),
+			'not_found'          => esc_html__( 'No Our Team found', 'legal_services' ),
+			'not_found_in_trash' => esc_html__( 'No Our Team found in Trash', 'legal_services' ),
+			'name'               => esc_html__( 'Our Team', 'legal_services' ),
+			'singular_name'      => esc_html__( 'Team Member', 'legal_services' ),
+		],
+		'public'              => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'show_ui'             => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'show_in_rest'        => true,
+		'capability_type'     => 'post',
+		'hierarchical'        => false,
+		'has_archive'         => true,
+		'query_var'           => true,
+		'can_export'          => true,
+		'rewrite_no_front'    => false,
+		'show_in_menu'        => false,
+		'supports' => [
+			'title',
+			'editor',
+			'thumbnail',
+		],
+		
+		'rewrite' => true
+	];
+
+	register_post_type( 'team-member', $args );
 }
-add_action('init', 'create_our_team_cpt');
 
+//---------------------Added default custom meta box with our team post type------------------------
+// Hook to add meta box
+add_action( 'add_meta_boxes', 'team_member_add_meta_box' );
 
-// Add custom meta box for 'Designation'
-function add_designation_meta_box() {
+// Function to create meta box
+function team_member_add_meta_box() {
     add_meta_box(
-        'designation_meta_box',    // Unique ID
-        'Designation',             // Box title
-        'designation_meta_box_html',  // Content callback
-        'create_our_team_cpt',                // Post type
-        'side',                    // Context (side, normal, etc.)
-        'default'                  // Priority
+        'team_member_designation',       // Meta box ID
+        'Designation',                   // Meta box title
+        'team_member_meta_box_callback', // Callback function
+        'team-member',                   // Post type where to display
+        'normal',                        // Context (normal/side)
+        'high'                           // Priority
     );
 }
-add_action('add_meta_boxes', 'add_designation_meta_box');
 
-// HTML for the meta box
-function designation_meta_box_html($post) {
-    $value = get_post_meta($post->ID, '_designation', true);
+// Callback function to render the meta box
+function team_member_meta_box_callback( $post ) {
+    // Retrieve current value of 'designation' meta field, if exists
+    $designation = get_post_meta( $post->ID, '_team_member_designation', true );
+    
+    // Security nonce for verification
+    wp_nonce_field( 'team_member_save_meta_box_data', 'team_member_meta_box_nonce' );
     ?>
-    <label for="designation_field">Designation</label>
-    <input type="text" name="designation_field" id="designation_field" value="<?php echo esc_attr($value); ?>" />
+    <label for="team_member_designation_field">Designation</label>
+    <input type="text" id="team_member_designation_field" name="team_member_designation_field" value="<?php echo esc_attr( $designation ); ?>" size="25" />
     <?php
 }
 
-// Save the custom field data
-function save_designation_meta_box_data($post_id) {
-    // Check if the current user has permission to edit the post
-    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) return;
-    if (!current_user_can('edit_post', $post_id)) return;
+// Hook to save meta box data
+add_action( 'save_post', 'team_member_save_meta_box_data' );
 
-    // Check if the input field is set and save the meta value
-    if (isset($_POST['designation_field'])) {
-        $designation = sanitize_text_field($_POST['designation_field']);
-        update_post_meta($post_id, '_designation', $designation);
+// Function to save meta box data
+function team_member_save_meta_box_data( $post_id ) {
+    // Check if nonce is valid to prevent unauthorized saving
+    if ( ! isset( $_POST['team_member_meta_box_nonce'] ) ) {
+        return;
     }
+    if ( ! wp_verify_nonce( $_POST['team_member_meta_box_nonce'], 'team_member_save_meta_box_data' ) ) {
+        return;
+    }
+
+    // Check for autosave
+    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+        return;
+    }
+
+    // Check user permissions
+    if ( ! current_user_can( 'edit_post', $post_id ) ) {
+        return;
+    }
+
+    // Check if the field is set
+    if ( ! isset( $_POST['team_member_designation_field'] ) ) {
+        return;
+    }
+
+    // Sanitize and save the data
+    $designation = sanitize_text_field( $_POST['team_member_designation_field'] );
+    update_post_meta( $post_id, '_team_member_designation', $designation );
 }
-add_action('save_post', 'save_designation_meta_box_data');
