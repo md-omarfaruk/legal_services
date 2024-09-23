@@ -58,3 +58,6 @@ require_once(get_theme_file_path('/inc/gallery-page-customize/gallery-page-custo
 // -------------------Video-Gallery-Page-Customize----------
 require_once(get_theme_file_path('/inc/video-gallery-page-customize/video-gallery-page-customize-panel.php'));
 
+// -------------------Our-Team-Page-Customize----------
+require_once(get_theme_file_path('/inc/our-team-customize/our-team-customize-panel.php'));
+
