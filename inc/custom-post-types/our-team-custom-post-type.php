@@ -6,8 +6,8 @@ function legal_services_our_team_register_post_type() {
 		'labels' => [
 			'menu_name'          => esc_html__( 'Our Team', 'legal_services' ),
 			'name_admin_bar'     => esc_html__( 'Our Team', 'legal_services' ),
-			'add_new'            => esc_html__( 'Add Team Member', 'legal_services' ),
-			'add_new_item'       => esc_html__( 'Add new Team Member', 'legal_services' ),
+			'add_new'            => esc_html__( 'Add New Member', 'legal_services' ),
+			'add_new_item'       => esc_html__( 'Add New Team Member', 'legal_services' ),
 			'new_item'           => esc_html__( 'New Team Member', 'legal_services' ),
 			'edit_item'          => esc_html__( 'Edit Team Member', 'legal_services' ),
 			'view_item'          => esc_html__( 'View Team Member', 'legal_services' ),
@@ -32,7 +32,7 @@ function legal_services_our_team_register_post_type() {
 		'has_archive'         => true,
 		'query_var'           => true,
 		'can_export'          => true,
-		'rewrite_no_front'    => true,
+		'rewrite_no_front'    => false,
 		'show_in_menu'        => true,
 		'menu_position'       => 2,
 		'menu_icon'           => 'dashicons-admin-users',
@@ -40,10 +40,10 @@ function legal_services_our_team_register_post_type() {
 			'title',
 			'editor',
 			'thumbnail',
+			'custom-fields',
 		],
 		'taxonomies' => [
 			'category',
-			'post_tag',
 		],
 		'rewrite' => true
 	];
