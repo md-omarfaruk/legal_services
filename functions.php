@@ -22,6 +22,8 @@ function legal_services_setup_theme()
         );
     };
     add_action('init', 'register_legal_services_menus');
+    // -------------------Our-Team-Custom-Post-Type----------
+require_once(get_theme_file_path('/inc/custom-post-types/our-team-custom-post-type.php'));
 }
 add_action('after_setup_theme', 'legal_services_setup_theme');
 
@@ -55,3 +57,4 @@ require_once(get_theme_file_path('/inc/gallery-page-customize/gallery-page-custo
 
 // -------------------Video-Gallery-Page-Customize----------
 require_once(get_theme_file_path('/inc/video-gallery-page-customize/video-gallery-page-customize-panel.php'));
+
