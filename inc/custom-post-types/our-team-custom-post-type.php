@@ -12,7 +12,7 @@ function legal_services_our_team() {
 			'edit_item'          => esc_html__( 'Edit Team Member', 'legal_services' ),
 			'view_item'          => esc_html__( 'View Team Member', 'legal_services' ),
 			'update_item'        => esc_html__( 'View Team Member', 'legal_services' ),
-			'all_items'          => esc_html__( 'All Team Members', 'legal_services' ),
+			'all_items'          => esc_html__( 'All Our Team', 'legal_services' ),
 			'search_items'       => esc_html__( 'Search Our Team', 'legal_services' ),
 			'parent_item_colon'  => esc_html__( 'Parent Team Member', 'legal_services' ),
 			'not_found'          => esc_html__( 'No Our Team found', 'legal_services' ),
@@ -33,13 +33,16 @@ function legal_services_our_team() {
 		'query_var'           => true,
 		'can_export'          => true,
 		'rewrite_no_front'    => false,
-		'show_in_menu'        => false,
+		'show_in_menu'        => true,
+        'menu_icon'           => 'dashicons-groups',
 		'supports' => [
 			'title',
 			'editor',
 			'thumbnail',
 		],
-		
+		'taxonomies' => [
+			'category',
+		],
 		'rewrite' => true
 	];
 
