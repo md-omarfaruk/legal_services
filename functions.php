@@ -61,3 +61,72 @@ require_once(get_theme_file_path('/inc/video-gallery-page-customize/video-galler
 // -------------------Our-Team-Page-Customize----------
 require_once(get_theme_file_path('/inc/our-team-customize/our-team-customize-panel.php'));
 
+
+
+// --------------------------gettingFrontendFormData---------------------------------
+
+function create_form_submission_cpt() {
+    $labels = array(
+        'name'                  => _x('Form Submissions', 'Post Type General Name', 'textdomain'),
+        'singular_name'         => _x('Form Submission', 'Post Type Singular Name', 'textdomain'),
+        'menu_name'             => __('Form Submissions', 'textdomain'),
+        'all_items'             => __('All Submissions', 'textdomain'),
+        'add_new_item'          => __('Add New Submission', 'textdomain'),
+    );
+    
+    $args = array(
+        'label'                 => __('Form Submission', 'textdomain'),
+        'labels'                => $labels,
+        'public'                => false,  // We don't want this post type to be publicly accessible
+        'show_ui'               => true,   // Show it in the admin dashboard
+        'show_in_menu'          => true,   // Show in admin menu
+        'menu_icon'             => 'dashicons-feedback',  // Choose a relevant icon
+        'supports'              => array('title', 'editor', 'custom-fields'),
+        'capability_type'       => 'post',
+        'has_archive'           => false,
+        'rewrite'               => false,
+        'query_var'             => true,
+    );
+    
+    register_post_type('form_submission', $args);
+}
+add_action('init', 'create_form_submission_cpt');
+
+// Hook for logged-in users
+add_action('admin_post_submit_form_data', 'handle_form_submission');
+// Hook for non-logged-in users
+add_action('admin_post_nopriv_submit_form_data', 'handle_form_submission');
+
+function handle_form_submission() {
+    // Check if the form data is set
+    if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])) {
+        // Sanitize form input
+        $name = sanitize_text_field($_POST['name']);
+        $email = sanitize_email($_POST['email']);
+        $message = sanitize_textarea_field($_POST['message']);
+
+        // Create a new post in the 'form_submission' custom post type
+        $post_id = wp_insert_post(array(
+            'post_title'   => $name,        // Name as post title
+            'post_content' => $message,     // Message as post content
+            'post_type'    => 'form_submission',
+            'post_status'  => 'publish',    // You can set it to 'draft' if you want to review
+        ));
+
+        // Add custom field for email
+        if ($post_id) {
+            add_post_meta($post_id, 'email', $email);
+        }
+
+        // Redirect after successful submission
+        wp_redirect(home_url('/thank-you/'));  // Replace with your thank you page
+        exit;
+    } else {
+        // If form data is missing, redirect to an error page or display an error
+        wp_redirect(home_url('/error/'));
+        exit;
+    }
+}
+
+
+
