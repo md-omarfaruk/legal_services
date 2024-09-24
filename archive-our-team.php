@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Archive Our Team Page
+ * Template Name: Our Team Page
  */
 get_header()
 ?>
@@ -24,6 +24,7 @@ get_header()
                     'posts_per_page' => -1,             // Retrieve all posts
                     'orderby'        => 'date',         // Order by date
                     'order'          => 'DESC',         // Display latest first
+                    'category_name'  => 'executive-team',
                 ));
 
                 // Check if there are any posts in the query
@@ -71,6 +72,7 @@ get_header()
                     'posts_per_page' => -1,             // Retrieve all posts
                     'orderby'        => 'date',         // Order by date
                     'order'          => 'DESC',         // Display latest first
+                    'category_name'  => 'advocacy-team',
                 ));
 
                 // Check if there are any posts in the query
@@ -118,6 +120,7 @@ get_header()
                     'posts_per_page' => -1,             // Retrieve all posts
                     'orderby'        => 'date',         // Order by date
                     'order'          => 'DESC',         // Display latest first
+                    'category_name'  => 'administration-team',
                 ));
 
                 // Check if there are any posts in the query
