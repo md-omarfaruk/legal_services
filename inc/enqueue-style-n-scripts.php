@@ -11,7 +11,7 @@ function legal_services_enqueue_styles()
         wp_enqueue_style('legal_services-contact-page-style',  get_template_directory_uri() . '/assets/css/contact.css', array(), filemtime(get_template_directory() . '/assets/css/contact.css'), 'all');
     }
     // ---------------------Our-Team-Page-----------------------
-    if(is_page_template( 'archive-our-team.php' )){
+    if([is_page_template( 'archive-our-team.php'), is_page_template('single-team-member.php')] ){
         wp_enqueue_style('legal_services-our-team-page-style',  get_template_directory_uri() . '/assets/css/our-team.css', array(), filemtime(get_template_directory() . '/assets/css/our-team.css'), 'all');
     }
     // ---------------------Gallery-Page-----------------------
