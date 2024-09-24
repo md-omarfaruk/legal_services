@@ -8,9 +8,9 @@ get_header();
 <div class="my-5">
 <!-- ---------------------------Main-Contents-Start------------------------ -->
 
-<div class="appointment-title">
+<div class="thanks-title">
             <h1 class="text-center roboto-black">
-                Thank You
+            <?php echo get_theme_mod('thanks_page_hero_title'); ?>
             </h1>
         </div>
         <div class="appointment-container bg-white roboto-medium">

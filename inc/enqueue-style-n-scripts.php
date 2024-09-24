@@ -24,21 +24,22 @@ function legal_services_enqueue_styles()
     }
     // ---------------------Appointment-Page-----------------------
     if(is_page_template( 'appointment.php' )){
-        wp_enqueue_style('legal_services-appointment-page-style',  get_template_directory_uri() . '/assets/css/about-us.css', array(), filemtime(get_template_directory() . '/assets/css/about-us.css'), 'all');
+        wp_enqueue_style('legal_services-appointment-page-style',  get_template_directory_uri() . '/assets/css/appointment.css', array(), filemtime(get_template_directory() . '/assets/css/appointment.css'), 'all');
     }
     // ---------------------Contact-Page-----------------------
     if(is_page_template( 'about-us.php' )){
         wp_enqueue_style('legal_services-contact-page-style',  get_template_directory_uri() . '/assets/css/about-us.css', array(), filemtime(get_template_directory() . '/assets/css/about-us.css'), 'all');
     }
-    
-
-
-
-
+    // ---------------------Thanks-Page-----------------------
+    if(is_page_template( 'thanks.php' )){
+        wp_enqueue_style('legal_services-thanks-page-style',  get_template_directory_uri() . '/assets/css/thanks.css', array(), filemtime(get_template_directory() . '/assets/css/thanks.css'), 'all');
+    }
     wp_enqueue_style('legal_services-main-style',  get_template_directory_uri() . '/assets/css/style.css', array(), filemtime(get_template_directory() . '/assets/css/style.css'), 'all');
     wp_enqueue_style('legal_services-style', get_stylesheet_uri(), array(), filemtime(get_template_directory() . '/style.css'), 'all');
 }
 add_action('wp_enqueue_scripts', 'legal_services_enqueue_styles');
+
+// -----------------------javaScripts-enqueue------------------------------
 
 function legal_services_enqueue_scripts()
 {
@@ -48,6 +49,9 @@ function legal_services_enqueue_scripts()
     if(is_page_template( 'gallery.php' )){
     wp_enqueue_script('legal_services_jQueryJsScript', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js', null, null, true);
     }
+    if(is_page_template( 'appointment.php' )){
+        wp_enqueue_script('legal_services_appointmentPageJsScript', get_template_directory_uri() . '/assets/js/appointment.js', null, null, true);
+        }
     wp_enqueue_script('legal_services_mainJsScript', get_template_directory_uri() . '/assets/js/main.js', null, null, true);
 }
 add_action('wp_enqueue_scripts', 'legal_services_enqueue_scripts');
