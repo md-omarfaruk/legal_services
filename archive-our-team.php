@@ -62,7 +62,7 @@ get_header()
     </div>
 
 
-            <div class="executive-team">
+            <div class="advocay-team">
             <h3 class="text-lg-start text-sm-center team-name roboto-mediumaaa"><?php echo get_theme_mod('our_team_page_advocacy_team_heading'); ?></h3>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <?php
@@ -110,7 +110,7 @@ get_header()
     </div>
 
 
-            <div class="executive-team">
+            <div class="administration-team">
             <h3 class="text-lg-start text-sm-center team-name roboto-mediumaaa"><?php echo get_theme_mod('our_team_page_administration_team_heading'); ?></h3>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <?php
