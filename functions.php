@@ -64,8 +64,11 @@ require_once(get_theme_file_path('/inc/our-team-customize/our-team-page-customiz
 // -------------------Appointment-Page-Customize----------
 require_once(get_theme_file_path('/inc/appointment-page-customize/appointment-page-hero-section-customize.php'));
 
-// -------------------Appointment-Page-Customize----------
+// -------------------Thanks-Page-Customize----------
 require_once(get_theme_file_path('/inc/thanks-page-customize/thanks-page-hero-section-customize.php'));
+
+// -------------------404-Page-Customize--------------------
+require_once(get_theme_file_path('/inc/404-page-customize.php'));
 
 // --------------------------gettingFrontendFormData---------------------------------
 
