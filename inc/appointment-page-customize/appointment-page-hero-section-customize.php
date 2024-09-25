@@ -1,8 +1,8 @@
 <?php
-function legal_services_appointment_page_customize($wp_customize)
-{$wp_customize->add_section('appointment_page_hero_section', array(
+$wp_customize->add_section('appointment_page_hero_section', array(
     'title' => __('Appointment Page Hero Section', 'legal_services'),
-    'priority' => 90,
+    'panel' => 'appointment_page_customize', 
+    'priority' => 10,
 ));
 // -----------------Banner-Title--------------------------------
 
@@ -24,7 +24,4 @@ $wp_customize->add_control(
         )
     )
 );
-
-}
-add_action('customize_register', 'legal_services_appointment_page_customize');
 ?>

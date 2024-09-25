@@ -131,7 +131,9 @@ h6.slot-period {
   font-size: 30px;
   color: #12D488;
 }
-
+.total{
+  color: #12D488;
+}
 @media (max-width: 767.98px) {
   .icon-link {
     font-size: 14px;

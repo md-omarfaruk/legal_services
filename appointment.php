@@ -46,28 +46,26 @@ get_header()
                     <div class="col-lg-9 p-4 border rounded-3 shadow">
                         <!-- -----------------------------Service-part-Start---------------------------- -->
                         <div class="service" id="service">
-                        <h6 class="my-3" id="serviceRequiredNote">Please select any service to book an appointment</h6>
-                            <h4>Select Category</h4>
+                        <h6 class="my-3" id="serviceRequiredNote"><?php echo get_theme_mod('appointment_page_service_required_note'); ?></h6>
+                            <h4><?php echo get_theme_mod('appointment_page_service_select_category_title'); ?></h4>
                             <a class="icon-link all-icon py-2 px-3 border rounded-2" href="#">
-                                All
+                                <?php echo get_theme_mod('appointment_page_service_all_text'); ?>
                                 <i class="bi bi-check-circle-fill ms-2"></i>
                             </a>
-                            <h5 class="my-3">Select Service</h5>
+                            <h5 class="my-3"><?php echo get_theme_mod('appointment_page_select_service_text'); ?></h5>
                             <div class="d-flex p-3 service-details rounded-3 position-relative"
                                 id="selectService">
                                 <div>
-                                    <img src="assets/img/client-img-1.jpg" class="appointment-page-client-img border-0"
+                                    <img src="<?php echo get_theme_file_uri('assets/img/client-img-1.jpg'); ?>" class="appointment-page-client-img border-0"
                                         alt="Adv Bashir Ahammed">
                                 </div>
                                 <div class="ms-3">
-                                    <h5>Appointment with Our Attorney</h5>
-                                    <h6>You have to pay before the meeting.</h6>
-                                    <p class="note">Note: Please note that if anyone wishes to cancel a scheduled
-                                        appointment after
-                                        it is paid and confirmed, Appointment Fee (Non Refundable )</p>
+                                    <h5><?php echo get_theme_mod('appointment_page_attorney_text'); ?></h5>
+                                    <h6><?php echo get_theme_mod('appointment_page_pay_before_text'); ?></h6>
+                                    <p class="note"><?php echo get_theme_mod('appointment_page_service_section_note_text'); ?></p>
                                     <div class="d-flex">
-                                        <p class="duration me-3">Duration: <strong>30m</strong></p>
-                                        <p class="price">Price: <strong class="amount py-1 px-3 rounded-3">100$</strong>
+                                        <p class="duration me-3"><?php echo get_theme_mod('appointment_page_service_section_duration_text'); ?>: <strong><?php echo get_theme_mod('appointment_page_service_section_duration_time_text'); ?></strong></p>
+                                        <p class="price"><?php echo get_theme_mod('appointment_page_service_section_price_text'); ?>: <strong class="amount py-1 px-3 rounded-3"><?php echo get_theme_mod('appointment_page_service_section_price_amount_text'); ?></strong>
                                         </p>
                                     </div>
                                     <i class="bi bi-check-circle-fill service-details-icon position-absolulte"></i>
@@ -359,7 +357,7 @@ get_header()
                             </div>
                             <div class="mt-3 d-flex justify-content-between border-bottom">
                                 <h5 class="">Total Amount Payable</h5>
-                                <h6 class="">$100.00</h6>
+                                <h6 class="total text-bold">$100.00</h6>
                             </div>
 
                             <div class="row rounded-2 bg-body-secondary mt-5 p-4">

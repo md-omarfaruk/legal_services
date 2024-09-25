@@ -62,7 +62,7 @@ require_once(get_theme_file_path('/inc/video-gallery-page-customize/video-galler
 require_once(get_theme_file_path('/inc/our-team-customize/our-team-page-customize-panel.php'));
 
 // -------------------Appointment-Page-Customize----------
-require_once(get_theme_file_path('/inc/appointment-page-customize/appointment-page-hero-section-customize.php'));
+require_once(get_theme_file_path('/inc/appointment-page-customize/appointment-page-customize-panel.php'));
 
 // -------------------Thanks-Page-Customize----------
 require_once(get_theme_file_path('/inc/thanks-page-customize/thanks-page-hero-section-customize.php'));
