@@ -19,6 +19,10 @@ function scrollFunction() {
         document.getElementById("header-navbar-one").style.width = "100%";
     }
 }
+// ---------------------Search-Scripts------------------------
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelector('.').style.display = 'none';
+});
 
 // --------------------Gallery-Lightbox-Script-Start--------------------------------
 
@@ -100,5 +104,6 @@ document.onkeydown = function(e) {
 };
 
 // --------------------Gallery-Lightbox-Script-End--------------------------------
+
 
 

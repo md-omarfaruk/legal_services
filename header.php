@@ -7,7 +7,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?> >
     <!-- ---------------------Header-Section-Start--------------------------- -->
     <header>
         <div class="header-logo-area py-3">
@@ -42,6 +42,9 @@
                             <i class="bi bi-search"></i>
                             <h6 class="search roboto-regular mt-2">Search</h6>
                         </div>
+                    </div>
+                    <div class="text-end my-3">
+                    <?php get_search_form() ?>
                     </div>
                 </div>
             </div>
