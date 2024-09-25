@@ -11,7 +11,7 @@ get_header();
      <!-- Start the Loop. -->
  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
  <div class="container">
- <div class="col-lg-4 text-center">
+ <div class="col-lg-4 text-center my-4">
                             <div class="card h-100 border-0">
                                 <?php if (has_post_thumbnail()) : ?>
                                     <img src="<?php the_post_thumbnail_url('medium'); ?>" class="card-img-top mx-auto d-block" alt="<?php the_title(); ?>">
@@ -30,7 +30,7 @@ get_header();
                         </div>
 <?php endwhile; else : ?>
 
-<h2><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></h2>
+<h2 class="text-danger-emphasis roboto-black"><?php esc_html_e( 'Sorry, nothing matched your criteria.' ); ?></h2>
 
 
 <!-- REALLY stop The Loop. -->

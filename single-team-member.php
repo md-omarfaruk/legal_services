@@ -1,11 +1,6 @@
 <?php
 get_header()
 ?>
-<div class="our-team-title">
-    <h1 class="text-center roboto-black">
-        <?php echo get_theme_mod('our_team_page_hero_title'); ?>
-    </h1>
-</div>
 <div class="bg-white">
     <div class="container py-5">
         <div class="row single-team-member justify-content-center my-5">

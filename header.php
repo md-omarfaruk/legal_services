@@ -54,7 +54,7 @@
         <div class="header-nav" id="header-navbar-one">
             <nav class="navbar navbar-expand-lg py-0 roboto-regular">
                 <div class="container-lg">
-                    <a class="navbar-brand responsive-logo" href="index.html"><img src="<?php echo get_theme_file_uri('assets/img/responsive-logo.png'); ?>"
+                    <a class="navbar-brand responsive-logo" href="<?php echo get_option("siteurl"); ?>"><img src="<?php echo get_theme_file_uri('assets/img/responsive-logo.png'); ?>"
                             width="110" alt="Legal Services"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,7 +89,7 @@
         <div class="header-fixed-nav" id="header-navbar-two">
             <nav class="navbar navbar-expand-lg p-0 roboto-regular">
                 <div class="container">
-                    <a class="navbar-brand" id="fixed-nav-logo" href="index.html"><img
+                    <a class="navbar-brand" id="fixed-nav-logo" href="<?php echo get_option("siteurl"); ?>"><img
                             src="<?php echo get_theme_mod('header_fixed_menu_logo'); ?>" width="54" alt="Legal Services"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

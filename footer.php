@@ -3,7 +3,7 @@
     <div class="container py-5">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12 roboto-regular px-5">
-                <a class="navbar-brand" href="index.html"><img src="<?php echo  get_theme_mod('footer_logo'); ?>" width="160"
+                <a class="navbar-brand" href="<?php echo get_option("siteurl"); ?>"><img src="<?php echo  get_theme_mod('footer_logo'); ?>" width="160"
                         alt="Legal Services"></a>
                 <p class="footer-desc mt-4 mb-0 lh-lg"><?php echo get_theme_mod('footer_description'); ?></p>
                 <p><a href="<?php echo get_theme_mod('read_more'); ?>" class="text-danger">Read More</a></p>

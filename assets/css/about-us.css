@@ -12,3 +12,8 @@
 img.card-img-top {
 height: 276px !important;
 }
+@media (max-width: 767.98px) {
+  img.card-img-top {
+    height: 276px !important;
+    }
+}
