@@ -100,7 +100,9 @@
   color: #f4f4f4;
   font-size: 26px;
 }
-
+.header-search-icon{
+  cursor: pointer;
+}
 .search {
   color: white;
   font-size: 13px;
@@ -109,7 +111,7 @@
 .bi-search:hover {
   color: #c18f59;
 }
-.search-form{
+#searchForm{
   display: none;
 }
 .search-field{

@@ -21,8 +21,22 @@ function scrollFunction() {
 }
 // ---------------------Search-Scripts------------------------
 document.addEventListener("DOMContentLoaded", function() {
-  document.querySelector('.').style.display = 'none';
+  var searchIcon = document.getElementById('searchBar');
+  var searchForm = document.getElementById('searchForm'); // Make sure the ID matches the actual output of get_search_form()
+  
+  // Initially hide the search form
+  searchForm.style.display = 'none';
+  
+  // Toggle visibility of the search form on icon click
+  searchIcon.addEventListener('click', function() {
+      if (searchForm.style.display === 'none') {
+          searchForm.style.display = 'block';
+      } else {
+          searchForm.style.display = 'none';
+      }
+  });
 });
+
 
 // --------------------Gallery-Lightbox-Script-Start--------------------------------
 

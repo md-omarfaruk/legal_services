@@ -38,12 +38,12 @@
                             <a href="<?php echo get_theme_mod('twitter'); ?>"><i class="bi bi-twitter me-3"></i></a>
                             <a href="<?php echo get_theme_mod('youtube'); ?>"><i class="bi bi-youtube me-3"></i></a>
                         </div>
-                        <div class="header-search-icon ms-4">
+                        <div class="header-search-icon ms-4" id="searchBar">
                             <i class="bi bi-search"></i>
                             <h6 class="search roboto-regular mt-2">Search</h6>
                         </div>
                     </div>
-                    <div class="text-end my-3">
+                    <div class="text-end my-3" id="searchForm">
                     <?php get_search_form() ?>
                     </div>
                 </div>
