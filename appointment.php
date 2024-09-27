@@ -60,12 +60,12 @@ get_header()
                                         alt="Adv Bashir Ahammed">
                                 </div>
                                 <div class="ms-3">
-                                    <h5><?php echo get_theme_mod('appointment_page_attorney_text'); ?></h5>
+                                    <h5 id="appointWith"><?php echo get_theme_mod('appointment_page_attorney_text'); ?></h5>
                                     <h6><?php echo get_theme_mod('appointment_page_pay_before_text'); ?></h6>
                                     <p class="note"><?php echo get_theme_mod('appointment_page_service_section_note_text'); ?></p>
                                     <div class="d-flex">
                                         <p class="duration me-3"><?php echo get_theme_mod('appointment_page_service_section_duration_text'); ?>: <strong><?php echo get_theme_mod('appointment_page_service_section_duration_time_text'); ?></strong></p>
-                                        <p class="price"><?php echo get_theme_mod('appointment_page_service_section_price_text'); ?>: <strong class="amount py-1 px-3 rounded-3"><?php echo get_theme_mod('appointment_page_service_section_price_amount_text'); ?></strong>
+                                        <p class="price" id="price"><?php echo get_theme_mod('appointment_page_service_section_price_text'); ?>: <strong class="amount py-1 px-3 rounded-3"><?php echo get_theme_mod('appointment_page_service_section_price_amount_text'); ?></strong>
                                         </p>
                                     </div>
                                     <i class="bi bi-check-circle-fill service-details-icon position-absolulte"></i>
@@ -160,10 +160,8 @@ get_header()
                                     <h4><?php echo get_theme_mod('appointment_page_basic_details_title'); ?></h4>
                                 </div>
                                 <div class="col text-lg-end">
-                                    <form action="/action_page.php">
                                         <label for="select-date"><?php echo get_theme_mod('appointment_page_pick_a_date_text'); ?></label>
                                         <input type="date" id="select-date" name="select-date">
-                                    </form>
                                 </div>
                             </div>
                             <div class="col">
@@ -339,7 +337,7 @@ get_header()
                             <div class="row">
                                 <div class="col border-end">
                                     <p class="text-secondary">Service</p>
-                                    <h6>Appointment with Our Attorney</h6>
+                                    <h6 id="summaryAppointWith"></h6>
                                 </div>
                                 <div class="col">
                                     <p class="text-secondary">Date & Time</p>
@@ -349,7 +347,7 @@ get_header()
 
                             <div class="mt-5 d-flex justify-content-between border-bottom">
                                 <p class="m-0 text-secondary">Subtotal</p>
-                                <h6 class="">$100.00</h6>
+                                <h6 id="subTotal">$100.00</h6>
                             </div>
                             <div class="mt-3 d-flex justify-content-between border-bottom">
                                 <h5 class="">Total Amount Payable</h5>

@@ -228,6 +228,21 @@ document.addEventListener('DOMContentLoaded', function () {
         dateItem.classList.add('active');
         basicItem.classList.remove('active');
     });
+    // Add an event listener for the element with the id "selectService"
+    selectService.addEventListener("click", function() {
+    
+    // Get the inner HTML of the element with id "appointWith"
+    let appointWithText = document.getElementById("appointWith").innerHTML;
+    
+    // Set the inner HTML of the element with id "summaryAppointWith" to the value of "appointWith"
+    document.getElementById("summaryAppointWith").innerHTML = appointWithText;
+    
+    // Get the inner HTML of the element with class "amount" (which represents the price)
+    let priceText = document.querySelector(".amount").innerHTML;
+    
+    // Set the inner HTML of the element with id "subTotal" to the value of "amount"
+    document.getElementById("subTotal").innerHTML = priceText;
+});
 });
 
 
@@ -270,3 +285,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+// ---------------------------requiredFrontendFunctionalityForDevelopmentBackendAndLittleBitFrontend--------------
+
+
