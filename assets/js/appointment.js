@@ -289,4 +289,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // ---------------------------requiredFrontendFunctionalityForDevelopmentBackendAndLittleBitFrontend--------------
 
+// -------------------------------------dateTimeFrontendFunctionality--------------------------------
+// Get the date input elements from both sections
+const dateTimeInput = document.querySelector('#dateTime #select-date');
+const basicDetailsInput = document.querySelector('#basicDetails #select-date');
+const summaryDate = document.getElementById('summaryDate');
+
+// Function to synchronize both date inputs
+function syncDateInputs() {
+    // Sync the values between the two date inputs
+    dateTimeInput.value = basicDetailsInput.value;
+    // Update the summaryDate innerHTML with the selected date
+    summaryDate.innerHTML = dateTimeInput.value;
+    summaryDate.innerHTML = basicDetailsInput.value;
+}
+
+// Event listeners for changes in the date inputs
+dateTimeInput.addEventListener('change', function() {
+    basicDetailsInput.value = dateTimeInput.value;
+    syncDateInputs();
+});
+
+basicDetailsInput.addEventListener('change', function() {
+    dateTimeInput.value = basicDetailsInput.value;
+    syncDateInputs();
+});
 
