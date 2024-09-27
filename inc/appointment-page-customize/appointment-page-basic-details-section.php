@@ -209,6 +209,26 @@ $wp_customize->add_control(
         )
     )
 );
+// -----------------Input-Cell-Number-Required-Note-Text--------------------------------
+
+//Setting
+$wp_customize->add_setting('appointment_page_cell_number_required_note_text',  array(
+    'type' => 'theme_mod',
+    'default' => 'This field can not be blank',
+));
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'appointment_page_cell_number_required_note_text',
+        array(
+            'label' => __('Appointment Page Basic Details Cell Number Required Note Text', 'legal_services'),
+            'type' => 'text',
+            'section' => 'appointment_page_basic_details_section',
+            'settings' => 'appointment_page_cell_number_required_note_text',
+        )
+    )
+);
 
 // ----------------Check-Input-Consultation-fee-Paid-Label-Text--------------------------------
 

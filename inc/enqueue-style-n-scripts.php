@@ -53,6 +53,7 @@ function legal_services_enqueue_scripts()
     }
     if(is_page_template( 'appointment.php' )){
         wp_enqueue_script('legal_services_appointmentPageJsScript', get_template_directory_uri() . '/assets/js/appointment.js', null, null, true);
+        wp_enqueue_script('legal_services_appointmentPageCalendarJsScript', 'https://cdn.jsdelivr.net/npm/flatpickr', null, null, true);
         }
     wp_enqueue_script('legal_services_mainJsScript', get_template_directory_uri() . '/assets/js/main.js', null, null, true);
 }

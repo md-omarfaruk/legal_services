@@ -39,6 +39,33 @@ showSection('serviceItem', 'service');
 
 // ------------------------------functionality------------------------
 
+// ------------------------dateCalendarFunctionality------------------------
+
+    // Function to set the current date in the input field
+    function setCurrentDate() {
+      const dateInput = document.getElementById('select-date');
+      const today = new Date();
+      const yyyy = today.getFullYear();
+      const mm = String(today.getMonth() + 1).padStart(2, '0'); // Month (01-12)
+      const dd = String(today.getDate()).padStart(2, '0'); // Day (01-31)
+      const currentDate = `${yyyy}-${mm}-${dd}`;
+      dateInput.value = currentDate;  // Set the input field to the current date
+    }
+
+    // Event listener to handle date input opening and closing
+    document.addEventListener("DOMContentLoaded", function () {
+      setCurrentDate(); // Set current date on load
+
+      const dateInput = document.getElementById('select-date');
+      dateInput.focus();  // Open the calendar when the page loads
+
+      // Close calendar automatically after selecting a date
+      dateInput.addEventListener('change', function () {
+        dateInput.blur(); // Close the calendar once the user selects a date
+      });
+    });
+    
+// ------------------AllOthersMainPartsFunctionality--------------------------------
 document.addEventListener('DOMContentLoaded', function () {
     const serviceItem = document.getElementById('serviceItem');
     const dateItem = document.getElementById('dateItem');

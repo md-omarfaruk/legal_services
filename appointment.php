@@ -85,11 +85,8 @@ get_header()
                             <h4><?php echo get_theme_mod('appointment_page_date_time_title'); ?></h4>
                             <div class="row mt-3">
                                 <div class="col-12 calendar-body text-center">
-                                    <form action="/action_page.php">
                                         <label for="select-date"><?php echo get_theme_mod('appointment_page_select_date_time_text'); ?></label>
                                         <input type="date" id="select-date" name="select-date">
-                                        <input type="submit" value="Select">
-                                    </form>
                                 </div>
                                 <div class="col-12 p-3 time-slot">
                                     <h5 class="mb-4"><?php echo get_theme_mod('appointment_page_time_slot_text'); ?></h5>
@@ -166,7 +163,6 @@ get_header()
                                     <form action="/action_page.php">
                                         <label for="select-date"><?php echo get_theme_mod('appointment_page_pick_a_date_text'); ?></label>
                                         <input type="date" id="select-date" name="select-date">
-                                        <input type="submit" value="Select">
                                     </form>
                                 </div>
                             </div>
@@ -181,7 +177,7 @@ get_header()
                                         <div class="col">
                                             <label for="phone"><?php echo get_theme_mod('appointment_page_home_phone_label_text'); ?></label>
                                             <input type="tel" id="phone" name="phone" class="form-control"
-                                                placeholder="+880-1868787748" aria-label="Phone">
+                                                placeholder="+8801868787748" aria-label="Phone">
                                         </div>
                                         <div class="col">
                                             <label for="email"><?php echo get_theme_mod('appointment_page_email_address_label_text'); ?></label>
@@ -203,7 +199,7 @@ get_header()
                                         <label for="tel" class="form-label"><?php echo get_theme_mod('appointment_page_cell_number_label_text'); ?><sup class="text-danger fs-6">*</sup></label>
                                         <input type="tel" class="form-control" id="tel"
                                             placeholder="Enter Your Cell Number">
-                                            <p id="required"><small class="text-danger">This field can not be blank</small></p>
+                                            <p id="required"><small class="text-danger"><?php echo get_theme_mod('appointment_page_cell_number_required_note_text'); ?></small></p>
                                     </div>
                                     <h6 class="ms-32"><?php echo get_theme_mod('appointment_page_consultaion_fee_paid_label_text'); ?></h6>
                                     <div class="d-flex">
@@ -337,8 +333,8 @@ get_header()
                                     d="M16.0873 20.6895C16.8836 21.0473 17.5116 21.6978 17.8411 22.5061C18.1706 23.3144 18.1764 24.2186 17.8572 25.031L14.6718 33.139L18.6708 32.404C18.9205 32.3581 19.1784 32.4051 19.3959 32.5361C19.6134 32.667 19.7755 32.873 19.8517 33.1152L20.6489 35.6486C20.6905 35.781 20.7053 35.9203 20.6923 36.0585C20.6793 36.1966 20.6388 36.3308 20.5732 36.453C20.5076 36.5753 20.4182 36.6832 20.3103 36.7705C20.2024 36.8577 20.0781 36.9224 19.9448 36.9609L14.7471 38.4617C14.0896 38.6515 13.397 38.6864 12.7238 38.5635C12.0505 38.4407 11.4149 38.1635 10.8668 37.7536C10.3188 37.3438 9.87314 36.8125 9.56495 36.2015C9.25676 35.5905 9.09439 34.9163 9.09058 34.232C9.0888 33.9122 9.12167 33.5931 9.18861 33.2804L11.3726 23.0775C11.4787 22.582 11.6942 22.1166 12.0034 21.7152C12.3127 21.3138 12.7077 20.9867 13.1597 20.7577C13.6118 20.5288 14.1093 20.4038 14.6158 20.392C15.1224 20.3802 15.6251 20.4819 16.0873 20.6895Z"
                                     fill="#CFD6E6"></path>
                             </svg>
-                            <h4 class="text-center mt-4">Summary</h4>
-                            <p class="text-center text-secondary">Your appointment booking summary</p>
+                            <h4 class="text-center mt-4"><?php echo get_theme_mod('appointment_page_summary_title'); ?></h4>
+                            <p class="text-center text-secondary"><?php echo get_theme_mod('appointment_page_booking_summary_text'); ?></p>
                             <p class="text-center text-secondary">Customer</p>
                             <div class="row">
                                 <div class="col border-end">
