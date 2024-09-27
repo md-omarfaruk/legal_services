@@ -320,3 +320,5 @@ basicDetailsInput.addEventListener('change', function() {
     syncDateInputs();
 });
 
+
+
