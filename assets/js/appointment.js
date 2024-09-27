@@ -181,6 +181,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Change the border color of the selected slot
             this.style.borderColor = "#12D488";
+             // Get the innerHTML of the h5 tag inside the clicked slot
+             const timeText = slot.querySelector('h5').innerHTML;
+
+             // Set the innerHTML of the #summaryTime element with the timeText
+             document.getElementById('summaryTime').innerHTML = timeText;
         });
     });
 

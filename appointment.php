@@ -341,7 +341,7 @@ get_header()
                                 </div>
                                 <div class="col">
                                     <p class="text-secondary">Date & Time</p>
-                                    <h6><span id= "summaryDate"></span>, <span id= "summaryTime">10:05 am - 10:35 am</span></h6>
+                                    <h6><span id= "summaryDate"></span>, <span id= "summaryTime"></span></h6>
                                 </div>
                             </div>
 
