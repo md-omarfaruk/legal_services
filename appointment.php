@@ -81,19 +81,19 @@ get_header()
                         <!-- ---------------------------Service-Part-End------------------------ -->
                         <!-- -------------------------------Date-&-Time-Part-Start------------------------------ -->
                         <div class="date-time" id="dateTime">
-                            <h6 class="my-3" id="dateTimeRequiredNote">Please select a time slot to proceed with the booking.</h6>
-                            <h4>Date & Time</h4>
+                            <h6 class="my-3" id="dateTimeRequiredNote"><?php echo get_theme_mod('appointment_page_date_time_required_note'); ?></h6>
+                            <h4><?php echo get_theme_mod('appointment_page_date_time_title'); ?></h4>
                             <div class="row mt-3">
                                 <div class="col-12 calendar-body text-center">
                                     <form action="/action_page.php">
-                                        <label for="select-date">Select Your Date:</label>
+                                        <label for="select-date"><?php echo get_theme_mod('appointment_page_select_date_time_text'); ?></label>
                                         <input type="date" id="select-date" name="select-date">
                                         <input type="submit" value="Select">
                                     </form>
                                 </div>
                                 <div class="col-12 p-3 time-slot">
-                                    <h5 class="mb-4">Time Slot</h5>
-                                    <h6 class="slot-period">Morning</h6>
+                                    <h5 class="mb-4"><?php echo get_theme_mod('appointment_page_time_slot_text'); ?></h5>
+                                    <h6 class="slot-period"><?php echo get_theme_mod('appointment_page_date_time_morning_text'); ?></h6>
                                     <div class="times row mb-4 justify-content-between">
                                         <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
                                             <h5>10:35 am - 11:05 am</h5>
@@ -104,7 +104,7 @@ get_header()
                                             <h6>0 Slots left</h6>
                                         </div>
                                     </div>
-                                    <h6 class="slot-period">Afternoon</h6>
+                                    <h6 class="slot-period"><?php echo get_theme_mod('appointment_page_date_time_afternoon_text'); ?></h6>
                                     <div class="times row mb-4 justify-content-between">
                                         <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
                                             <h5>12:05 am - 12:35 am</h5>
@@ -131,7 +131,7 @@ get_header()
                                             <h6>0 Slots left</h6>
                                         </div>
                                     </div>
-                                    <h6 class="slot-period">Evening</h6>
+                                    <h6 class="slot-period"><?php echo get_theme_mod('appointment_page_date_time_evening_text'); ?></h6>
                                     <div class="times row mb-4 justify-content-between">
                                         <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
                                             <h5>03:05 am - 03:35 am</h5>
@@ -160,11 +160,11 @@ get_header()
                         <div class="basic-details" id="basicDetails">
                             <div class="row">
                                 <div class="col">
-                                    <h4>Basic Details</h4>
+                                    <h4><?php echo get_theme_mod('appointment_page_basic_details_title'); ?></h4>
                                 </div>
                                 <div class="col text-lg-end">
                                     <form action="/action_page.php">
-                                        <label for="select-date">Pick a Date:</label>
+                                        <label for="select-date"><?php echo get_theme_mod('appointment_page_pick_a_date_text'); ?></label>
                                         <input type="date" id="select-date" name="select-date">
                                         <input type="submit" value="Select">
                                     </form>
@@ -172,40 +172,40 @@ get_header()
                             </div>
                             <div class="col">
                                 <div class="mb-3">
-                                    <label for="name" class="form-label">Your Full Name</label>
+                                    <label for="name" class="form-label"><?php echo get_theme_mod('appointment_page_your_full_name_label_text'); ?></label>
                                     <input type="text" class="form-control" id="name"
                                         placeholder="Enter Your Full Name">
                                 </div>
                                 <div class="row">
                                     <div class="row">
                                         <div class="col">
-                                            <label for="phone">Home Phone</label>
+                                            <label for="phone"><?php echo get_theme_mod('appointment_page_home_phone_label_text'); ?></label>
                                             <input type="tel" id="phone" name="phone" class="form-control"
                                                 placeholder="+880-1868787748" aria-label="Phone">
                                         </div>
                                         <div class="col">
-                                            <label for="email">Email Address</label>
+                                            <label for="email"><?php echo get_theme_mod('appointment_page_email_address_label_text'); ?></label>
                                             <input type="email" id="email" name="email" class="form-control"
                                                 placeholder="Enter Your Email Address" aria-label="Email Address">
                                         </div>
                                     </div>
-                                    <div class="form-floating">
+                                    <div class="form-floating my-3">
                                         <label for="history"></label>
                                         <textarea class="form-control" rows="5" id="history"
-                                            name="text">Enter Your Details Here</textarea>
+                                            name="text"><?php echo get_theme_mod('appointment_page_your_details_label_text'); ?></textarea>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="adress" class="form-label">Address</label>
+                                        <label for="adress" class="form-label"><?php echo get_theme_mod('appointment_page_address_label_text'); ?></label>
                                         <input type="text" class="form-control" id="adress"
                                             placeholder="Enter Your Address">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="tel" class="form-label">Cell Number<sup class="text-danger fs-6">*</sup></label>
+                                        <label for="tel" class="form-label"><?php echo get_theme_mod('appointment_page_cell_number_label_text'); ?><sup class="text-danger fs-6">*</sup></label>
                                         <input type="tel" class="form-control" id="tel"
                                             placeholder="Enter Your Cell Number">
                                             <p id="required"><small class="text-danger">This field can not be blank</small></p>
                                     </div>
-                                    <h6 class="ms-32">Consultation Fee Paid</h6>
+                                    <h6 class="ms-32"><?php echo get_theme_mod('appointment_page_consultaion_fee_paid_label_text'); ?></h6>
                                     <div class="d-flex">
                                     <div class="form-check ms-2">
                                         <input type="radio" class="form-check-input" id="radio1" name="optradio"
@@ -222,12 +222,12 @@ get_header()
                                         <div class="col">
                                             <label for="personName"></label>
                                             <textarea class="form-control" rows="5" id="personName"
-                                                name="text">Enter Referred Person Name</textarea>
+                                                name="text"><?php echo get_theme_mod('appointment_page_referred_person_name_label_text'); ?></textarea>
                                         </div>
                                         <div class="col">
                                             <label for="tel" class="form-label"></label>
                                             <input type="tel" class="form-control" id="referredTel"
-                                                placeholder="Enter Referred Number">
+                                                placeholder="<?php echo get_theme_mod('appointment_page_referred_person_name_label_text'); ?>">
                                         </div>
                                     </div>
                                 </div>

@@ -8,6 +8,8 @@ function legal_services_appointment_page_customize($wp_customize)
     ));
     require_once(get_theme_file_path( '/inc/appointment-page-customize/appointment-page-hero-section-customize.php' ));
     require_once(get_theme_file_path( '/inc/appointment-page-customize/appointment-page-service-section.php' ));
+    require_once(get_theme_file_path( '/inc/appointment-page-customize/appointment-page-date-time-section.php' ));
+    require_once(get_theme_file_path( '/inc/appointment-page-customize/appointment-page-basic-details-section.php' ));
 
 
 }
