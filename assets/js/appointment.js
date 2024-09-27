@@ -242,6 +242,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     // Set the inner HTML of the element with id "subTotal" to the value of "amount"
     document.getElementById("subTotal").innerHTML = priceText;
+    document.getElementById("total").innerHTML = priceText;
 });
 });
 

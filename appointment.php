@@ -347,11 +347,11 @@ get_header()
 
                             <div class="mt-5 d-flex justify-content-between border-bottom">
                                 <p class="m-0 text-secondary">Subtotal</p>
-                                <h6 id="subTotal">$100.00</h6>
+                                <h6 id="subTotal"></h6>
                             </div>
                             <div class="mt-3 d-flex justify-content-between border-bottom">
                                 <h5 class="">Total Amount Payable</h5>
-                                <h6 class="total text-bold">$100.00</h6>
+                                <h6 class="total text-bold" id="total"></h6>
                             </div>
 
                             <div class="row rounded-2 bg-body-secondary mt-5 p-4">
