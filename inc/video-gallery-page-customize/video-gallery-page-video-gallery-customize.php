@@ -120,3 +120,41 @@ $wp_customize->add_control(
         )
     )
 );
+//Setting
+$wp_customize->add_setting('video_gallery_page_gallery_videoSeven',  array(
+    'type' => 'theme_mod',
+    'default' => 'https://www.youtube.com/embed/hbLASgme01c?si=fUQOaaUhUddlj-yi',
+));
+//Setting
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'video_gallery_page_gallery_videoSeven',
+        array(
+            'label' => __('Video Gallery Page Gallery Video Seven', 'legal_services'),
+            'type' => 'url',
+            'section' => 'video_gallery_page_videos_gallery_customize',
+            'settings' => 'video_gallery_page_gallery_videoSeven',
+        )
+    )
+);
+//Setting
+$wp_customize->add_setting('video_gallery_page_gallery_videoEight',  array(
+    'type' => 'theme_mod',
+    'default' => 'https://www.youtube.com/embed/hbLASgme01c?si=fUQOaaUhUddlj-yi',
+));
+//Setting
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'video_gallery_page_gallery_videoEight',
+        array(
+            'label' => __('Video Gallery Page Gallery Video Eight', 'legal_services'),
+            'type' => 'url',
+            'section' => 'video_gallery_page_videos_gallery_customize',
+            'settings' => 'video_gallery_page_gallery_videoEight',
+        )
+    )
+);

@@ -105,48 +105,83 @@ $wp_customize->add_control(
         )
     )
 );
-
-
-
-
-
-// ------------------Morning-Slot-Time-Text--------------------------------
+// ------------------Morning-Slot-Time-One-Text--------------------------------
 
 //Setting
-$wp_customize->add_setting('appointment_page_date_time_morning_text',  array(
+$wp_customize->add_setting('appointment_page_morning_slot_time_one_text',  array(
     'type' => 'theme_mod',
-    'default' => 'Morning',
+    'default' => '10:35 am - 11:05 am',
 ));
 //Control
 $wp_customize->add_control(
     new WP_Customize_Control(
         $wp_customize,
-        'appointment_page_date_time_morning_text',
+        'appointment_page_morning_slot_time_one_text',
         array(
-            'label' => __('Appointment Page Date Time Morning Text', 'legal_services'),
+            'label' => __('Appointment Page Morning Slot Time One Text', 'legal_services'),
             'type' => 'text',
             'section' => 'appointment_page_date_time_section',
-            'settings' => 'appointment_page_date_time_morning_text',
+            'settings' => 'appointment_page_morning_slot_time_one_text',
         )
     )
 );
-// -----------------Section-Morning-Text--------------------------------
+// ------------------Morning-Available_slots_for_Slot-Time-One-Text--------------------------------
 
 //Setting
-$wp_customize->add_setting('appointment_page_date_time_morning_text',  array(
+$wp_customize->add_setting('appointment_page_morning_available_slots_for_one_text',  array(
     'type' => 'theme_mod',
-    'default' => 'Morning',
+    'default' => '1 Slots left',
 ));
 //Control
 $wp_customize->add_control(
     new WP_Customize_Control(
         $wp_customize,
-        'appointment_page_date_time_morning_text',
+        'appointment_page_morning_available_slots_for_one_text',
         array(
-            'label' => __('Appointment Page Date Time Morning Text', 'legal_services'),
+            'label' => __('Appointment Page Morning Available Slots for Slot Time One Text', 'legal_services'),
             'type' => 'text',
             'section' => 'appointment_page_date_time_section',
-            'settings' => 'appointment_page_date_time_morning_text',
+            'settings' => 'appointment_page_morning_available_slots_for_one_text',
+        )
+    )
+);
+// ------------------Morning-Slot-Time-Two-Text--------------------------------
+
+//Setting
+$wp_customize->add_setting('appointment_page_morning_slot_time_two_text',  array(
+    'type' => 'theme_mod',
+    'default' => '10:35 am - 11:05 am',
+));
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'appointment_page_morning_slot_time_two_text',
+        array(
+            'label' => __('Appointment Page Morning Slot Time Two Text', 'legal_services'),
+            'type' => 'text',
+            'section' => 'appointment_page_date_time_section',
+            'settings' => 'appointment_page_morning_slot_time_two_text',
+        )
+    )
+);
+// ------------------Morning-Available_slots_for_Slot-Time-Two-Text--------------------------------
+
+//Setting
+$wp_customize->add_setting('appointment_page_morning_available_slots_for_two_text',  array(
+    'type' => 'theme_mod',
+    'default' => '1 Slots left',
+));
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'appointment_page_morning_available_slots_for_two_text',
+        array(
+            'label' => __('Appointment Page Morning Available Slots for Slot Time Two Text', 'legal_services'),
+            'type' => 'text',
+            'section' => 'appointment_page_date_time_section',
+            'settings' => 'appointment_page_morning_available_slots_for_two_text',
         )
     )
 );
@@ -170,6 +205,250 @@ $wp_customize->add_control(
         )
     )
 );
+
+
+
+
+// ------------------Afternoon-Slot-Time-One-Text--------------------------------
+
+//Setting
+$wp_customize->add_setting('appointment_page_afternoon_slot_time_one_text',  array(
+    'type' => 'theme_mod',
+    'default' => '10:35 am - 11:05 am',
+));
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'appointment_page_afternoon_slot_time_one_text',
+        array(
+            'label' => __('Appointment Page Afternoon Slot Time One Text', 'legal_services'),
+            'type' => 'text',
+            'section' => 'appointment_page_date_time_section',
+            'settings' => 'appointment_page_afternoon_slot_time_one_text',
+        )
+    )
+);
+// ------------------Afternoon-Available_slots_for_Slot-Time-One-Text--------------------------------
+
+//Setting
+$wp_customize->add_setting('appointment_page_afternoon_available_slots_for_one_text',  array(
+    'type' => 'theme_mod',
+    'default' => '1 Slots left',
+));
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'appointment_page_afternoon_available_slots_for_one_text',
+        array(
+            'label' => __('Appointment Page Afternoon Available Slots for Slot Time One Text', 'legal_services'),
+            'type' => 'text',
+            'section' => 'appointment_page_date_time_section',
+            'settings' => 'appointment_page_afternoon_available_slots_for_one_text',
+        )
+    )
+);
+// ------------------Afternoon-Slot-Time-Two-Text--------------------------------
+
+//Setting
+$wp_customize->add_setting('appointment_page_afternoon_slot_time_two_text',  array(
+    'type' => 'theme_mod',
+    'default' => '10:35 am - 11:05 am',
+));
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'appointment_page_afternoon_slot_time_two_text',
+        array(
+            'label' => __('Appointment Page Afternoon Slot Time Two Text', 'legal_services'),
+            'type' => 'text',
+            'section' => 'appointment_page_date_time_section',
+            'settings' => 'appointment_page_afternoon_slot_time_two_text',
+        )
+    )
+);
+// ------------------Afternoon-Available_slots_for_Slot-Time-Two-Text--------------------------------
+
+//Setting
+$wp_customize->add_setting('appointment_page_afternoon_available_slots_for_two_text',  array(
+    'type' => 'theme_mod',
+    'default' => '1 Slots left',
+));
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'appointment_page_afternoon_available_slots_for_two_text',
+        array(
+            'label' => __('Appointment Page Afternoon Available Slots for Slot Time Two Text', 'legal_services'),
+            'type' => 'text',
+            'section' => 'appointment_page_date_time_section',
+            'settings' => 'appointment_page_afternoon_available_slots_for_two_text',
+        )
+    )
+);
+// ------------------Afternoon-Slot-Time-Three-Text--------------------------------
+
+//Setting
+$wp_customize->add_setting('appointment_page_afternoon_slot_time_three_text',  array(
+    'type' => 'theme_mod',
+    'default' => '10:35 am - 11:05 am',
+));
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'appointment_page_afternoon_slot_time_three_text',
+        array(
+            'label' => __('Appointment Page Afternoon Slot Time Three Text', 'legal_services'),
+            'type' => 'text',
+            'section' => 'appointment_page_date_time_section',
+            'settings' => 'appointment_page_afternoon_slot_time_three_text',
+        )
+    )
+);
+// ------------------Afternoon-Available_slots_for_Slot-Time-Three-Text--------------------------------
+
+//Setting
+$wp_customize->add_setting('appointment_page_afternoon_available_slots_for_three_text',  array(
+    'type' => 'theme_mod',
+    'default' => '1 Slots left',
+));
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'appointment_page_afternoon_available_slots_for_three_text',
+        array(
+            'label' => __('Appointment Page Afternoon Available Slots for Slot Time Three Text', 'legal_services'),
+            'type' => 'text',
+            'section' => 'appointment_page_date_time_section',
+            'settings' => 'appointment_page_afternoon_available_slots_for_three_text',
+        )
+    )
+);
+// ------------------Afternoon-Slot-Time-Four-Text--------------------------------
+
+//Setting
+$wp_customize->add_setting('appointment_page_afternoon_slot_time_four_text',  array(
+    'type' => 'theme_mod',
+    'default' => '10:35 am - 11:05 am',
+));
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'appointment_page_afternoon_slot_time_four_text',
+        array(
+            'label' => __('Appointment Page Afternoon Slot Time Four Text', 'legal_services'),
+            'type' => 'text',
+            'section' => 'appointment_page_date_time_section',
+            'settings' => 'appointment_page_afternoon_slot_time_four_text',
+        )
+    )
+);
+// ------------------Afternoon-Available_slots_for_Slot-Time-Four-Text--------------------------------
+
+//Setting
+$wp_customize->add_setting('appointment_page_afternoon_available_slots_for_four_text',  array(
+    'type' => 'theme_mod',
+    'default' => '1 Slots left',
+));
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'appointment_page_afternoon_available_slots_for_four_text',
+        array(
+            'label' => __('Appointment Page Afternoon Available Slots for Slot Time Four Text', 'legal_services'),
+            'type' => 'text',
+            'section' => 'appointment_page_date_time_section',
+            'settings' => 'appointment_page_afternoon_available_slots_for_four_text',
+        )
+    )
+);
+// ------------------Afternoon-Slot-Time-Five-Text--------------------------------
+
+//Setting
+$wp_customize->add_setting('appointment_page_afternoon_slot_time_five_text',  array(
+    'type' => 'theme_mod',
+    'default' => '10:35 am - 11:05 am',
+));
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'appointment_page_afternoon_slot_time_five_text',
+        array(
+            'label' => __('Appointment Page Afternoon Slot Time Five Text', 'legal_services'),
+            'type' => 'text',
+            'section' => 'appointment_page_date_time_section',
+            'settings' => 'appointment_page_afternoon_slot_time_five_text',
+        )
+    )
+);
+// ------------------Afternoon-Available_slots_for_Slot-Time-Five-Text--------------------------------
+
+//Setting
+$wp_customize->add_setting('appointment_page_afternoon_available_slots_for_five_text',  array(
+    'type' => 'theme_mod',
+    'default' => '1 Slots left',
+));
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'appointment_page_afternoon_available_slots_for_five_text',
+        array(
+            'label' => __('Appointment Page Afternoon Available Slots for Slot Time Five Text', 'legal_services'),
+            'type' => 'text',
+            'section' => 'appointment_page_date_time_section',
+            'settings' => 'appointment_page_afternoon_available_slots_for_five_text',
+        )
+    )
+);
+// ------------------Afternoon-Slot-Time-six-Text--------------------------------
+
+//Setting
+$wp_customize->add_setting('appointment_page_afternoon_slot_time_six_text',  array(
+    'type' => 'theme_mod',
+    'default' => '10:35 am - 11:05 am',
+));
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'appointment_page_afternoon_slot_time_six_text',
+        array(
+            'label' => __('Appointment Page Afternoon Slot Time six Text', 'legal_services'),
+            'type' => 'text',
+            'section' => 'appointment_page_date_time_section',
+            'settings' => 'appointment_page_afternoon_slot_time_six_text',
+        )
+    )
+);
+// ------------------Afternoon-Available_slots_for_Slot-Time-six-Text--------------------------------
+
+//Setting
+$wp_customize->add_setting('appointment_page_afternoon_available_slots_for_six_text',  array(
+    'type' => 'theme_mod',
+    'default' => '1 Slots left',
+));
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'appointment_page_afternoon_available_slots_for_six_text',
+        array(
+            'label' => __('Appointment Page Afternoon Available Slots for Slot Time six Text', 'legal_services'),
+            'type' => 'text',
+            'section' => 'appointment_page_date_time_section',
+            'settings' => 'appointment_page_afternoon_available_slots_for_six_text',
+        )
+    )
+);
 // -----------------Section-Evening-Text--------------------------------
 
 //Setting
@@ -187,6 +466,46 @@ $wp_customize->add_control(
             'type' => 'text',
             'section' => 'appointment_page_date_time_section',
             'settings' => 'appointment_page_date_time_evening_text',
+        )
+    )
+);
+// ------------------Evening-Slot-Time-One-Text--------------------------------
+
+//Setting
+$wp_customize->add_setting('appointment_page_evening_slot_time_one_text',  array(
+    'type' => 'theme_mod',
+    'default' => '10:35 am - 11:05 am',
+));
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'appointment_page_evening_slot_time_one_text',
+        array(
+            'label' => __('Appointment Page Evening Slot Time One Text', 'legal_services'),
+            'type' => 'text',
+            'section' => 'appointment_page_date_time_section',
+            'settings' => 'appointment_page_evening_slot_time_one_text',
+        )
+    )
+);
+// ------------------Evening-Available_slots_for_Slot-Time-One-Text--------------------------------
+
+//Setting
+$wp_customize->add_setting('appointment_page_evening_available_slots_for_one_text',  array(
+    'type' => 'theme_mod',
+    'default' => '1 Slots left',
+));
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'appointment_page_evening_available_slots_for_one_text',
+        array(
+            'label' => __('Appointment Page Evening Available Slots for Slot Time One Text', 'legal_services'),
+            'type' => 'text',
+            'section' => 'appointment_page_date_time_section',
+            'settings' => 'appointment_page_evening_available_slots_for_one_text',
         )
     )
 );

@@ -93,12 +93,12 @@ get_header()
                             <h6 class="slot-period"><?php echo get_theme_mod('appointment_page_date_time_morning_text'); ?></h6>
                             <div class="times row mb-4 justify-content-between">
                                 <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
-                                    <h5>10:35 am - 11:05 am</h5>
-                                    <h6>0 Slots left</h6>
+                                    <h5><?php echo get_theme_mod('appointment_page_morning_slot_time_one_text'); ?></h5>
+                                    <h6><?php echo get_theme_mod('appointment_page_morning_available_slots_for_one_text'); ?></h6>
                                 </div>
                                 <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
-                                    <h5>11:35 am - 12:05 am</h5>
-                                    <h6>0 Slots left</h6>
+                                    <h5><?php echo get_theme_mod('appointment_page_morning_slot_time_two_text'); ?></h5>
+                                    <h6><?php echo get_theme_mod('appointment_page_morning_available_slots_for_two_text'); ?></h6>
                                 </div>
                             </div>
                             <h6 class="slot-period"><?php echo get_theme_mod('appointment_page_date_time_afternoon_text'); ?></h6>

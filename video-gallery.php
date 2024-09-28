@@ -57,6 +57,20 @@ get_header()
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
+                    <div class="col-lg-6">
+                        <iframe width="100%" height="360"
+                            src="<?php echo get_theme_mod('video_gallery_page_gallery_videoSeven');?>"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-lg-6">
+                        <iframe width="100%" height="360"
+                            src="<?php echo get_theme_mod('video_gallery_page_gallery_videoEight');?>"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
 
 
                 </div>
