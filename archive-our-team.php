@@ -32,7 +32,7 @@ get_header()
 
 
                     <?php while ($team_members->have_posts()) : $team_members->the_post(); ?>
-                        <div class="col text-center">
+                        <div class="col text-center mt-5">
                             <div class="card h-100 border-0">
                                 <?php if (has_post_thumbnail()) : ?>
                                     <img src="<?php the_post_thumbnail_url('medium'); ?>" class="card-img-top mx-auto d-block" alt="<?php the_title(); ?>">
