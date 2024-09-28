@@ -9,6 +9,7 @@ function create_appointments_post_type() {
         'has_archive' => true,
         'supports' => array('title', 'editor'),
         'show_in_menu' => true,
+        'menu_icon'           => 'dashicons-calendar',
     ));
 }
 add_action('init', 'create_appointments_post_type');
