@@ -114,3 +114,165 @@ $wp_customize->add_control(
         )
     )
 );
+//Setting
+$wp_customize->add_setting('gallery_page_img_gallery_imgSeven',  array(
+    'type' => 'theme_mod',
+    'default' => '/assets/img/client-img-1.jpg',
+));
+//Setting
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Image_Control(
+        $wp_customize,
+        'gallery_page_img_gallery_imgSeven',
+        array(
+            'label' => __('Gallery Page Image Gallery Image Seven', 'legal_services'),
+            'section' => 'gallery_page_images_gallery_customize',
+            'settings' => 'gallery_page_img_gallery_imgSeven',
+        )
+    )
+);
+//Setting
+$wp_customize->add_setting('gallery_page_img_gallery_imgEight',  array(
+    'type' => 'theme_mod',
+    'default' => '/assets/img/client-img-1.jpg',
+));
+//Setting
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Image_Control(
+        $wp_customize,
+        'gallery_page_img_gallery_imgEight',
+        array(
+            'label' => __('Gallery Page Image Gallery Image Eight', 'legal_services'),
+            'section' => 'gallery_page_images_gallery_customize',
+            'settings' => 'gallery_page_img_gallery_imgEight',
+        )
+    )
+);
+//Setting
+$wp_customize->add_setting('gallery_page_img_gallery_imgNine',  array(
+    'type' => 'theme_mod',
+    'default' => '/assets/img/client-img-1.jpg',
+));
+//Setting
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Image_Control(
+        $wp_customize,
+        'gallery_page_img_gallery_imgNine',
+        array(
+            'label' => __('Gallery Page Image Gallery Image Nine', 'legal_services'),
+            'section' => 'gallery_page_images_gallery_customize',
+            'settings' => 'gallery_page_img_gallery_imgNine',
+        )
+    )
+);
+//Setting
+$wp_customize->add_setting('gallery_page_img_gallery_imgTen',  array(
+    'type' => 'theme_mod',
+    'default' => '/assets/img/client-img-1.jpg',
+));
+//Setting
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Image_Control(
+        $wp_customize,
+        'gallery_page_img_gallery_imgTen',
+        array(
+            'label' => __('Gallery Page Image Gallery Image Ten', 'legal_services'),
+            'section' => 'gallery_page_images_gallery_customize',
+            'settings' => 'gallery_page_img_gallery_imgTen',
+        )
+    )
+);
+//Setting
+$wp_customize->add_setting('gallery_page_img_gallery_imgElaven',  array(
+    'type' => 'theme_mod',
+    'default' => '/assets/img/client-img-1.jpg',
+));
+//Setting
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Image_Control(
+        $wp_customize,
+        'gallery_page_img_gallery_imgElaven',
+        array(
+            'label' => __('Gallery Page Image Gallery Image Elaven', 'legal_services'),
+            'section' => 'gallery_page_images_gallery_customize',
+            'settings' => 'gallery_page_img_gallery_imgElaven',
+        )
+    )
+);
+//Setting
+$wp_customize->add_setting('gallery_page_img_gallery_imgTwelve',  array(
+    'type' => 'theme_mod',
+    'default' => '/assets/img/client-img-1.jpg',
+));
+//Setting
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Image_Control(
+        $wp_customize,
+        'gallery_page_img_gallery_imgTwelve',
+        array(
+            'label' => __('Gallery Page Image Gallery Image Twelve', 'legal_services'),
+            'section' => 'gallery_page_images_gallery_customize',
+            'settings' => 'gallery_page_img_gallery_imgTwelve',
+        )
+    )
+);
+//Setting
+$wp_customize->add_setting('gallery_page_img_gallery_imgThirteen',  array(
+    'type' => 'theme_mod',
+    'default' => '/assets/img/client-img-1.jpg',
+));
+//Setting
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Image_Control(
+        $wp_customize,
+        'gallery_page_img_gallery_imgThirteen',
+        array(
+            'label' => __('Gallery Page Image Gallery Image Thirteen', 'legal_services'),
+            'section' => 'gallery_page_images_gallery_customize',
+            'settings' => 'gallery_page_img_gallery_imgThirteen',
+        )
+    )
+);
+//Setting
+$wp_customize->add_setting('gallery_page_img_gallery_imgFourteen',  array(
+    'type' => 'theme_mod',
+    'default' => '/assets/img/client-img-1.jpg',
+));
+//Setting
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Image_Control(
+        $wp_customize,
+        'gallery_page_img_gallery_imgFourteen',
+        array(
+            'label' => __('Gallery Page Image Gallery Image Fourteen', 'legal_services'),
+            'section' => 'gallery_page_images_gallery_customize',
+            'settings' => 'gallery_page_img_gallery_imgFourteen',
+        )
+    )
+);
+//Setting
+$wp_customize->add_setting('gallery_page_img_gallery_imgFifteen',  array(
+    'type' => 'theme_mod',
+    'default' => '/assets/img/client-img-1.jpg',
+));
+//Setting
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Image_Control(
+        $wp_customize,
+        'gallery_page_img_gallery_imgFifteen',
+        array(
+            'label' => __('Gallery Page Image Gallery Image Fifteen', 'legal_services'),
+            'section' => 'gallery_page_images_gallery_customize',
+            'settings' => 'gallery_page_img_gallery_imgFifteen',
+        )
+    )
+);

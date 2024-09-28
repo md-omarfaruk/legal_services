@@ -57,7 +57,70 @@ get_header()
                                 src="<?php echo get_theme_mod('gallery_page_img_gallery_imgSix');?>"
                                 data-imgsrc="<?php echo get_theme_mod('gallery_page_img_gallery_imgSix');?>" alt="Photo Gallery">
                         </div>
-                    </div>                
+                    </div>           
+                    <div class="col-lg-4">
+                        <div class="lightbox_img_wrap">
+                            <img class="lightbox-enabled img-fluid gallery-img"
+                                src="<?php echo get_theme_mod('gallery_page_img_gallery_imgSeven');?>"
+                                data-imgsrc="<?php echo get_theme_mod('gallery_page_img_gallery_imgSeven');?>" alt="Photo Gallery">
+                        </div>
+                    </div> 
+                    <div class="col-lg-4">
+                        <div class="lightbox_img_wrap">
+                            <img class="lightbox-enabled img-fluid gallery-img"
+                                src="<?php echo get_theme_mod('gallery_page_img_gallery_imgEight');?>"
+                                data-imgsrc="<?php echo get_theme_mod('gallery_page_img_gallery_imgEight');?>" alt="Photo Gallery">
+                        </div>
+                    </div> 
+                    <div class="col-lg-4">
+                        <div class="lightbox_img_wrap">
+                            <img class="lightbox-enabled img-fluid gallery-img"
+                                src="<?php echo get_theme_mod('gallery_page_img_gallery_imgNine');?>"
+                                data-imgsrc="<?php echo get_theme_mod('gallery_page_img_gallery_imgNine');?>" alt="Photo Gallery">
+                        </div>
+                    </div> 
+                    <div class="col-lg-4">
+                        <div class="lightbox_img_wrap">
+                            <img class="lightbox-enabled img-fluid gallery-img"
+                                src="<?php echo get_theme_mod('gallery_page_img_gallery_imgTen');?>"
+                                data-imgsrc="<?php echo get_theme_mod('gallery_page_img_gallery_imgTen');?>" alt="Photo Gallery">
+                        </div>
+                    </div> 
+                    <div class="col-lg-4">
+                        <div class="lightbox_img_wrap">
+                            <img class="lightbox-enabled img-fluid gallery-img"
+                                src="<?php echo get_theme_mod('gallery_page_img_gallery_imgElaven');?>"
+                                data-imgsrc="<?php echo get_theme_mod('gallery_page_img_gallery_imgElaven');?>" alt="Photo Gallery">
+                        </div>
+                    </div> 
+                    <div class="col-lg-4">
+                        <div class="lightbox_img_wrap">
+                            <img class="lightbox-enabled img-fluid gallery-img"
+                                src="<?php echo get_theme_mod('gallery_page_img_gallery_imgTwelve');?>"
+                                data-imgsrc="<?php echo get_theme_mod('gallery_page_img_gallery_imgTwelve');?>" alt="Photo Gallery">
+                        </div>
+                    </div> 
+                    <div class="col-lg-4">
+                        <div class="lightbox_img_wrap">
+                            <img class="lightbox-enabled img-fluid gallery-img"
+                                src="<?php echo get_theme_mod('gallery_page_img_gallery_imgThirteen');?>"
+                                data-imgsrc="<?php echo get_theme_mod('gallery_page_img_gallery_imgThirteen');?>" alt="Photo Gallery">
+                        </div>
+                    </div> 
+                    <div class="col-lg-4">
+                        <div class="lightbox_img_wrap">
+                            <img class="lightbox-enabled img-fluid gallery-img"
+                                src="<?php echo get_theme_mod('gallery_page_img_gallery_imgFourteen');?>"
+                                data-imgsrc="<?php echo get_theme_mod('gallery_page_img_gallery_imgFourteen');?>" alt="Photo Gallery">
+                        </div>
+                    </div> 
+                    <div class="col-lg-4">
+                        <div class="lightbox_img_wrap">
+                            <img class="lightbox-enabled img-fluid gallery-img"
+                                src="<?php echo get_theme_mod('gallery_page_img_gallery_imgFifteen');?>"
+                                data-imgsrc="<?php echo get_theme_mod('gallery_page_img_gallery_imgFifteen');?>" alt="Photo Gallery">
+                        </div>
+                    </div> 
                 </div>                
                 <section class="lightbox-container">
 

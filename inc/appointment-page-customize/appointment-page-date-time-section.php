@@ -105,6 +105,51 @@ $wp_customize->add_control(
         )
     )
 );
+
+
+
+
+
+// ------------------Morning-Slot-Time-Text--------------------------------
+
+//Setting
+$wp_customize->add_setting('appointment_page_date_time_morning_text',  array(
+    'type' => 'theme_mod',
+    'default' => 'Morning',
+));
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'appointment_page_date_time_morning_text',
+        array(
+            'label' => __('Appointment Page Date Time Morning Text', 'legal_services'),
+            'type' => 'text',
+            'section' => 'appointment_page_date_time_section',
+            'settings' => 'appointment_page_date_time_morning_text',
+        )
+    )
+);
+// -----------------Section-Morning-Text--------------------------------
+
+//Setting
+$wp_customize->add_setting('appointment_page_date_time_morning_text',  array(
+    'type' => 'theme_mod',
+    'default' => 'Morning',
+));
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'appointment_page_date_time_morning_text',
+        array(
+            'label' => __('Appointment Page Date Time Morning Text', 'legal_services'),
+            'type' => 'text',
+            'section' => 'appointment_page_date_time_section',
+            'settings' => 'appointment_page_date_time_morning_text',
+        )
+    )
+);
 // -----------------Section-Afternoon-Text--------------------------------
 
 //Setting
