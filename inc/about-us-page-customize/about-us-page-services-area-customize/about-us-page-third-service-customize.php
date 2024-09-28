@@ -9,7 +9,7 @@ $wp_customize->add_section('about_us_page_third_service_customize', array(
 //Setting
 $wp_customize->add_setting('about_us_page_third_service_img',  array(
     'type' => 'theme_mod',
-     'default'   => get_template_directory_uri() . '/assets/img/immigration.jpeg',
+     'default'   => get_template_directory_uri() . '/assets/img/immigration.png',
 ));
 
 //Control

@@ -9,7 +9,7 @@ $wp_customize->add_section('about_us_page_second_service_customize', array(
 //Setting
 $wp_customize->add_setting('about_us_page_second_service_img',  array(
     'type' => 'theme_mod',
-     'default'   => get_template_directory_uri() . '/assets/img/medical-malpractice.jpeg',
+     'default'   => get_template_directory_uri() . '/assets/img/medical-malpractice.png',
 ));
 
 //Control
