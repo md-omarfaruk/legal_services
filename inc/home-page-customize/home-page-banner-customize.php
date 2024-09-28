@@ -9,7 +9,7 @@ $wp_customize->add_section('home_page_banner_section', array(
 //Setting
 $wp_customize->add_setting('banner_background',  array(
     'type' => 'theme_mod',
-    'default' => '/assets/img/MOIN-LAW-SLIDER.webp',
+     'default'   => get_template_directory_uri() . '/assets/img/MOIN-LAW-SLIDER.webp',
 ));
 
 //Control

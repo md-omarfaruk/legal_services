@@ -9,7 +9,7 @@ $wp_customize->add_section('about_us_page_main_content_section', array(
 //Setting
 $wp_customize->add_setting('about_us_page_main_content_first_row_img',  array(
     'type' => 'theme_mod',
-    'default' => '/assets/img/supreme-court-building.jpg',
+     'default'   => get_template_directory_uri() . '/assets/img/supreme-court-building.jpg',
 ));
 
 //Control
@@ -50,7 +50,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('about_us_page_main_content_second_row_img',  array(
     'type' => 'theme_mod',
-    'default' => '/assets/img/shongshad.jpg',
+     'default'   => get_template_directory_uri() . '/assets/img/shongshad.jpg',
 ));
 
 //Control

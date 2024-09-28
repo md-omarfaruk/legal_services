@@ -9,7 +9,7 @@
 //Setting
 $wp_customize->add_setting('gallery_page_img_gallery_imgOne',  array(
     'type' => 'theme_mod',
-    'default' => '/assets/img/client-img-1.jpg',
+     'default'   => get_template_directory_uri() . '/assets/img/client-img-1.jpg',
 ));
 //Setting
 //Control
@@ -27,7 +27,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('gallery_page_img_gallery_imgTwo',  array(
     'type' => 'theme_mod',
-    'default' => '/assets/img/client-img-1.jpg',
+     'default'   => get_template_directory_uri() . '/assets/img/client-img-1.jpg',
 ));
 //Setting
 //Control
@@ -45,7 +45,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('gallery_page_img_gallery_imgThree',  array(
     'type' => 'theme_mod',
-    'default' => '/assets/img/client-img-1.jpg',
+     'default'   => get_template_directory_uri() . '/assets/img/client-img-1.jpg',
 ));
 //Setting
 //Control
@@ -63,7 +63,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('gallery_page_img_gallery_imgFour',  array(
     'type' => 'theme_mod',
-    'default' => '/assets/img/client-img-1.jpg',
+     'default'   => get_template_directory_uri() . '/assets/img/client-img-1.jpg',
 ));
 //Setting
 //Control
@@ -81,7 +81,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('gallery_page_img_gallery_imgFive',  array(
     'type' => 'theme_mod',
-    'default' => '/assets/img/client-img-1.jpg',
+     'default'   => get_template_directory_uri() . '/assets/img/client-img-1.jpg',
 ));
 //Setting
 //Control
@@ -99,7 +99,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('gallery_page_img_gallery_imgSix',  array(
     'type' => 'theme_mod',
-    'default' => '/assets/img/client-img-1.jpg',
+     'default'   => get_template_directory_uri() . '/assets/img/client-img-1.jpg',
 ));
 //Setting
 //Control
@@ -117,7 +117,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('gallery_page_img_gallery_imgSeven',  array(
     'type' => 'theme_mod',
-    'default' => '/assets/img/client-img-1.jpg',
+     'default'   => get_template_directory_uri() . '/assets/img/client-img-1.jpg',
 ));
 //Setting
 //Control
@@ -135,7 +135,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('gallery_page_img_gallery_imgEight',  array(
     'type' => 'theme_mod',
-    'default' => '/assets/img/client-img-1.jpg',
+     'default'   => get_template_directory_uri() . '/assets/img/client-img-1.jpg',
 ));
 //Setting
 //Control
@@ -153,7 +153,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('gallery_page_img_gallery_imgNine',  array(
     'type' => 'theme_mod',
-    'default' => '/assets/img/client-img-1.jpg',
+     'default'   => get_template_directory_uri() . '/assets/img/client-img-1.jpg',
 ));
 //Setting
 //Control
@@ -171,7 +171,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('gallery_page_img_gallery_imgTen',  array(
     'type' => 'theme_mod',
-    'default' => '/assets/img/client-img-1.jpg',
+     'default'   => get_template_directory_uri() . '/assets/img/client-img-1.jpg',
 ));
 //Setting
 //Control
@@ -189,7 +189,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('gallery_page_img_gallery_imgElaven',  array(
     'type' => 'theme_mod',
-    'default' => '/assets/img/client-img-1.jpg',
+     'default'   => get_template_directory_uri() . '/assets/img/client-img-1.jpg',
 ));
 //Setting
 //Control
@@ -207,7 +207,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('gallery_page_img_gallery_imgTwelve',  array(
     'type' => 'theme_mod',
-    'default' => '/assets/img/client-img-1.jpg',
+     'default'   => get_template_directory_uri() . '/assets/img/client-img-1.jpg',
 ));
 //Setting
 //Control
@@ -225,7 +225,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('gallery_page_img_gallery_imgThirteen',  array(
     'type' => 'theme_mod',
-    'default' => '/assets/img/client-img-1.jpg',
+     'default'   => get_template_directory_uri() . '/assets/img/client-img-1.jpg',
 ));
 //Setting
 //Control
@@ -243,7 +243,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('gallery_page_img_gallery_imgFourteen',  array(
     'type' => 'theme_mod',
-    'default' => '/assets/img/client-img-1.jpg',
+     'default'   => get_template_directory_uri() . '/assets/img/client-img-1.jpg',
 ));
 //Setting
 //Control
@@ -261,7 +261,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('gallery_page_img_gallery_imgFifteen',  array(
     'type' => 'theme_mod',
-    'default' => '/assets/img/client-img-1.jpg',
+     'default'   => get_template_directory_uri() . '/assets/img/client-img-1.jpg',
 ));
 //Setting
 //Control

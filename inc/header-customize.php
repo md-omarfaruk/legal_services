@@ -14,7 +14,7 @@ function legal_services_top_header($wp_customize)
     //Setting
     $wp_customize->add_setting('top_header_logo',  array(
         'type' => 'theme_mod',
-        'default' => '/assets/img/moin-choudhury-logo.webp',
+         'default'   => get_template_directory_uri() . '/assets/img/moin-choudhury-logo.webp',
     ));
 
     //Control
@@ -34,7 +34,7 @@ function legal_services_top_header($wp_customize)
     //Setting
     $wp_customize->add_setting('header_fixed_menu_logo',  array(
         'type' => 'theme_mod',
-        'default' => '/assets/img/fixed-nav-logo.png',
+         'default'   => get_template_directory_uri() . '/assets/img/fixed-nav-logo.png',
     ));
 
     //Control

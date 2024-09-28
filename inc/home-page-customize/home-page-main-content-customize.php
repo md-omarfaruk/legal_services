@@ -9,7 +9,7 @@ $wp_customize->add_section('home_page_main_content_section', array(
 //Setting
 $wp_customize->add_setting('home_page_main_content_img',  array(
     'type' => 'theme_mod',
-    'default' => '/assets/img/client-img.jpg',
+     'default'   => get_template_directory_uri() . '/assets/img/client-img.jpg',
 ));
 
 //Control

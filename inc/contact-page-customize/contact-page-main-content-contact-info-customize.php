@@ -29,7 +29,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('contact_page_contact_info_img',  array(
     'type' => 'theme_mod',
-    'default' => '/assets/img/client-img-1.jpg',
+     'default'   => get_template_directory_uri() . '/assets/img/client-img-1.jpg',
 ));
 
 //Control

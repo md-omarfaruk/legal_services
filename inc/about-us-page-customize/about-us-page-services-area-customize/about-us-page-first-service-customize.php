@@ -9,7 +9,8 @@ $wp_customize->add_section('about_us_page_first_service_customize', array(
 //Setting
 $wp_customize->add_setting('about_us_page_first_service_img',  array(
     'type' => 'theme_mod',
-    'default' => '/assets/img/accident.jpeg',
+    'default'   => get_template_directory_uri() . '/assets/img/accident.jpeg', // Path to your default image
+    'sanitize_callback' => 'esc_url_raw', // Sanitization
 ));
 
 //Control

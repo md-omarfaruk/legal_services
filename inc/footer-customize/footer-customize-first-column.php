@@ -9,7 +9,7 @@ $wp_customize->add_section('footer_first_column', array(
 //Setting
 $wp_customize->add_setting('footer_logo',  array(
     'type' => 'theme_mod',
-    'default' => '/assets/img/responsive-logo.png',
+     'default'   => get_template_directory_uri() . '/assets/img/responsive-logo.png',
 ));
 
 //Control
