@@ -4,27 +4,6 @@ $wp_customize->add_section('home_page_banner_section', array(
     'panel' => 'home_page_customize',
     'priority' => 10,
 ));
-
-// -----------------Banner-Background-Image--------------------------------
-//Setting
-$wp_customize->add_setting('banner_background',  array(
-    'type' => 'theme_mod',
-     'default'   => get_template_directory_uri() . '/assets/img/MOIN-LAW-SLIDER.webp',
-));
-
-//Control
-//Footer-Logo
-$wp_customize->add_control(
-    new WP_Customize_Image_Control(
-        $wp_customize,
-        'banner_background',
-        array(
-            'label' => __('Banner Background', 'legal_services'),
-            'section' => 'home_page_banner_section',
-            'settings' => 'banner_background',
-        )
-    )
-);
 // -----------------Banner-Title--------------------------------
 
 //Setting
