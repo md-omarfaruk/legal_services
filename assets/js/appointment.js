@@ -186,6 +186,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
              // Set the innerHTML of the #summaryTime element with the timeText
              document.getElementById('summaryTime').innerHTML = timeText;
+             document.getElementById('summaryAppointTimeInput').value = timeText;
         });
     });
 
@@ -241,6 +242,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     // Set the inner HTML of the element with id "summaryAppointWith" to the value of "appointWith"
     document.getElementById("summaryAppointWith").innerHTML = appointWithText;
+    document.getElementById("summaryAppointWithInput").value = appointWithText;
     
     // Get the inner HTML of the element with class "amount" (which represents the price)
     let priceText = document.querySelector(".amount").innerHTML;
@@ -248,6 +250,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Set the inner HTML of the element with id "subTotal" to the value of "amount"
     document.getElementById("subTotal").innerHTML = priceText;
     document.getElementById("total").innerHTML = priceText;
+    document.getElementById("subTotalInput").value = priceText;
+    document.getElementById("totalInput").value = priceText;
 });
 });
 
@@ -306,7 +310,9 @@ function syncDateInputs() {
     dateTimeInput.value = basicDetailsInput.value;
     // Update the summaryDate innerHTML with the selected date
     summaryDate.innerHTML = dateTimeInput.value;
+    document.getElementById("summaryAppointDateInput").value = dateTimeInput.value;
     summaryDate.innerHTML = basicDetailsInput.value;
+    document.getElementById("summaryAppointDateInput").value = basicDetailsInput.value;
 }
 
 // Event listeners for changes in the date inputs

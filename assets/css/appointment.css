@@ -134,6 +134,10 @@ h6.slot-period {
 .total{
   color: #12D488;
 }
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+  cursor: pointer;
+  border: none;
+}
 @media (max-width: 767.98px) {
   .icon-link {
     font-size: 14px;
