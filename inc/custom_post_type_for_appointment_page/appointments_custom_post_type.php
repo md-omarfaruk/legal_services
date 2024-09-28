@@ -29,6 +29,9 @@ function handle_appointments() {
         $optradio = sanitize_text_field($_POST['optradio']);
         $person_name = sanitize_textarea_field($_POST['personName']);
         $referred_tel = sanitize_text_field($_POST['referredTel']);
+        $summaryAppointTimeInput = sanitize_text_field($_POST['summaryAppointTimeInput']);
+        $subTotalInput = sanitize_text_field($_POST['subTotalInput']);
+        $totalInput = sanitize_text_field($_POST['totalInput']);
 
         // Create post content from the form fields
         $post_content = "
@@ -40,7 +43,11 @@ function handle_appointments() {
             <strong>Cell Number:</strong> $tel<br>
             <strong>Consultation Fee Paid:</strong> $optradio<br>
             <strong>Referred Person Name:</strong> $person_name<br>
-            <strong>Referred Person Tel:</strong> $referred_tel
+            <strong>Referred Person Tel:</strong> $referred_tel<br>
+            <strong>Slot Time:</strong> $summaryAppointTimeInput<br>
+            <strong>Sub Total:</strong> $subTotalInput<br>
+            <strong>Total:</strong> $totalInput<br>
+
         ";
 
         // Insert the form submission as a post in the custom post type

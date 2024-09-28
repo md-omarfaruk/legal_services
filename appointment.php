@@ -344,8 +344,8 @@ get_header()
                         </div>
                         <div class="col">
                             <p class="text-secondary">Date & Time</p>
-                            <input type="hidden" id="summaryAppointDateInput" name="appointWithInput" value="34">
-                            <input type="hidden" id="summaryAppointTimeInput" name="appointWithInput" value="34">
+                            <input type="hidden" id="summaryAppointDateInput" name="summaryAppointDateInput" value="">
+                            <input type="hidden" id="summaryAppointTimeInput" name="summaryAppointTimeInput" value="">
                             <h6><span id="summaryDate"></span>, <span id="summaryTime"></span></h6>
                         </div>
                     </div>
