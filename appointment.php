@@ -104,34 +104,34 @@ get_header()
                             <h6 class="slot-period"><?php echo get_theme_mod('appointment_page_date_time_afternoon_text'); ?></h6>
                             <div class="times row mb-4 justify-content-between">
                                 <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
-                                    <h5>12:05 am - 12:35 am</h5>
+                                    <h5>12:05 pm - 12:35 pm</h5>
                                     <h6>0 Slots left</h6>
                                 </div>
                                 <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
-                                    <h5>12:35 am - 01:05 am</h5>
+                                    <h5>12:35 pm - 01:05 pm</h5>
                                     <h6>0 Slots left</h6>
                                 </div>
                                 <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
-                                    <h5>01:05 am - 01:35 am</h5>
+                                    <h5>01:05 pm - 01:35 pm</h5>
                                     <h6>0 Slots left</h6>
                                 </div>
                                 <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
-                                    <h5>01:35 am - 02:05 am</h5>
+                                    <h5>01:35 pm - 02:05 pm</h5>
                                     <h6>0 Slots left</h6>
                                 </div>
                                 <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
-                                    <h5>02:05 am - 02:35 am</h5>
+                                    <h5>02:05 pm - 02:35 pm</h5>
                                     <h6>0 Slots left</h6>
                                 </div>
                                 <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
-                                    <h5>02:35 am - 03:05 am</h5>
+                                    <h5>02:35 pm - 03:05 pm</h5>
                                     <h6>0 Slots left</h6>
                                 </div>
                             </div>
                             <h6 class="slot-period"><?php echo get_theme_mod('appointment_page_date_time_evening_text'); ?></h6>
                             <div class="times row mb-4 justify-content-between">
                                 <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
-                                    <h5>03:05 am - 03:35 am</h5>
+                                    <h5>03:05 pm - 03:35 pm</h5>
                                     <h6>0 Slots left</h6>
                                 </div>
                             </div>
