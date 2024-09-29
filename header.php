@@ -69,13 +69,13 @@
                             <?php
                             if (has_nav_menu('header-menu')) {
                                 wp_nav_menu(array(
-                                    'theme_location'  => 'header-menu', // Register this location in functions.php
-                                    'container'       => false,         // No wrapping div container
-                                    'items_wrap'      => '%3$s',        // Removes the <ul> since you already have it
-                                    'menu_class'      => '',            // No additional classes for <ul>
-                                    'add_li_class'    => 'nav-item d-flex', // Adds custom class to <li>
-                                    'link_class'      => 'nav-link',       // Adds custom class to <a>
-                                    'link_after'      => '<i class="bi bi-star-fill mx-3"></i>', // Add icon after each link
+                                    'theme_location'  => 'header-menu',
+                                    'container'       => false,         
+                                    'items_wrap'      => '%3$s',        
+                                    'menu_class'      => '',             
+                                    'add_li_class'    => 'nav-item d-flex', 
+                                    'link_class'      => 'nav-link',       
+                                    'link_after'      => '<i class="bi bi-star-fill mx-3"></i>', 
                                 ));
                             }
                             ?>
