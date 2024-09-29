@@ -9,7 +9,7 @@ get_header()
 
         <div class="video-gallery-title">
             <h1 class="text-center roboto-black">
-            <?php echo get_theme_mod('video_gallery_page_hero_title');?>
+            <?php echo get_theme_mod('video_gallery_page_hero_title', 'VIDEO GALLERY');?>
             </h1>
         </div>
         <div class="video-gallery-container">
@@ -17,62 +17,60 @@ get_header()
                 <div class="row">
                     <div class="col-lg-6">
                         <iframe class="gallery-video" width="100%" height="360"
-                            src="<?php echo get_theme_mod('video_gallery_page_gallery_videoOne');?>"
+                            src="<?php echo get_theme_mod('video_gallery_page_gallery_videoOne', 'https://www.youtube.com/embed/hbLASgme01c?si=fUQOaaUhUddlj-yi');?>"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-6">
                         <iframe width="100%" height="360"
-                            src="<?php echo get_theme_mod('video_gallery_page_gallery_videoTwo');?>"
+                            src="<?php echo get_theme_mod('video_gallery_page_gallery_videoTwo', 'https://www.youtube.com/embed/zUuIk1Cc-8Y?si=zjUEXYeo-cEESH_9');?>"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-6">
                         <iframe width="100%" height="360"
-                            src="<?php echo get_theme_mod('video_gallery_page_gallery_videoThree');?>"
+                            src="<?php echo get_theme_mod('video_gallery_page_gallery_videoThree', 'https://www.youtube.com/embed/4-gAa3fA7sk?si=75XHK8ffe2GNOMW5');?>"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-6">
                         <iframe width="100%" height="360"
-                            src="<?php echo get_theme_mod('video_gallery_page_gallery_videoFour');?>"
+                            src="<?php echo get_theme_mod('video_gallery_page_gallery_videoFour', 'https://www.youtube.com/embed/qUnikyOntC4?si=OtZHrB2celdayE6t');?>"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-6">
                         <iframe class="gallery-video" width="100%" height="360"
-                            src="<?php echo get_theme_mod('video_gallery_page_gallery_videoFive');?>"
+                            src="<?php echo get_theme_mod('video_gallery_page_gallery_videoFive', 'https://www.youtube.com/embed/zUuIk1Cc-8Y?si=zjUEXYeo-cEESH_9');?>"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-6">
                         <iframe width="100%" height="360"
-                            src="<?php echo get_theme_mod('video_gallery_page_gallery_videoSix');?>"
+                            src="<?php echo get_theme_mod('video_gallery_page_gallery_videoSix', 'https://www.youtube.com/embed/hbLASgme01c?si=fUQOaaUhUddlj-yi');?>"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-6">
                         <iframe width="100%" height="360"
-                            src="<?php echo get_theme_mod('video_gallery_page_gallery_videoSeven');?>"
+                            src="<?php echo get_theme_mod('video_gallery_page_gallery_videoSeven', 'https://www.youtube.com/embed/4-gAa3fA7sk?si=75XHK8ffe2GNOMW5');?>"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-6">
                         <iframe width="100%" height="360"
-                            src="<?php echo get_theme_mod('video_gallery_page_gallery_videoEight');?>"
+                            src="<?php echo get_theme_mod('video_gallery_page_gallery_videoEight', 'https://www.youtube.com/embed/qUnikyOntC4?si=OtZHrB2celdayE6t');?>"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
-
-
                 </div>
             </div>
         </div>

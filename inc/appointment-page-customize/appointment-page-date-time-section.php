@@ -150,7 +150,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('appointment_page_morning_slot_time_two_text',  array(
     'type' => 'theme_mod',
-    'default' => '10:35 am - 11:05 am',
+    'default' => '11:05 am - 12:05 pm',
 ));
 //Control
 $wp_customize->add_control(
@@ -214,7 +214,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('appointment_page_afternoon_slot_time_one_text',  array(
     'type' => 'theme_mod',
-    'default' => '10:35 am - 11:05 am',
+    'default' => '12:05 pm - 12:35 pm',
 ));
 //Control
 $wp_customize->add_control(
@@ -254,7 +254,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('appointment_page_afternoon_slot_time_two_text',  array(
     'type' => 'theme_mod',
-    'default' => '10:35 am - 11:05 am',
+    'default' => '12:35 pm - 01:05 pm',
 ));
 //Control
 $wp_customize->add_control(
@@ -294,7 +294,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('appointment_page_afternoon_slot_time_three_text',  array(
     'type' => 'theme_mod',
-    'default' => '10:35 am - 11:05 am',
+    'default' => '01:05 pm - 01:35 pm',
 ));
 //Control
 $wp_customize->add_control(
@@ -334,7 +334,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('appointment_page_afternoon_slot_time_four_text',  array(
     'type' => 'theme_mod',
-    'default' => '10:35 am - 11:05 am',
+    'default' => '01:35 pm - 02:05 pm',
 ));
 //Control
 $wp_customize->add_control(
@@ -374,7 +374,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('appointment_page_afternoon_slot_time_five_text',  array(
     'type' => 'theme_mod',
-    'default' => '10:35 am - 11:05 am',
+    'default' => '02:05 pm - 02:35 pm',
 ));
 //Control
 $wp_customize->add_control(
@@ -414,7 +414,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('appointment_page_afternoon_slot_time_six_text',  array(
     'type' => 'theme_mod',
-    'default' => '10:35 am - 11:05 am',
+    'default' => '02:35 pm - 03:05 pm',
 ));
 //Control
 $wp_customize->add_control(
@@ -474,7 +474,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('appointment_page_evening_slot_time_one_text',  array(
     'type' => 'theme_mod',
-    'default' => '10:35 am - 11:05 am',
+    'default' => '03:05 pm - 03:35 pm',
 ));
 //Control
 $wp_customize->add_control(

@@ -3,8 +3,8 @@ function social_media($wp_customize)
 {
     //Settings
     $wp_customize->add_setting('facebook', array('default' => 'https://www.facebook.com/advbashir.ahammed'));
-    $wp_customize->add_setting('twitter', array('default' => ''));
-    $wp_customize->add_setting('youtube', array('default' => ''));
+    $wp_customize->add_setting('twitter', array('default' => 'https://x.com/?lang=en'));
+    $wp_customize->add_setting('youtube', array('default' => 'https://www.youtube.com/'));
 
     //Controls
     //Facebook

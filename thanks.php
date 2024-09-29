@@ -10,7 +10,7 @@ get_header();
 
     <div class="thanks-title">
         <h1 class="text-center roboto-black">
-            <?php echo get_theme_mod('thanks_page_hero_title'); ?>
+            <?php echo get_theme_mod('thanks_page_hero_title', 'Thank You'); ?>
         </h1>
     </div>
     <div class="appointment-container bg-white roboto-medium">

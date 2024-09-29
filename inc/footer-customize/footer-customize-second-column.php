@@ -25,7 +25,7 @@ $wp_customize->add_control(
 );
 $wp_customize->add_setting('footer_mobile_number',  array(
     'type' => 'theme_mod',
-    'default' => '+880-1868787748',
+    'default' => '+8801868787748',
 ));
 
 //Control

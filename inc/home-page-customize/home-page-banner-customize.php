@@ -51,8 +51,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('banner_smaller_second_title',  array(
     'type' => 'theme_mod',
-    'default' => 'LEGAL SERVICES
-',
+    'default' => 'LEGAL SERVICES',
 
 ));
 //Control
@@ -160,7 +159,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('banner_btn_link',  array(
     'type' => 'theme_mod',
-    'default' => '/home',
+    'default' => get_option("siteurl"),
 
 ));
 //Control

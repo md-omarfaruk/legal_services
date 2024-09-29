@@ -74,7 +74,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('home_page_main_content_toll_free_number',  array(
     'type' => 'theme_mod',
-    'default' => '+8801868-787748',
+    'default' => '+8801868787748',
 
 ));
 //Control

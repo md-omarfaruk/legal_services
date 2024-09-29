@@ -9,7 +9,7 @@ get_header()
 
 <div class="appointment-title">
     <h1 class="text-center roboto-black">
-        <?php echo get_theme_mod('appointment_page_hero_title'); ?>
+        <?php echo get_theme_mod('appointment_page_hero_title', 'Book an Appointment'); ?>
     </h1>
 </div>
 <div class="appointment-container bg-white roboto-medium">
@@ -46,26 +46,28 @@ get_header()
             <div class="col-lg-9 p-4 border rounded-3 shadow">
                 <!-- -----------------------------Service-part-Start---------------------------- -->
                 <div class="service" id="service">
-                    <h6 class="my-3" id="serviceRequiredNote"><?php echo get_theme_mod('appointment_page_service_required_note'); ?></h6>
-                    <h4><?php echo get_theme_mod('appointment_page_service_select_category_title'); ?></h4>
+                    <h6 class="my-3" id="serviceRequiredNote"><?php echo get_theme_mod('appointment_page_service_required_note', 'Please select any service to book an appointment'); ?></h6>
+                    <h4><?php echo get_theme_mod('appointment_page_service_select_category_title', 'Select Category'); ?></h4>
                     <a class="icon-link all-icon py-2 px-3 border rounded-2" href="#">
-                        <?php echo get_theme_mod('appointment_page_service_all_text'); ?>
+                        <?php echo get_theme_mod('appointment_page_service_all_text', 'All'); ?>
                         <i class="bi bi-check-circle-fill ms-2"></i>
                     </a>
-                    <h5 class="my-3"><?php echo get_theme_mod('appointment_page_select_service_text'); ?></h5>
+                    <h5 class="my-3"><?php echo get_theme_mod('appointment_page_select_service_text', 'Select Service'); ?></h5>
                     <div class="d-flex p-3 service-details rounded-3 position-relative"
                         id="selectService">
                         <div>
-                            <img src="<?php echo get_theme_mod('appointment_page_service_attorney_img'); ?>" class="appointment-page-client-img border-0"
+                            <img src="<?php echo get_theme_mod('appointment_page_service_attorney_img',  get_template_directory_uri() . '/assets/img/client-img-1.jpg'); ?>" class="appointment-page-client-img border-0"
                                 alt="Adv Bashir Ahammed">
                         </div>
                         <div class="ms-3">
-                            <h5 id="appointWith"><?php echo get_theme_mod('appointment_page_attorney_text'); ?></h5>
+                            <h5 id="appointWith"><?php echo get_theme_mod('appointment_page_attorney_text', 'Appointment with Our Attorney'); ?></h5>
                             <h6><?php echo get_theme_mod('appointment_page_pay_before_text'); ?></h6>
-                            <p class="note"><?php echo get_theme_mod('appointment_page_service_section_note_text'); ?></p>
+                            <p class="note"><?php echo get_theme_mod('appointment_page_service_section_note_text', 'Note: Please note that if anyone wishes to cancel a scheduled
+                                        appointment after
+                                        it is paid and confirmed, Appointment Fee (Non Refundable )'); ?></p>
                             <div class="d-flex">
-                                <p class="duration me-3"><?php echo get_theme_mod('appointment_page_service_section_duration_text'); ?>: <strong><?php echo get_theme_mod('appointment_page_service_section_duration_time_text'); ?></strong></p>
-                                <p class="price" id="price"><?php echo get_theme_mod('appointment_page_service_section_price_text'); ?>: <strong class="amount py-1 px-3 rounded-3"><?php echo get_theme_mod('appointment_page_service_section_price_amount_text'); ?></strong>
+                                <p class="duration me-3"><?php echo get_theme_mod('appointment_page_service_section_duration_text', 'Duration'); ?>: <strong><?php echo get_theme_mod('appointment_page_service_section_duration_time_text', '30m'); ?></strong></p>
+                                <p class="price" id="price"><?php echo get_theme_mod('appointment_page_service_section_price_text', 'Price'); ?>: <strong class="amount py-1 px-3 rounded-3"><?php echo get_theme_mod('appointment_page_service_section_price_amount_text', '100$'); ?></strong>
                                 </p>
                             </div>
                             <i class="bi bi-check-circle-fill service-details-icon position-absolulte"></i>
@@ -81,58 +83,58 @@ get_header()
                 <!-- ---------------------------Service-Part-End------------------------ -->
                 <!-- -------------------------------Date-&-Time-Part-Start------------------------------ -->
                 <div class="date-time" id="dateTime">
-                    <h6 class="my-3" id="dateTimeRequiredNote"><?php echo get_theme_mod('appointment_page_date_time_required_note'); ?></h6>
-                    <h4><?php echo get_theme_mod('appointment_page_date_time_title'); ?></h4>
+                    <h6 class="my-3" id="dateTimeRequiredNote"><?php echo get_theme_mod('appointment_page_date_time_required_note', 'Please select a time slot to proceed with the booking.'); ?></h6>
+                    <h4><?php echo get_theme_mod('appointment_page_date_time_title', 'Date & Time'); ?></h4>
                     <div class="row mt-3">
                         <div class="col-12 calendar-body text-center">
-                            <label for="select-date"><?php echo get_theme_mod('appointment_page_select_date_time_text'); ?></label>
+                            <label for="select-date"><?php echo get_theme_mod('appointment_page_select_date_time_text', 'Select Your Date:'); ?></label>
                             <input type="date" id="select-date" name="select-date">
                         </div>
                         <div class="col-12 p-3 time-slot">
-                            <h5 class="mb-4"><?php echo get_theme_mod('appointment_page_time_slot_text'); ?></h5>
-                            <h6 class="slot-period"><?php echo get_theme_mod('appointment_page_date_time_morning_text'); ?></h6>
+                            <h5 class="mb-4"><?php echo get_theme_mod('appointment_page_time_slot_text', 'Time Slot'); ?></h5>
+                            <h6 class="slot-period"><?php echo get_theme_mod('appointment_page_date_time_morning_text', 'Morning'); ?></h6>
                             <div class="times row mb-4 justify-content-between">
                                 <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
-                                    <h5><?php echo get_theme_mod('appointment_page_morning_slot_time_one_text'); ?></h5>
-                                    <h6><?php echo get_theme_mod('appointment_page_morning_available_slots_for_one_text'); ?></h6>
+                                    <h5><?php echo get_theme_mod('appointment_page_morning_slot_time_one_text', '10:35 am - 11:05 am'); ?></h5>
+                                    <h6><?php echo get_theme_mod('appointment_page_morning_available_slots_for_one_text', '1 Slots left'); ?></h6>
                                 </div>
                                 <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
-                                    <h5><?php echo get_theme_mod('appointment_page_morning_slot_time_two_text'); ?></h5>
-                                    <h6><?php echo get_theme_mod('appointment_page_morning_available_slots_for_two_text'); ?></h6>
+                                    <h5><?php echo get_theme_mod('appointment_page_morning_slot_time_two_text', '11:35 am - 12:05pm'); ?></h5>
+                                    <h6><?php echo get_theme_mod('appointment_page_morning_available_slots_for_two_text', '1 Slots left'); ?></h6>
                                 </div>
                             </div>
-                            <h6 class="slot-period"><?php echo get_theme_mod('appointment_page_date_time_afternoon_text'); ?></h6>
+                            <h6 class="slot-period"><?php echo get_theme_mod('appointment_page_date_time_afternoon_text', 'Afternoon'); ?></h6>
                             <div class="times row mb-4 justify-content-between">
                                 <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
-                                    <h5>12:05 pm - 12:35 pm</h5>
-                                    <h6>0 Slots left</h6>
+                                    <h5><?php get_theme_mod('appointment_page_afternoon_slot_time_one_text', '12:05 pm - 12:35 pm');?></h5>
+                                    <h6><?php get_theme_mod('appointment_page_afternoon_available_slots_for_one_text', '1 Slots left');?></h6>
                                 </div>
                                 <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
-                                    <h5>12:35 pm - 01:05 pm</h5>
-                                    <h6>0 Slots left</h6>
+                                    <h5><?php get_theme_mod('appointment_page_afternoon_slot_time_two_text', '12:35 pm - 01:05 pm');?></h5>
+                                    <h6><?php get_theme_mod('appointment_page_afternoon_available_slots_for_two_text', '1 Slots left');?></h6>
                                 </div>
                                 <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
-                                    <h5>01:05 pm - 01:35 pm</h5>
-                                    <h6>0 Slots left</h6>
+                                    <h5><?php get_theme_mod('appointment_page_afternoon_slot_time_three_text', '01:05 pm - 01:35 pm');?></h5>
+                                    <h6><?php get_theme_mod('appointment_page_afternoon_available_slots_for_three_text', '1 Slots left');?></h6>
                                 </div>
                                 <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
-                                    <h5>01:35 pm - 02:05 pm</h5>
-                                    <h6>0 Slots left</h6>
+                                    <h5><?php get_theme_mod('appointment_page_afternoon_slot_time_four_text', '01:35 pm - 02:05 pm');?></h5>
+                                    <h6><?php get_theme_mod('appointment_page_afternoon_available_slots_for_four_text', '1 Slots left');?></h6>
                                 </div>
                                 <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
-                                    <h5>02:05 pm - 02:35 pm</h5>
-                                    <h6>0 Slots left</h6>
+                                    <h5><?php get_theme_mod('appointment_page_afternoon_slot_time_five_text', '02:05 pm - 02:35 pm');?></h5>
+                                    <h6><?php get_theme_mod('appointment_page_afternoon_available_slots_for_five_text', '1 Slots left');?></h6>
                                 </div>
                                 <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
-                                    <h5>02:35 pm - 03:05 pm</h5>
-                                    <h6>0 Slots left</h6>
+                                    <h5><?php get_theme_mod('appointment_page_afternoon_slot_time_six_text', '02:35 pm - 03:05 pm');?></h5>
+                                    <h6><?php get_theme_mod('appointment_page_afternoon_available_slots_for_six_text', '1 Slots left');?></h6>
                                 </div>
                             </div>
                             <h6 class="slot-period"><?php echo get_theme_mod('appointment_page_date_time_evening_text'); ?></h6>
-                            <div class="times row mb-4 justify-content-between">
+                            <div cla35 mb - 01:05 pm-4 justify-content-between">
                                 <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
-                                    <h5>03:05 pm - 03:35 pm</h5>
-                                    <h6>0 Slots left</h6>
+                                    <h5><?php get_theme_mod('appointment_page_evening_slot_time_one_text', '03:05 pm - 03:35 pm');?></h5>
+                                    <h6><?php get_theme_mod('appointment_page_evening_available_slots_for_six_text', '1 Slots left');?></h6>
                                 </div>
                             </div>
                         </div>
@@ -159,48 +161,48 @@ get_header()
                     <div class="basic-details" id="basicDetails">
                         <div class="row">
                             <div class="col">
-                                <h4><?php echo get_theme_mod('appointment_page_basic_details_title'); ?></h4>
+                                <h4><?php echo get_theme_mod('appointment_page_basic_details_title', 'Basic Details'); ?></h4>
                             </div>
                             <div class="col text-lg-end">
-                                <label for="select-date"><?php echo get_theme_mod('appointment_page_pick_a_date_text'); ?></label>
+                                <label for="select-date"><?php echo get_theme_mod('appointment_page_pick_a_date_text', 'Pick a Date:'); ?></label>
                                 <input type="date" id="select-date" name="select-date">
                             </div>
                         </div>
                         <div class="col">
                             <div class="mb-3">
-                                <label for="name" class="form-label"><?php echo get_theme_mod('appointment_page_your_full_name_label_text'); ?></label>
+                                <label for="name" class="form-label"><?php echo get_theme_mod('appointment_page_your_full_name_label_text', 'Your Full Name'); ?></label>
                                 <input type="text" class="form-control" id="name" name="name"
                                     placeholder="Enter Your Full Name">
                             </div>
                             <div class="row">
                                 <div class="row">
                                     <div class="col">
-                                        <label for="phone"><?php echo get_theme_mod('appointment_page_home_phone_label_text'); ?></label>
+                                        <label for="phone"><?php echo get_theme_mod('appointment_page_home_phone_label_text', 'Home Phone'); ?></label>
                                         <input type="tel" id="phone" name="phone" class="form-control"
                                             placeholder="+8801868787748" aria-label="Phone">
                                     </div>
                                     <div class="col">
-                                        <label for="email"><?php echo get_theme_mod('appointment_page_email_address_label_text'); ?></label>
+                                        <label for="email"><?php echo get_theme_mod('appointment_page_email_address_label_text', 'Email Address'); ?></label>
                                         <input type="email" id="email" name="email" class="form-control"
                                             placeholder="Enter Your Email Address" aria-label="Email Address">
                                     </div>
                                 </div>
                                 <div class="form-group mt-2">
-                                    <label for="textarea"><?php echo get_theme_mod('appointment_page_your_details_label_text'); ?>:</label>
+                                    <label for="textarea"><?php echo get_theme_mod('appointment_page_your_details_label_text', 'Enter Your Details Here'); ?>:</label>
                                     <textarea id="textarea" name="textarea" rows="5" class="form-control"></textarea>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="address" class="form-label"><?php echo get_theme_mod('appointment_page_address_label_text'); ?></label>
+                                    <label for="address" class="form-label"><?php echo get_theme_mod('appointment_page_address_label_text', 'Address'); ?></label>
                                     <input type="text" class="form-control" id="adress" name="address"
                                         placeholder="Enter Your Address">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="tel" class="form-label"><?php echo get_theme_mod('appointment_page_cell_number_label_text'); ?><sup class="text-danger fs-6">*</sup></label>
+                                    <label for="tel" class="form-label"><?php echo get_theme_mod('appointment_page_cell_number_label_text', 'Cell Number'); ?><sup class="text-danger fs-6">*</sup></label>
                                     <input type="tel" class="form-control" id="tel" name="tel"
                                         placeholder="Enter Your Cell Number" required>
-                                    <p id="required"><small class="text-danger"><?php echo get_theme_mod('appointment_page_cell_number_required_note_text'); ?></small></p>
+                                    <p id="required"><small class="text-danger"><?php echo get_theme_mod('appointment_page_cell_number_required_note_text', 'This field can not be blank'); ?></small></p>
                                 </div>
-                                <h6 class="ms-32"><?php echo get_theme_mod('appointment_page_consultaion_fee_paid_label_text'); ?></h6>
+                                <h6 class="ms-32"><?php echo get_theme_mod('appointment_page_consultaion_fee_paid_label_text', 'Consultation fee Paid'); ?></h6>
                                 <div class="d-flex">
                                     <div class="form-check ms-2">
                                         <input type="radio" class="form-check-input" id="radio1" name="optradio"
@@ -217,12 +219,12 @@ get_header()
                                     <div class="col">
                                         <label for="personName"></label>
                                         <textarea class="form-control" rows="5" id="personName"
-                                            name="personName"><?php echo get_theme_mod('appointment_page_referred_person_name_label_text'); ?></textarea>
+                                            name="personName"><?php echo get_theme_mod('appointment_page_referred_person_name_label_text', 'Enter Referred Person Name'); ?></textarea>
                                     </div>
                                     <div class="col">
                                         <label for="referredTel" class="form-label"></label>
                                         <input type="tel" name="referredTel" class="form-control" id="referredTel"
-                                            placeholder="<?php echo get_theme_mod('appointment_page_referred_person_name_label_text'); ?>">
+                                            placeholder="<?php echo get_theme_mod('appointment_page_referred_person_name_label_text', 'Enter Referred Number'); ?>">
                                     </div>
                                 </div>
                             </div>
@@ -333,8 +335,8 @@ get_header()
                             d="M16.0873 20.6895C16.8836 21.0473 17.5116 21.6978 17.8411 22.5061C18.1706 23.3144 18.1764 24.2186 17.8572 25.031L14.6718 33.139L18.6708 32.404C18.9205 32.3581 19.1784 32.4051 19.3959 32.5361C19.6134 32.667 19.7755 32.873 19.8517 33.1152L20.6489 35.6486C20.6905 35.781 20.7053 35.9203 20.6923 36.0585C20.6793 36.1966 20.6388 36.3308 20.5732 36.453C20.5076 36.5753 20.4182 36.6832 20.3103 36.7705C20.2024 36.8577 20.0781 36.9224 19.9448 36.9609L14.7471 38.4617C14.0896 38.6515 13.397 38.6864 12.7238 38.5635C12.0505 38.4407 11.4149 38.1635 10.8668 37.7536C10.3188 37.3438 9.87314 36.8125 9.56495 36.2015C9.25676 35.5905 9.09439 34.9163 9.09058 34.232C9.0888 33.9122 9.12167 33.5931 9.18861 33.2804L11.3726 23.0775C11.4787 22.582 11.6942 22.1166 12.0034 21.7152C12.3127 21.3138 12.7077 20.9867 13.1597 20.7577C13.6118 20.5288 14.1093 20.4038 14.6158 20.392C15.1224 20.3802 15.6251 20.4819 16.0873 20.6895Z"
                             fill="#CFD6E6"></path>
                     </svg>
-                    <h4 class="text-center mt-4"><?php echo get_theme_mod('appointment_page_summary_title'); ?></h4>
-                    <p class="text-center text-secondary"><?php echo get_theme_mod('appointment_page_booking_summary_text'); ?></p>
+                    <h4 class="text-center mt-4"><?php echo get_theme_mod('appointment_page_summary_title', 'Summary'); ?></h4>
+                    <p class="text-center text-secondary"><?php echo get_theme_mod('appointment_page_booking_summary_text', 'Your appointment booking summary'); ?></p>
                     <p class="text-center text-secondary">Customer</p>
                     <div class="row">
                         <div class="col border-end">

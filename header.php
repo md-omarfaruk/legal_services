@@ -23,20 +23,20 @@
                                 <img src="<?php echo get_theme_file_uri('assets/img/icons/clock.png'); ?>" class="header-icon-img" alt="">
                                 <h4 class="hours roboto-regular"><?php echo get_theme_mod('opening_hours', '09:00 - 06:00'); ?></h4>
                             </div>
-                            <p class="day roboto-regular">Our Opening Days <?php echo get_theme_mod('opening_days'); ?></p>
+                            <p class="day roboto-regular">Our Opening Days <?php echo get_theme_mod('opening_days', 'Mon. - Fri.'); ?></p>
                         </div>
 
                         <div class="direct-contact me-5">
                             <div class="d-flex align-items-center">
                                 <img src="<?php echo get_theme_file_uri('assets/img/icons/headphone.png'); ?>" class="header-icon-img" alt="">
-                                <h4 class="contact-number roboto-regular"><?php echo get_theme_mod('mobile_number'); ?></h4>
+                                <h4 class="contact-number roboto-regular"><?php echo get_theme_mod('mobile_number', '+8801868787748'); ?></h4>
                             </div>
-                            <p class="direct-contact-text roboto-regular">Direct : <?php echo get_theme_mod('direct_mobile_number'); ?></p>
+                            <p class="direct-contact-text roboto-regular">Direct : <?php echo get_theme_mod('direct_mobile_number', '+8801868787748'); ?></p>
                         </div>
                         <div class="header-social-icons">
-                            <a href="<?php echo get_theme_mod('facebook'); ?>"><i class="bi bi-facebook me-3"></i></a>
-                            <a href="<?php echo get_theme_mod('twitter'); ?>"><i class="bi bi-twitter me-3"></i></a>
-                            <a href="<?php echo get_theme_mod('youtube'); ?>"><i class="bi bi-youtube me-3"></i></a>
+                            <a href="<?php echo get_theme_mod('facebook', 'https://www.facebook.com/advbashir.ahammed'); ?>"><i class="bi bi-facebook me-3"></i></a>
+                            <a href="<?php echo get_theme_mod('twitter', 'https://x.com/?lang=en'); ?>"><i class="bi bi-twitter me-3"></i></a>
+                            <a href="<?php echo get_theme_mod('youtube', 'https://www.youtube.com/'); ?>"><i class="bi bi-youtube me-3"></i></a>
                         </div>
                         <div class="header-search-icon ms-4" id="searchBar">
                             <i class="bi bi-search"></i>

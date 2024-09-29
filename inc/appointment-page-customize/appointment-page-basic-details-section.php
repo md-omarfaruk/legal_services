@@ -126,47 +126,6 @@ $wp_customize->add_control(
         )
     )
 );
-// -----------------Input-Enter-Your-Details-Here-Text--------------------------------
-
-//Setting
-$wp_customize->add_setting('appointment_page_your_details_label_text',  array(
-    'type' => 'theme_mod',
-    'default' => 'Enter Your Details Here',
-));
-//Control
-$wp_customize->add_control(
-    new WP_Customize_Control(
-        $wp_customize,
-        'appointment_page_your_details_label_text',
-        array(
-            'label' => __('Appointment Page Basic Detials Input Enter Your Details Here Label Text', 'legal_services'),
-            'type' => 'text',
-            'section' => 'appointment_page_basic_details_section',
-            'settings' => 'appointment_page_your_details_label_text',
-        )
-    )
-);
-
-// -----------------Input-Enter-Your-Details-Here-Label-Text--------------------------------
-
-//Setting
-$wp_customize->add_setting('appointment_page_your_details_label_text',  array(
-    'type' => 'theme_mod',
-    'default' => 'Enter Your Details Here',
-));
-//Control
-$wp_customize->add_control(
-    new WP_Customize_Control(
-        $wp_customize,
-        'appointment_page_your_details_label_text',
-        array(
-            'label' => __('Appointment Page Basic Detials Input Enter Your Details Here Label Text', 'legal_services'),
-            'type' => 'text',
-            'section' => 'appointment_page_basic_details_section',
-            'settings' => 'appointment_page_your_details_label_text',
-        )
-    )
-);
 
 // -----------------Input-Address-Label-Text--------------------------------
 

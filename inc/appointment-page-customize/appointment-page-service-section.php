@@ -6,25 +6,6 @@ $wp_customize->add_section('appointment_page_service_section', array(
     'priority' => 20,
 ));
 // -----------------service-Required-Note--------------------------------
-// -----------------Gallery-Page-Images--------------------------------
-//Setting
-$wp_customize->add_setting('appointment_page_service_attorney_img',  array(
-    'type' => 'theme_mod',
-     'default'   => get_template_directory_uri() . '/assets/img/client-img-1.jpg',
-));
-//Setting
-//Control
-$wp_customize->add_control(
-    new WP_Customize_Image_Control(
-        $wp_customize,
-        'appointment_page_service_attorney_img',
-        array(
-            'label' => __('Appoint Page Service Section Attorney Image', 'legal_services'),
-            'section' => 'appointment_page_service_section',
-            'settings' => 'appointment_page_service_attorney_img',
-        )
-    )
-);
 //Setting
 $wp_customize->add_setting('appointment_page_service_required_note',  array(
     'type' => 'theme_mod',
@@ -40,6 +21,25 @@ $wp_customize->add_control(
             'type' => 'text',
             'section' => 'appointment_page_service_section',
             'settings' => 'appointment_page_service_required_note',
+        )
+    )
+);
+// -----------------------Appoint-Page-Service-Section-Attorney-Image------------------------
+//Setting
+$wp_customize->add_setting('appointment_page_service_attorney_img',  array(
+    'type' => 'theme_mod',
+     'default'   => get_template_directory_uri() . '/assets/img/client-img-1.jpg',
+));
+//Setting
+//Control
+$wp_customize->add_control(
+    new WP_Customize_Image_Control(
+        $wp_customize,
+        'appointment_page_service_attorney_img',
+        array(
+            'label' => __('Appoint Page Service Section Attorney Image', 'legal_services'),
+            'section' => 'appointment_page_service_section',
+            'settings' => 'appointment_page_service_attorney_img',
         )
     )
 );

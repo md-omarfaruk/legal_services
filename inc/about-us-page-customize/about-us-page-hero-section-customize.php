@@ -9,7 +9,7 @@ $wp_customize->add_section('about_us_page_hero_section', array(
 //Setting
 $wp_customize->add_setting('about_us_page_hero_title',  array(
     'type' => 'theme_mod',
-    'default' => 'Adv Bashir Ahammed',
+    'default' => 'About Us',
 
 ));
 //Control

@@ -7,15 +7,15 @@ get_header()
 ?>
 <div class="our-team-title">
     <h1 class="text-center roboto-black">
-        <?php echo get_theme_mod('our_team_page_hero_title'); ?>
+        <?php echo get_theme_mod('our_team_page_hero_title', 'Our Team'); ?>
     </h1>
 </div>
 <div class="bg-white">
     <div class="container py-5">
-        <p class="text-success text-center roboto-regular pb-5"><?php echo get_theme_mod('our_team_page_main_content_top_description'); ?></p>
-        <h1 class="text-center text-dark roboto-black mt-5"><?php echo get_theme_mod('our_team_page_main_content_top_heading'); ?></h1>
+        <p class="text-success text-center roboto-regular pb-5"><?php echo get_theme_mod('our_team_page_main_content_top_description', 'Welcome to advbashirahammed.com, your premier destination for legal and consultancy services in Bangladesh. With our team of experienced lawyers and consultants, we offer comprehensive solutions to legal challenges across almost all sectors and industries. Our team has a deep understanding of the legal landscape in Bangladesh, and we have successfully represented clients in a wide range of legal matters, from intellectual property disputes to corporate law and beyond. With Lacsb.com, you can trust that you are receiving the highest quality legal services available in Bangladesh.'); ?></p>
+        <h1 class="text-center text-dark roboto-black mt-5"><?php echo get_theme_mod('our_team_page_main_content_top_heading', 'Meet our team of legal experts'); ?></h1>
         <div class="executive-team">
-            <h3 class="text-lg-start text-sm-center team-name roboto-mediumaaa"><?php echo get_theme_mod('our_team_page_executive_team_heading'); ?></h3>
+            <h3 class="text-lg-start text-sm-center team-name roboto-mediumaaa"><?php echo get_theme_mod('our_team_page_executive_team_heading', 'Our Executive Team'); ?></h3>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <?php
                 // Custom Query to Fetch Team Members
@@ -63,7 +63,7 @@ get_header()
 
 
             <div class="advocay-team">
-            <h3 class="text-lg-start text-sm-center team-name roboto-mediumaaa"><?php echo get_theme_mod('our_team_page_advocacy_team_heading'); ?></h3>
+            <h3 class="text-lg-start text-sm-center team-name roboto-mediumaaa"><?php echo get_theme_mod('our_team_page_advocacy_team_heading', 'Our Advocacy Team'); ?></h3>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <?php
                 // Custom Query to Fetch Team Members
@@ -111,7 +111,7 @@ get_header()
 
 
             <div class="administration-team">
-            <h3 class="text-lg-start text-sm-center team-name roboto-mediumaaa"><?php echo get_theme_mod('our_team_page_administration_team_heading'); ?></h3>
+            <h3 class="text-lg-start text-sm-center team-name roboto-mediumaaa"><?php echo get_theme_mod('our_team_page_administration_team_heading', 'Our Administration Team'); ?></h3>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <?php
                 // Custom Query to Fetch Team Members

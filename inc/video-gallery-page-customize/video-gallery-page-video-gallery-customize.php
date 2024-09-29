@@ -28,7 +28,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('video_gallery_page_gallery_videoTwo',  array(
     'type' => 'theme_mod',
-    'default' => 'https://www.youtube.com/embed/hbLASgme01c?si=fUQOaaUhUddlj-yi',
+    'default' => 'https://www.youtube.com/embed/zUuIk1Cc-8Y?si=zjUEXYeo-cEESH_9',
 ));
 //Setting
 //Control
@@ -47,7 +47,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('video_gallery_page_gallery_videoThree',  array(
     'type' => 'theme_mod',
-    'default' => 'https://www.youtube.com/embed/hbLASgme01c?si=fUQOaaUhUddlj-yi',
+    'default' => 'https://www.youtube.com/embed/qUnikyOntC4?si=OtZHrB2celdayE6t',
 ));
 //Setting
 //Control
@@ -66,7 +66,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('video_gallery_page_gallery_videoFour',  array(
     'type' => 'theme_mod',
-    'default' => 'https://www.youtube.com/embed/hbLASgme01c?si=fUQOaaUhUddlj-yi',
+    'default' => 'https://www.youtube.com/embed/4-gAa3fA7sk?si=75XHK8ffe2GNOMW5',
 ));
 //Setting
 //Control
@@ -104,7 +104,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('video_gallery_page_gallery_videoSix',  array(
     'type' => 'theme_mod',
-    'default' => 'https://www.youtube.com/embed/hbLASgme01c?si=fUQOaaUhUddlj-yi',
+    'default' => 'https://www.youtube.com/embed/zUuIk1Cc-8Y?si=zjUEXYeo-cEESH_9',
 ));
 //Setting
 //Control
@@ -142,7 +142,7 @@ $wp_customize->add_control(
 //Setting
 $wp_customize->add_setting('video_gallery_page_gallery_videoEight',  array(
     'type' => 'theme_mod',
-    'default' => 'https://www.youtube.com/embed/hbLASgme01c?si=fUQOaaUhUddlj-yi',
+    'default' => 'https://www.youtube.com/embed/zUuIk1Cc-8Y?si=zjUEXYeo-cEESH_9',
 ));
 //Setting
 //Control
