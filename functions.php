@@ -30,47 +30,6 @@ require_once(get_theme_file_path('/inc/custom_post_type_for_appointment_page/app
 }
 add_action('after_setup_theme', 'legal_services_setup_theme');
 
-
-
-// ---------------------------Default-menus------------------------
-
-function legal_services_create_default_menu() {
-
-    $menu_exists = wp_get_nav_menu_object('header-menu');
-
-    if ( !$menu_exists ) {
-        $menu_id = wp_create_nav_menu('header-menu');
-
-        wp_update_nav_menu_item( $menu_id, 0, array(
-            'theme_location'  => 'header-menu',
-            'container'       => false,         
-            'items_wrap'      => '%3$s',        
-            'menu_class'      => '',             
-            'add_li_class'    => 'nav-item d-flex', 
-            'link_class'      => 'nav-link',       
-            'link_after'      => '<i class="bi bi-star-fill mx-3"></i>', 
-        ));
-
-        wp_update_nav_menu_item( $menu_id, 0, array(
-            'theme_location'  => 'header-menu',
-            'container'       => false,         
-            'items_wrap'      => '%3$s',        
-            'menu_class'      => '',             
-            'add_li_class'    => 'nav-item d-flex', 
-            'link_class'      => 'nav-link',       
-            'link_after'      => '<i class="bi bi-star-fill mx-3"></i>', 
-        ));
-
-        $locations = get_theme_mod('header-menu');
-        $locations['header-menu'] = $menu_id;
-        set_theme_mod( 'header-menu', $locations );
-    }
-}
-add_action('after_setup_theme', 'legal_services_create_default_menu');
-
-
-
-
 // Enqueue theme styles and scripts
 require_once(get_theme_file_path('/inc/enqueue-style-n-scripts.php'));
 
