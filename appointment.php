@@ -131,7 +131,7 @@ get_header()
                                 </div>
                             </div>
                             <h6 class="slot-period"><?php echo get_theme_mod('appointment_page_date_time_evening_text'); ?></h6>
-                            <div class="times row mb-4 justify-content-between">>
+                            <div class="times row mb-4 justify-content-between">
                                 <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
                                     <h5><?php echo get_theme_mod('appointment_page_evening_slot_time_one_text', '03:05 pm - 03:35 pm');?></h5>
                                     <h6><?php echo get_theme_mod('appointment_page_evening_available_slots_for_six_text', '1 Slots left');?></h6>
