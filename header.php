@@ -21,7 +21,7 @@
                         <div class="opening-hours me-5">
                             <div class="d-flex align-items-center">
                                 <img src="<?php echo get_theme_file_uri('assets/img/icons/clock.png'); ?>" class="header-icon-img" alt="">
-                                <h4 class="hours roboto-regular"><?php echo get_theme_mod('opening_hours'); ?></h4>
+                                <h4 class="hours roboto-regular"><?php echo get_theme_mod('opening_hours', '09:00 - 06:00'); ?></h4>
                             </div>
                             <p class="day roboto-regular">Our Opening Days <?php echo get_theme_mod('opening_days'); ?></p>
                         </div>
