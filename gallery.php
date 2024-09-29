@@ -47,8 +47,8 @@ get_header()
                     <div class="col-lg-4">
                         <div class="lightbox_img_wrap">
                             <img class="lightbox-enabled img-fluid gallery-img"
-                                src="<?php echo get_theme_mod('gallery_page_img_gallery_imgFive'get_template_directory_uri() . '/assets/img/7.jpg');?>"
-                                data-imgsrc="<?php echo get_theme_mod('gallery_page_img_gallery_imgFive'get_template_directory_uri() . '/assets/img/7.jpg');?>" alt="Photo Gallery">
+                                src="<?php echo get_theme_mod('gallery_page_img_gallery_imgFive', get_template_directory_uri() . '/assets/img/7.jpg');?>"
+                                data-imgsrc="<?php echo get_theme_mod('gallery_page_img_gallery_imgFive', get_template_directory_uri() . '/assets/img/7.jpg');?>" alt="Photo Gallery">
                         </div>
                     </div>
                     <div class="col-lg-4">

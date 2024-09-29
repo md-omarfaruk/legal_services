@@ -6,7 +6,7 @@
                 <a class="navbar-brand" href="<?php echo get_option("siteurl"); ?>"><img src="<?php echo  get_theme_mod('footer_logo', get_template_directory_uri() . '/assets/img/responsive-logo.png'); ?>" width="160"
                         alt="Legal Services"></a>
                 <p class="footer-desc mt-4 mb-0 lh-lg"><?php echo get_theme_mod('footer_description', 'Adv Bashir Ahammed, probably the first Bangladeshi-American attorney to be admitted to practice before the United States Supreme Court, the United States Court of International Trade and the Michigan Supreme Court.'); ?></p>
-                <p><a href="<?php echo get_theme_mod('read_more', echo get_option("siteurl")); ?>" class="text-danger">Read More</a></p>
+                <p><a href="<?php echo get_theme_mod('read_more', get_option("siteurl")); ?>" class="text-danger">Read More</a></p>
                 <div class="footer-social-links d-flex">
                     <a href="<?php echo get_theme_mod('facebook', 'https://www.facebook.com/advbashir.ahammed', 'https://www.facebook.com/advbashir.ahammed'); ?>" class="pe-3"><i class="bi bi-facebook"></i></a>
                     <a href="<?php echo get_theme_mod('twitter', 'https://x.com/?lang=en'); ?>" class="pe-3"><i class="bi bi-twitter"></i></a>
