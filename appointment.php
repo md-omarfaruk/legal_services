@@ -56,7 +56,7 @@ get_header()
                     <div class="d-flex p-3 service-details rounded-3 position-relative"
                         id="selectService">
                         <div>
-                            <img src="<?php echo get_theme_file_uri('assets/img/client-img-1.jpg'); ?>" class="appointment-page-client-img border-0"
+                            <img src="<?php echo get_theme_mod('appointment_page_service_attorney_img'); ?>" class="appointment-page-client-img border-0"
                                 alt="Adv Bashir Ahammed">
                         </div>
                         <div class="ms-3">
