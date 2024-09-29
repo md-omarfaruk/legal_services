@@ -50,6 +50,26 @@ function legal_services_top_header($wp_customize)
             )
         )
     );
+    // -----------------Header-Menu-Logo-Responsive-Devices--------------------------------
+    //Setting
+    $wp_customize->add_setting('header_menu_logo_responsive_devices',  array(
+        'type' => 'theme_mod',
+         'default'   => get_template_directory_uri() . '/assets/img/responsive-logo.png',
+    ));
+
+    //Control
+    //Top-Logo
+    $wp_customize->add_control(
+        new WP_Customize_Image_Control(
+            $wp_customize,
+            'header_menu_logo_responsive_devices',
+            array(
+                'label' => __('Header Menu Logo Responsive Devices', 'legal_services'),
+                'section' => 'top_header',
+                'settings' => 'header_menu_logo_responsive_devices',
+            )
+        )
+    );
     // -----------------Top-Opening-Hours--------------------------------
 
     //Setting

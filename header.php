@@ -14,7 +14,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
-                        <a href="<?php echo get_option("siteurl"); ?>"><img src="<?php echo  get_theme_mod('top_header_logo'); ?>" class="header-logo"
+                        <a href="<?php echo get_option("siteurl"); ?>"><img src="<?php echo  get_theme_mod('top_header_logo', get_template_directory_uri() . '/assets/img/moin-choudhury-logo.png'); ?>" class="header-logo"
                                 width="224" alt="Legal Services"></a>
                     </div>
                     <div class="col-lg-9 d-flex justify-content-end">
@@ -54,7 +54,7 @@
         <div class="header-nav" id="header-navbar-one">
             <nav class="navbar navbar-expand-lg py-0 roboto-regular">
                 <div class="container-lg">
-                    <a class="navbar-brand responsive-logo" href="<?php echo get_option("siteurl"); ?>"><img src="<?php echo get_theme_file_uri('assets/img/responsive-logo.png'); ?>"
+                    <a class="navbar-brand responsive-logo" href="<?php echo get_option("siteurl"); ?>"><img src="<?php echo get_theme_mod('header_menu_logo_responsive_devices', get_template_directory_uri() . '/assets/img/responsive-logo.png'); ?>"
                             width="110" alt="Legal Services"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,7 +90,7 @@
             <nav class="navbar navbar-expand-lg p-0 roboto-regular">
                 <div class="container">
                     <a class="navbar-brand" id="fixed-nav-logo" href="<?php echo get_option("siteurl"); ?>"><img
-                            src="<?php echo get_theme_mod('header_fixed_menu_logo'); ?>" width="54" alt="Legal Services"></a>
+                            src="<?php echo get_theme_mod('header_fixed_menu_logo', get_template_directory_uri() . '/assets/img/fixed-nav-logo.png'); ?>" width="54" alt="Legal Services"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
